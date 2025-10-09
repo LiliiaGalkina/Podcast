@@ -12,6 +12,17 @@
     font-weight: 700;
     color: $fontcolor;
     background-color: $backcolor;
+    transition: all 0.5s ease;
+
+    &:hover {
+        transform: scale(0.97);
+    }
+
+    @media (max-width: 768px) {
+        height: 3.5rem;
+        padding: 1rem 1.5rem;
+        font-size: 1.2rem;
+    }
 }
 
 .buttongrey {
