@@ -1,0 +1,50 @@
+@import "../variables";
+
+.header {
+    padding: 2.4rem 0;
+    background-color: $backgroundHeaderHero;
+}
+
+.headeritems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 12.3rem;
+    max-width: 7.4rem;
+    img {
+        width: 100%;
+    }
+}
+
+.menulist {
+    display: flex;
+    align-items: center;
+}
+
+.menuitem {
+    &:not(:last-child) {
+        margin-right: 6rem;
+    }
+}
+
+.menulink {
+    font-size: 1.6rem;
+    line-height: 160%;
+    font-weight: 700;
+    color: $textColorDark;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
