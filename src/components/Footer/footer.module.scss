@@ -1,0 +1,136 @@
+@import "../variables";
+
+//mixins
+@mixin footertext($fontsize) {
+  font-size: $fontsize;
+  line-height: 160%;
+  font-weight: 500;
+  color: $textColorGrey;
+}
+
+@mixin footermenuitem($colorText) {
+  font-size: 1.6rem;
+  line-height: 160%;
+  font-weight: 500;
+  color: $colorText;
+}
+
+.footer {
+  padding: 14rem 0 8rem;
+}
+
+.content {
+  padding-bottom: 14rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid $textColorGrey;
+}
+
+.logoblock {
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.logo {
+  margin-right: 2.4rem;
+  width: 7.4rem;
+  img {
+    max-width: 100%;
+  }
+}
+
+.logotext {
+  @include footertext(1.2rem);
+}
+
+.infotext {
+  @include footertext(1.4rem);
+  margin-bottom: 4rem;
+  max-width: 27.5rem;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.footernavigation {
+  display: flex;
+}
+
+.footermenu {
+  margin-right: 12.4rem;
+  display: flex;
+  gap: 9.3rem;
+}
+
+.footermenucolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footermenuitemdark {
+  @include footermenuitem($textColorDark);
+}
+
+.footermenuitemred {
+  @include footermenuitem($textColorRed);
+}
+
+.navigatioinfotext {
+  @include footertext(1.6rem);
+  margin-bottom: 2rem;
+}
+
+.navigatioinfoitems {
+  margin-bottom: 6rem;
+  display: flex;
+  align-items: center;
+  gap: 3.85rem;
+}
+
+.navigatioinfoitem {
+  img {
+    max-width: 100%;
+  }
+}
+
+.copyright {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyrightitem {
+  @include footertext(1.2rem);
+  color: $textColorGrey;
+}
+
+.copyrightitemred {
+  color: $textColorRed;
+}
+
+.copyrightitems {
+  @include footertext(1.2rem);
+  color: $textColorGrey;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.copyrightitemlink:first-child {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 1.2rem;
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: $textColorGrey;
+  }
+}
