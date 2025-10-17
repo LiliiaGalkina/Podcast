@@ -14,7 +14,10 @@ const HomePage = () => {
         <p className={style.herotext}>
           We cover all kinds of categories and a weekly special guest.
         </p>
+        <div className={style.heroslider}>
         <HomePageSlider />
+
+        </div>
         <div className="container">
           <div className={style.herolinks}>
             <p className={style.herolinkstitle}>Supported by:</p>
