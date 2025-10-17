@@ -1,4 +1,4 @@
-@import "../variables";
+@use "../_variables.scss" as *;
 
 //mixins
 @mixin footertext($fontsize) {
@@ -21,8 +21,8 @@
 
 .content {
   padding-bottom: 14rem;
-  display: flex;
-  justify-content: space-between;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
   border-bottom: 0.1rem solid $textColorGrey;
 }
 
@@ -54,10 +54,6 @@
   display: flex;
   align-items: center;
   gap: 2.5rem;
-}
-
-.footernavigation {
-  display: flex;
 }
 
 .footermenu {
@@ -116,21 +112,92 @@
 
 .copyrightitems {
   @include footertext(1.2rem);
-  color: $textColorGrey;
   display: flex;
   align-items: center;
   gap: 2.4rem;
 }
 
-.copyrightitemlink:first-child {
-  position: relative;
+@media (max-width: 1024px) {
+  .footer {
+    padding: 8rem 0 4rem;
+  }
+  .content {
+    padding-bottom: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5rem;
+  }
 
-  &::after {
-    position: absolute;
-    top: 50%;
-    left: 1.2rem;
-    width: 0.4rem;
-    height: 0.4rem;
-    background-color: $textColorGrey;
+  .footermenu {
+    margin-right: 5rem;
+  }
+
+  .navigatioinfo {
+    padding-right: 5rem;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 768px) {
+  .footermenu {
+    margin-right: 0;
+    gap: 4rem;
+    justify-content: end;
+  }
+
+  .navigatioinfo {
+    padding-right: 0;
+  }
+
+  .navigatioinfoitem {
+    max-width: 7rem;
+    
+  }
+}
+
+@media (max-width: 600px) {
+   .footer {
+    padding: 4rem 0 ;
+  }
+
+  .content {
+    align-items: center;
+  }
+
+  .navigatioinfo {
+    flex-direction: column;
+  }
+
+  .navigatioinfoitem {
+    max-width: fit-content;
+  }
+
+  .infotext {
+    max-width: 20rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding-bottom: 4rem;
+    grid-template-columns: 1fr;
+  }
+
+  .navigatioinfo{
+    grid-column: 1/2;
+  }
+
+  .footermenu {
+    justify-content:center;
+    gap: 7rem;
+  }
+
+  .infotext {
+    max-width: 100%;
+  }
+
+  .copyrightitem {
+    display: flex;
+    flex-direction: column;
   }
 }

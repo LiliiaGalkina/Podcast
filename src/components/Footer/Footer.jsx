@@ -34,32 +34,32 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className={style.footernavigation}>
-            <div className={style.footermenu}>
-              <div className={style.footermenucolumn}>
-                <a href="#" className={style.footermenuitemdark}>
-                  About
-                </a>
-                <a href="#" className={style.footermenuitemred}>
-                  Testimonials
-                </a>
-                <a href="#" className={style.footermenuitemdark}>
-                  Features
-                </a>
-              </div>
-              <div className={style.footermenucolumn}>
-                <a href="#" className={style.footermenuitemred}>
-                  Episodes
-                </a>
-                <a href="#" className={style.footermenuitemdark}>
-                  Pricing
-                </a>
-                <a href="#" className={style.footermenuitemdark}>
-                  Blog
-                </a>
-              </div>
+          <div className={style.footermenu}>
+            <div className={style.footermenucolumn}>
+              <a href="#" className={style.footermenuitemdark}>
+                About
+              </a>
+              <a href="#" className={style.footermenuitemred}>
+                Testimonials
+              </a>
+              <a href="#" className={style.footermenuitemdark}>
+                Features
+              </a>
             </div>
-            <div className={style.navigatioinfo}>
+            <div className={style.footermenucolumn}>
+              <a href="#" className={style.footermenuitemred}>
+                Episodes
+              </a>
+              <a href="#" className={style.footermenuitemdark}>
+                Pricing
+              </a>
+              <a href="#" className={style.footermenuitemdark}>
+                Blog
+              </a>
+            </div>
+          </div>
+          <div className={style.navigatioinfo}>
+            <div>
               <p className={style.navigatioinfotext}>
                 Listen to episodes on your fav platform:
               </p>
@@ -74,7 +74,9 @@ const Footer = () => {
                   <img src={youtube} alt="" />
                 </a>
               </div>
-              <p className={style.navigatioinfotext}>App available on::</p>
+            </div>
+            <div>
+              <p className={style.navigatioinfotext}>App available on:</p>
               <div className={style.navigatioinfoitems}>
                 <a href="#" className={style.navigatioinfoitem} target="_blank">
                   <img src={appstore} alt="Appstore" />
@@ -88,7 +90,7 @@ const Footer = () => {
         </div>
         <div className={style.copyright}>
           <div className={style.copyrightitem}>
-            ©2022. All Rights Reserved.{" "}
+            <span>©2022. All Rights Reserved.</span>
             <span className={style.copyrightitemred}>Pod of Cast</span>
           </div>
           <div className={style.copyrightitems}>
