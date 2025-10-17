@@ -1,20 +1,5 @@
 @use "../_variables.scss" as *;
 
-//mixins
-@mixin footertext($fontsize) {
-  font-size: $fontsize;
-  line-height: 160%;
-  font-weight: 500;
-  color: $textColorGrey;
-}
-
-@mixin footermenuitem($colorText) {
-  font-size: 1.6rem;
-  line-height: 160%;
-  font-weight: 500;
-  color: $colorText;
-}
-
 .footer {
   padding: 14rem 0 8rem;
 }

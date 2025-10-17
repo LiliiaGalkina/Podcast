@@ -1,0 +1,38 @@
+@use "../_variables.scss" as *;
+
+.hero {
+    padding: 6.4rem 0 14rem;
+    background-color: $backgroundHeaderHero;
+}
+
+.herotitle {
+    @include title(9.6rem, 100%, -4%);
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.herotitlered {
+    color: $textColorRed;
+}
+
+.herotext {
+    @include text(1.6rem, 160%);
+    margin: 0 auto 24.5rem;
+    max-width: 37.4rem;
+    text-align: center;
+}
+
+
+.herolinks {
+    padding: 2rem 7rem 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.15rem solid $textColorDark; 
+    border-bottom: 0.15rem solid $textColorDark; 
+}
+
+.herolinkstitle {
+    @include title(2.265rem, 140%, -2%);
+}
+
