@@ -1,116 +1,160 @@
 @use "../_variables.scss" as *;
 
 .header {
-    padding: 2.4rem 0;
-    background-color: $backgroundHeaderHero;
+  padding: 2.4rem 0;
+  background-color: $backgroundHeaderHero;
 }
 
 .headeritems {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    margin-right: 12.3rem;
-    max-width: 7.4rem;
-    img {
-        width: 100%;
-    }
+  margin-right: 12.3rem;
+  max-width: 7.4rem;
+  img {
+    width: 100%;
+  }
 }
 
 .menulist {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .menuitem {
-    &:not(:last-child) {
-        margin-right: 6rem;
+  &:last-child {
+    position: relative;
+    div {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
+  }
+  &:not(:last-child) {
+    margin-right: 6rem;
+  }
 }
 
 .menulink {
-    font-size: 1.6rem;
-    line-height: 160%;
-    font-weight: 700;
-    color: $textColorDark;
-    transition: all 0.5s ease;
+  font-size: 1.6rem;
+  line-height: 160%;
+  font-weight: 700;
+  color: $textColorDark;
+  transition: all 0.5s ease;
 
-    &:hover {
-        text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.arrowdown {
+  transition: all 0.5s ease;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 1rem $textColorGrey;
+  }
+}
+
+.innermenu {
+  position: absolute;
+  top: 3rem;
+  left: -1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: $backgroundHeaderHero;
+  border: 0.1rem solid $textColorDark;
+}
+
+.innermenuitem {
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }
 
 .buttons {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 @media (max-width: 1024px) {
-    .logo {
-        margin-right: 5rem;
-        max-width: 5rem;
-    }
+  .logo {
+    margin-right: 5rem;
+    max-width: 5rem;
+  }
 
-    .menuitem {
+  .menuitem {
     &:not(:last-child) {
-        margin-right: 4rem;
+      margin-right: 4rem;
     }
-}
+  }
+
+  .innermenu {
+    top: 4rem;
+    left: -3rem;
+  }
 }
 
 @media (max-width: 700px) {
-    .buttons {
-        flex-direction: column;
-        gap: 1rem;
-    }
+  .buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 600px) {
-    .headeritems {
-        flex-wrap: wrap;
-        gap: 2rem;
-    }
+  .headeritems {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
 
-    .navigation {
-        width: 100%;
-    }
+  .navigation {
+    width: 100%;
+  }
 
-    .logo {
-        max-width: 7.4rem;
-    }
+  .logo {
+    max-width: 7.4rem;
+  }
 
-    .buttons {
-        width: 100%;
-        flex-direction: row;
-        justify-content: flex-end;
-        gap: 2rem;
-    }
+  .innermenu {
+    left: -5rem;
+  }
 
-    .menuitem {
-        &:not(:last-child) {
-            margin-right: 6rem;
-        }
+  .buttons {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .menuitem {
+    &:not(:last-child) {
+      margin-right: 6rem;
     }
+  }
 }
 
 @media (max-width: 480px) {
-    .logo {
-        margin-right: 2rem;
-        width: 5rem;
-    }
+  .logo {
+    margin-right: 2rem;
+    width: 5rem;
+  }
 
-       .menuitem {
-        &:not(:last-child) {
-            margin-right: 3rem;
-        }
+  .menuitem {
+    &:not(:last-child) {
+      margin-right: 3rem;
     }
+  }
 }
