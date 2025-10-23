@@ -30,240 +30,288 @@ const HomePageSlider = () => {
   const settings = {
     //centerMode:true,
     dots: true,
-    slidesToShow: 4,
+    centerPadding: "200px",
+    centerMode: true,
+    slidesToShow: 3,
     slidesToScroll: 1,
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1600,
+        settings: {
+          dots: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: false,
+          focusOnSelect: true,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 1280,
+        settings: {
+          dots: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+          centerMode: true,
+        },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          dots: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 790,
+        settings: {
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          centerMode: false,
+        },
+      },
+    ],
   };
   return (
-    <Slider {...settings} className={style.slider}>
-      <div className={style.slideritem}>
-        <img src={slideritem2} alt="девушка закатила глаза и высунула язык" />
-        <h3 className={style.sliderTitle}>Perplexed Mind</h3>
-        <div className={style.slidericons}>
-          <a href="#" className={style.slidericon}>
-            <img src={slidericon1} alt="google" />
-          </a>
-          <a href="#" className={style.slidericon}>
-            <img src={slidericon2} alt="spotify" />
-          </a>
-          <a href="#" className={style.slidericon}>
-            <img src={slidericon3} alt="youtube" />
-          </a>
+    <div className={style.slidercontainer}>
+      <Slider {...settings} className={style.slider}>
+        <div className={style.slideritem}>
+          <img src={slideritem2} alt="девушка закатила глаза и высунула язык" />
+          <h3 className={style.sliderTitle}>Perplexed Mind</h3>
+          <div className={style.slidericons}>
+            <a href="#" className={style.slidericon}>
+              <img src={slidericon1} alt="google" />
+            </a>
+            <a href="#" className={style.slidericon}>
+              <img src={slidericon2} alt="spotify" />
+            </a>
+            <a href="#" className={style.slidericon}>
+              <img src={slidericon3} alt="youtube" />
+            </a>
+          </div>
+          <div className={style.itemdecorblack1}>
+            <img src={itemdecorblack1} alt="черная звездочка" />
+          </div>
+          <div className={style.itemdecororange1}>
+            <img src={itemdecororange1} alt="оранжевая дуга" />
+          </div>
+          <div className={style.itemdecorblue1}>
+            <img src={itemdecorblue1} alt="голубая спираль" />
+          </div>
         </div>
-        <div className={style.itemdecorblack1}>
-          <img src={itemdecorblack1} alt="черная звездочка" />
+        <div className={style.slideritem}>
+          <img src={slideritem1} alt="человеческая фигура на фоне листьев" />
+          <h3 className={style.sliderTitle}>Self–confidence</h3>
+          <div className={style.slidericons}>
+            <a href="#" className={style.slidericon}>
+              <img src={slidericon1} alt="google" />
+            </a>
+            <a href="#" className={style.slidericon}>
+              <img src={slidericon2} alt="spotify" />
+            </a>
+            <a href="#" className={style.slidericon}>
+              <img src={slidericon3} alt="youtube" />
+            </a>
+          </div>
+          <div className={style.itemdecorblack2}>
+            <img src={itemdecorblack2} alt="черная звездочка" />
+          </div>
+          <div className={style.itemdecorblue2}>
+            <img src={itemdecorblue2} alt="три голубых кривых" />
+          </div>
+          <div className={style.itemdecororange2}>
+            <img src={itemdecororange2} alt="две оранжевых кривых" />
+          </div>
+          <div className={style.itemdecorwhite2}>
+            <img src={itemdecorwhite2} alt="белая спираль" />
+          </div>
         </div>
-        <div className={style.itemdecororange1}>
-          <img src={itemdecororange1} alt="оранжевая дуга" />
+        <div className={style.slideritem}>
+          <img src={slideritem2} alt="девушка закатила глаза и высунула язык" />
+          <h3 className={style.sliderTitle}>Perplexed Mind</h3>
+          <div className={style.slidericons}>
+            <a href="#" className={style.slidericon}>
+              <img src={slidericon1} alt="google" />
+            </a>
+            <a href="#" className={style.slidericon}>
+              <img src={slidericon2} alt="spotify" />
+            </a>
+            <a href="#" className={style.slidericon}>
+              <img src={slidericon3} alt="youtube" />
+            </a>
+          </div>
+          <div className={style.itemdecorblack1}>
+            <img src={itemdecorblack1} alt="черная звездочка" />
+          </div>
+          <div className={style.itemdecororange1}>
+            <img src={itemdecororange1} alt="оранжевая дуга" />
+          </div>
+          <div className={style.itemdecorblue1}>
+            <img src={itemdecorblue1} alt="голубая спираль" />
+          </div>
         </div>
-        <div className={style.itemdecorblue1}>
-          <img src={itemdecorblue1} alt="голубая спираль" />
+        <div className={style.slideritem}>
+          <img src={slideritem3} alt="девушки и парни сидят на полу" />
+          <h3 className={style.sliderTitle}>Women’s Rights</h3>
+          <div className={style.slidericons}>
+            <a href="#" className={style.slidericon}>
+              <img src={slidericon1} alt="google" />
+            </a>
+            <a href="#" className={style.slidericon}>
+              <img src={slidericon2} alt="spotify" />
+            </a>
+            <a href="#" className={style.slidericon}>
+              <img src={slidericon3} alt="youtube" />
+            </a>
+          </div>
+          <div className={style.itemdecorrainbow3}>
+            <img src={itemdecorrainbow3} alt="три разноцветные полоски" />
+          </div>
+          <div className={style.itemdecororange31}>
+            <img src={itemdecororange31} alt="оранжевый восклицательный знак" />
+          </div>
+          <div className={style.itemdecororange32}>
+            <img src={itemdecororange32} alt="оранжевый восклицательный знак" />
+          </div>
+          <div className={style.itemdecorblue3}>
+            <img src={itemdecorblue3} alt="голубая спираль" />
+          </div>
+          <div className={style.itemdecororangeblue3}>
+            <img
+              src={itemdecororangeblue3}
+              alt="оранжевой сердечко в голубом облачке"
+            />
+          </div>
+          <div className={style.itemdecorblueblack3}>
+            <img
+              src={itemdecorblueblack3}
+              alt="два голубых крожоска и под ним черная кривая"
+            />
+          </div>
+          <div className={style.itemdecororangestar3}>
+            <img src={itemdecororangestar3} alt="оранжевая звездочка" />
+          </div>
+          <div className={style.itemdecorblackstar3}>
+            <img src={itemdecorblackstar3} alt="черная звездочка" />
+          </div>
+          <div className={style.itemdecororangeline3}>
+            <img src={itemdecororangeline3} alt="оранжевая линия" />
+          </div>
+          <div className={style.itemdecorblackline3}>
+            <img src={itemdecorblackline3} alt="черная линия" />
+          </div>
         </div>
-      </div>
-      <div className={style.slideritem}>
-        <img src={slideritem1} alt="человеческая фигура на фоне листьев" />
-        <h3 className={style.sliderTitle}>Self–confidence</h3>
-        <div className={style.slidericons}>
-          <a href="#" className={style.slidericon}>
-            <img src={slidericon1} alt="google" />
-          </a>
-          <a href="#" className={style.slidericon}>
-            <img src={slidericon2} alt="spotify" />
-          </a>
-          <a href="#" className={style.slidericon}>
-            <img src={slidericon3} alt="youtube" />
-          </a>
+        <div className={style.slideritem}>
+          <img src={slideritem1} alt="человеческая фигура на фоне листьев" />
+          <h3 className={style.sliderTitle}>Self–confidence</h3>
+          <div className={style.slidericons}>
+            <a href="#" className={style.slidericon}>
+              <img src={slidericon1} alt="google" />
+            </a>
+            <a href="#" className={style.slidericon}>
+              <img src={slidericon2} alt="spotify" />
+            </a>
+            <a href="#" className={style.slidericon}>
+              <img src={slidericon3} alt="youtube" />
+            </a>
+          </div>
+          <div className={style.itemdecorblack2}>
+            <img src={itemdecorblack2} alt="черная звездочка" />
+          </div>
+          <div className={style.itemdecorblue2}>
+            <img src={itemdecorblue2} alt="три голубых кривых" />
+          </div>
+          <div className={style.itemdecororange2}>
+            <img src={itemdecororange2} alt="две оранжевых кривых" />
+          </div>
+          <div className={style.itemdecorwhite2}>
+            <img src={itemdecorwhite2} alt="белая спираль" />
+          </div>
         </div>
-        <div className={style.itemdecorblack2}>
-          <img src={itemdecorblack2} alt="черная звездочка" />
+        <div className={style.slideritem}>
+          <img src={slideritem2} alt="девушка закатила глаза и высунула язык" />
+          <h3 className={style.sliderTitle}>Perplexed Mind</h3>
+          <div className={style.slidericons}>
+            <a href="#" className={style.slidericon}>
+              <img src={slidericon1} alt="google" />
+            </a>
+            <a href="#" className={style.slidericon}>
+              <img src={slidericon2} alt="spotify" />
+            </a>
+            <a href="#" className={style.slidericon}>
+              <img src={slidericon3} alt="youtube" />
+            </a>
+          </div>
+          <div className={style.itemdecorblack1}>
+            <img src={itemdecorblack1} alt="черная звездочка" />
+          </div>
+          <div className={style.itemdecororange1}>
+            <img src={itemdecororange1} alt="оранжевая дуга" />
+          </div>
+          <div className={style.itemdecorblue1}>
+            <img src={itemdecorblue1} alt="голубая спираль" />
+          </div>
         </div>
-        <div className={style.itemdecorblue2}>
-          <img src={itemdecorblue2} alt="три голубых кривых" />
+        <div className={style.slideritem}>
+          <img src={slideritem3} alt="девушки и парни сидят на полу" />
+          <h3 className={style.sliderTitle}>Women’s Rights</h3>
+          <div className={style.slidericons}>
+            <a href="#" className={style.slidericon}>
+              <img src={slidericon1} alt="google" />
+            </a>
+            <a href="#" className={style.slidericon}>
+              <img src={slidericon2} alt="spotify" />
+            </a>
+            <a href="#" className={style.slidericon}>
+              <img src={slidericon3} alt="youtube" />
+            </a>
+          </div>
+          <div className={style.itemdecorrainbow3}>
+            <img src={itemdecorrainbow3} alt="три разноцветные полоски" />
+          </div>
+          <div className={style.itemdecororange31}>
+            <img src={itemdecororange31} alt="оранжевый восклицательный знак" />
+          </div>
+          <div className={style.itemdecororange32}>
+            <img src={itemdecororange32} alt="оранжевый восклицательный знак" />
+          </div>
+          <div className={style.itemdecorblue3}>
+            <img src={itemdecorblue3} alt="голубая спираль" />
+          </div>
+          <div className={style.itemdecororangeblue3}>
+            <img
+              src={itemdecororangeblue3}
+              alt="оранжевой сердечко в голубом облачке"
+            />
+          </div>
+          <div className={style.itemdecorblueblack3}>
+            <img
+              src={itemdecorblueblack3}
+              alt="два голубых крожоска и под ним черная кривая"
+            />
+          </div>
+          <div className={style.itemdecororangestar3}>
+            <img src={itemdecororangestar3} alt="оранжевая звездочка" />
+          </div>
+          <div className={style.itemdecorblackstar3}>
+            <img src={itemdecorblackstar3} alt="черная звездочка" />
+          </div>
+          <div className={style.itemdecororangeline3}>
+            <img src={itemdecororangeline3} alt="оранжевая линия" />
+          </div>
+          <div className={style.itemdecorblackline3}>
+            <img src={itemdecorblackline3} alt="черная линия" />
+          </div>
         </div>
-        <div className={style.itemdecororange2}>
-          <img src={itemdecororange2} alt="две оранжевых кривых" />
-        </div>
-        <div className={style.itemdecorwhite2}>
-          <img src={itemdecorwhite2} alt="белая спираль" />
-        </div>
-      </div>
-      <div className={style.slideritem}>
-        <img src={slideritem2} alt="девушка закатила глаза и высунула язык" />
-        <h3 className={style.sliderTitle}>Perplexed Mind</h3>
-        <div className={style.slidericons}>
-          <a href="#" className={style.slidericon}>
-            <img src={slidericon1} alt="google" />
-          </a>
-          <a href="#" className={style.slidericon}>
-            <img src={slidericon2} alt="spotify" />
-          </a>
-          <a href="#" className={style.slidericon}>
-            <img src={slidericon3} alt="youtube" />
-          </a>
-        </div>
-        <div className={style.itemdecorblack1}>
-          <img src={itemdecorblack1} alt="черная звездочка" />
-        </div>
-        <div className={style.itemdecororange1}>
-          <img src={itemdecororange1} alt="оранжевая дуга" />
-        </div>
-        <div className={style.itemdecorblue1}>
-          <img src={itemdecorblue1} alt="голубая спираль" />
-        </div>
-      </div>
-      <div className={style.slideritem}>
-        <img src={slideritem3} alt="девушки и парни сидят на полу" />
-        <h3 className={style.sliderTitle}>Women’s Rights</h3>
-        <div className={style.slidericons}>
-          <a href="#" className={style.slidericon}>
-            <img src={slidericon1} alt="google" />
-          </a>
-          <a href="#" className={style.slidericon}>
-            <img src={slidericon2} alt="spotify" />
-          </a>
-          <a href="#" className={style.slidericon}>
-            <img src={slidericon3} alt="youtube" />
-          </a>
-        </div>
-        <div className={style.itemdecorrainbow3}>
-          <img src={itemdecorrainbow3} alt="три разноцветные полоски" />
-        </div>
-        <div className={style.itemdecororange31}>
-          <img src={itemdecororange31} alt="оранжевый восклицательный знак" />
-        </div>
-        <div className={style.itemdecororange32}>
-          <img src={itemdecororange32} alt="оранжевый восклицательный знак" />
-        </div>
-        <div className={style.itemdecorblue3}>
-          <img src={itemdecorblue3} alt="голубая спираль" />
-        </div>
-        <div className={style.itemdecororangeblue3}>
-          <img
-            src={itemdecororangeblue3}
-            alt="оранжевой сердечко в голубом облачке"
-          />
-        </div>
-        <div className={style.itemdecorblueblack3}>
-          <img
-            src={itemdecorblueblack3}
-            alt="два голубых крожоска и под ним черная кривая"
-          />
-        </div>
-        <div className={style.itemdecororangestar3}>
-          <img src={itemdecororangestar3} alt="оранжевая звездочка" />
-        </div>
-        <div className={style.itemdecorblackstar3}>
-          <img src={itemdecorblackstar3} alt="черная звездочка" />
-        </div>
-        <div className={style.itemdecororangeline3}>
-          <img src={itemdecororangeline3} alt="оранжевая линия" />
-        </div>
-        <div className={style.itemdecorblackline3}>
-          <img src={itemdecorblackline3} alt="черная линия" />
-        </div>
-      </div>
-      <div className={style.slideritem}>
-        <img src={slideritem1} alt="человеческая фигура на фоне листьев" />
-        <h3 className={style.sliderTitle}>Self–confidence</h3>
-        <div className={style.slidericons}>
-          <a href="#" className={style.slidericon}>
-            <img src={slidericon1} alt="google" />
-          </a>
-          <a href="#" className={style.slidericon}>
-            <img src={slidericon2} alt="spotify" />
-          </a>
-          <a href="#" className={style.slidericon}>
-            <img src={slidericon3} alt="youtube" />
-          </a>
-        </div>
-        <div className={style.itemdecorblack2}>
-          <img src={itemdecorblack2} alt="черная звездочка" />
-        </div>
-        <div className={style.itemdecorblue2}>
-          <img src={itemdecorblue2} alt="три голубых кривых" />
-        </div>
-        <div className={style.itemdecororange2}>
-          <img src={itemdecororange2} alt="две оранжевых кривых" />
-        </div>
-        <div className={style.itemdecorwhite2}>
-          <img src={itemdecorwhite2} alt="белая спираль" />
-        </div>
-      </div>
-      <div className={style.slideritem}>
-        <img src={slideritem2} alt="девушка закатила глаза и высунула язык" />
-        <h3 className={style.sliderTitle}>Perplexed Mind</h3>
-        <div className={style.slidericons}>
-          <a href="#" className={style.slidericon}>
-            <img src={slidericon1} alt="google" />
-          </a>
-          <a href="#" className={style.slidericon}>
-            <img src={slidericon2} alt="spotify" />
-          </a>
-          <a href="#" className={style.slidericon}>
-            <img src={slidericon3} alt="youtube" />
-          </a>
-        </div>
-        <div className={style.itemdecorblack1}>
-          <img src={itemdecorblack1} alt="черная звездочка" />
-        </div>
-        <div className={style.itemdecororange1}>
-          <img src={itemdecororange1} alt="оранжевая дуга" />
-        </div>
-        <div className={style.itemdecorblue1}>
-          <img src={itemdecorblue1} alt="голубая спираль" />
-        </div>
-      </div>
-      <div className={style.slideritem}>
-        <img src={slideritem3} alt="девушки и парни сидят на полу" />
-        <h3 className={style.sliderTitle}>Women’s Rights</h3>
-        <div className={style.slidericons}>
-          <a href="#" className={style.slidericon}>
-            <img src={slidericon1} alt="google" />
-          </a>
-          <a href="#" className={style.slidericon}>
-            <img src={slidericon2} alt="spotify" />
-          </a>
-          <a href="#" className={style.slidericon}>
-            <img src={slidericon3} alt="youtube" />
-          </a>
-        </div>
-        <div className={style.itemdecorrainbow3}>
-          <img src={itemdecorrainbow3} alt="три разноцветные полоски" />
-        </div>
-        <div className={style.itemdecororange31}>
-          <img src={itemdecororange31} alt="оранжевый восклицательный знак" />
-        </div>
-        <div className={style.itemdecororange32}>
-          <img src={itemdecororange32} alt="оранжевый восклицательный знак" />
-        </div>
-        <div className={style.itemdecorblue3}>
-          <img src={itemdecorblue3} alt="голубая спираль" />
-        </div>
-        <div className={style.itemdecororangeblue3}>
-          <img
-            src={itemdecororangeblue3}
-            alt="оранжевой сердечко в голубом облачке"
-          />
-        </div>
-        <div className={style.itemdecorblueblack3}>
-          <img
-            src={itemdecorblueblack3}
-            alt="два голубых крожоска и под ним черная кривая"
-          />
-        </div>
-        <div className={style.itemdecororangestar3}>
-          <img src={itemdecororangestar3} alt="оранжевая звездочка" />
-        </div>
-        <div className={style.itemdecorblackstar3}>
-          <img src={itemdecorblackstar3} alt="черная звездочка" />
-        </div>
-        <div className={style.itemdecororangeline3}>
-          <img src={itemdecororangeline3} alt="оранжевая линия" />
-        </div>
-        <div className={style.itemdecorblackline3}>
-          <img src={itemdecorblackline3} alt="черная линия" />
-        </div>
-      </div>
-    </Slider>
+      </Slider>
+    </div>
   );
 };
 

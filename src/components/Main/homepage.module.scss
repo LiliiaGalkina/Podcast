@@ -1,41 +1,121 @@
 @use "../_variables.scss" as *;
 
 .hero {
-    padding: 6.4rem 0 14rem;
-    background-color: $backgroundHeaderHero;
+  position: relative;
+  padding: 6.4rem 0 14rem;
+  background-color: $backgroundHeaderHero;
 }
 
 .herotitle {
-    @include title(9.6rem, 100%, -4%);
-    margin-bottom: 4rem;
-    text-align: center;
+  @include title(9.6rem, 100%, -4%);
+  margin-bottom: 4rem;
+  text-align: center;
 }
 
 .herotitlered {
-    color: $textColorRed;
+  color: $textColorRed;
 }
 
 .herotext {
-    @include text(1.6rem, 160%);
-    margin: 0 auto 24.5rem;
-    max-width: 37.4rem;
-    text-align: center;
+  @include text(1.6rem, 160%);
+  margin: 0 auto 24.5rem;
+  max-width: 37.4rem;
+  text-align: center;
 }
 
 .heroslider {
-    margin-bottom: 12rem;
+  margin-bottom: 12rem;
 }
 
 .herolinks {
-    padding: 2rem 7rem 2rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 0.15rem solid $textColorDark; 
-    border-bottom: 0.15rem solid $textColorDark; 
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  border-top: 0.15rem solid $textColorDark;
+  border-bottom: 0.15rem solid $textColorDark;
 }
 
 .herolinkstitle {
-    @include title(2.265rem, 140%, -2%);
+  @include title(2.265rem, 140%, -2%);
 }
 
+.herolink {
+  img {
+    width: 100%;
+  }
+}
+
+.herodecorleft {
+  @include decorSlider(left, top, 0, 0);
+  max-width: 32rem;
+  img {
+    width: 100%;
+  }
+}
+
+.herodecorright {
+  @include decorSlider(right, top, 0, 13.7rem);
+}
+
+.herodecordown {
+  @include decorSlider(left, bottom, 50%, -7.5rem);
+}
+
+@media (max-width: 1180px) {
+  .herotitle {
+    @include title(8rem, 100%, -4%);
+  }
+
+  .herodecorleft {
+    max-width: 26rem;
+  }
+}
+
+@media (max-width: 970px) {
+  .herolink {
+    &:first-child,
+    &:last-child {
+      max-width: 10rem;
+    }
+    &:nth-child(2) {
+      max-width: 18rem;
+    }
+  }
+
+  .herodecorleft {
+    @include decorSlider(left, top, 0, 18rem);
+    max-width: 20rem;
+  }
+
+  .herodecorright {
+    @include decorSlider(right, top, 0, 27rem);
+  }
+}
+
+@media (max-width: 833px) {
+    .herolinkstitle {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+  .herotitle {
+    @include title(6rem, 100%, -4%);
+  }
+}
+
+@media (max-width: 480px) {
+    .hero {
+          padding: 6.4rem 0;
+    }
+  .herotext {
+    margin: 0 auto 8rem;
+  }
+  .herodecorleft,
+  .herodecorright,
+  .herodecordown {
+    display: none;
+  }
+}

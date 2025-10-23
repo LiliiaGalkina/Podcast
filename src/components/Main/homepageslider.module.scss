@@ -1,148 +1,118 @@
 @use "../_variables.scss" as *;
 
-.slik-track {
-    display: flex !important;
-    gap: 2rem !important;
+.slidercontainer {
+  margin: 0 auto;
+  width: 98%;
 }
+.slick-track {
+  display: flex !important;
+  gap: 2rem !important;
+  text-align: center;
+
+
+}
+
+.slick-slide {
+    width: 37.3rem !important;
+    text-align: center;
+}
+
 .slideritem {
-    position: relative;
-    max-width: 37.3rem;
-    height: 37.3rem;
-    border-radius: 1.2rem;
-    overflow: hidden;
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+  position: relative;
+  max-width: 37.3rem;
+  height: 37.3rem;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .sliderTitle {
-    position: absolute;
-    z-index: 3;
-    bottom: 2rem;
-    left: 2rem;
-    @include title(3.67rem, 120%, -8%);
-    color: $textColorSliderTitle;
+  position: absolute;
+  z-index: 3;
+  bottom: 2rem;
+  left: 2rem;
+  @include title(3.67rem, 120%, -8%);
+  color: $textColorSliderTitle;
 }
 
 .slidericons {
-    position: absolute;
-    z-index: 3;
-    top: 2rem;
-    right: 2rem;
-    display: flex;
-    gap: 1rem;
+  position: absolute;
+  z-index: 3;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .itemdecorblack1 {
-    position: absolute;
-    top: 13.69rem;
-    left: 12.49rem;
-    z-index: 3;
+  @include decorSlider(left, top, 12.49rem, 13.69rem);
 }
 
 .itemdecororange1 {
-    position: absolute;
-    top: 13.8rem;
-    left: 17.7rem;
-    z-index: 3;
+  @include decorSlider(left, top, 17.7rem, 13.8rem);
 }
 
 .itemdecorblue1 {
-    position: absolute;
-    z-index: 3;
-    bottom: 10.18rem;
-    left: 16.4rem;
+  @include decorSlider(left, bottom, 16.4rem, 10.18rem);
 }
 
 .itemdecorblack2 {
-    position: absolute;
-    z-index: 3;
-    bottom: 7rem;
-    right: 10rem;
+  @include decorSlider(right, bottom, 10rem, 7rem);
 }
 
 .itemdecorblue2 {
-    position: absolute;
-    z-index: 3;
-    top: 14.7rem;
-   left: 12rem;
+  @include decorSlider(left, top, 12rem, 14.7rem);
 }
 
 .itemdecororange2 {
-    position: absolute;
-    z-index: 3;
-    top: 6.2rem;
-    right: 7.6rem;
+  @include decorSlider(right, top, 7.6rem, 6.2rem);
 }
 
 .itemdecorwhite2 {
-    position: absolute;
-    z-index: 3;
-    top: 5.6rem;
-    right: 15.8rem;
+  @include decorSlider(right, top, 15.8rem, 5.6rem);
 }
 
 .itemdecorrainbow3 {
-    position: absolute;
-    z-index: 3;
-    top: 0;
-    left: 0;
+  @include decorSlider(left, top, 0, 0);
 }
 
 .itemdecororange31 {
-    position: absolute;
-    z-index: 3;
-    top: 15.4rem;
-    left: 5rem;
+  @include decorSlider(left, top, 5rem, 15.4rem);
 }
 
 .itemdecororange32 {
-    position: absolute;
-    z-index: 3;
-    top: 14rem;
-    left: 6.1rem;
+  @include decorSlider(left, top, 6.1rem, 14rem);
 }
 
 .itemdecorblue3 {
-    position: absolute;
-    z-index: 3;
-    top: 9.6rem;
-    left: 13.6rem;
+  @include decorSlider(left, top, 13.6rem, 9.6rem);
 }
 
 .itemdecororangeblue3 {
-    position: absolute;
-    z-index: 3;
-    top: 20.6rem;
-    left: 12.8rem;
+  @include decorSlider(left, top, 12.8rem, 20.6rem);
 }
 
 .itemdecorblueblack3 {
-    position: absolute;
-    z-index: 3;
-    top: 13.1rem;
-    right: 9rem;
+  @include decorSlider(right, top, 9rem, 13.1rem);
 }
 
 .itemdecororangestar3 {
-    position: absolute;
-    z-index: 3;
-    top: 15.4rem;
-    right: 3rem;
+  @include decorSlider(right, top, 3.2rem, 15.8rem);
 }
 
 .itemdecorblackstar3 {
-    position: absolute;
-    z-index: 3;
-    top: 16.1rem;
-    right: 1.86rem;
+  @include decorSlider(right, top, 2.8rem, 16.6rem);
 }
 
 .itemdecororangeline3 {
-    position: absolute;
-    z-index: 3;
-    top: 17.04rem;
-
+  @include decorSlider(right, top, 4.6rem, 16.8rem);
 }
+
+.itemdecorblackline3 {
+  @include decorSlider(right, top, 3.6rem, 17.2rem);
+}
+

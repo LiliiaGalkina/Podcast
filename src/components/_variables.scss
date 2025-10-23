@@ -1,11 +1,11 @@
 //переменные
 $textColorDark: #000000;
-$textColorWhite: #FFFFFF;
-$buttonDarkShadowColor: #BFBFBF;
-$backgroundHeaderHero: #F7EDE8;
-$textColorRed: #CD4631;
-$textColorGrey: #4D4D4D;
-$textColorSliderTitle: #81ADC8;
+$textColorWhite: #ffffff;
+$buttonDarkShadowColor: #bfbfbf;
+$backgroundHeaderHero: #f7ede8;
+$textColorRed: #cd4631;
+$textColorGrey: #4d4d4d;
+$textColorSliderTitle: #81adc8;
 
 //mixins
 @mixin footertext($fontsize) {
@@ -23,41 +23,48 @@ $textColorSliderTitle: #81ADC8;
 }
 
 @mixin button($backcolor, $fontcolor) {
-    height: 4.1rem;
-    padding: 1.2rem 2.4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0.2rem solid #000000;
-    border-radius: 0.8rem;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: $fontcolor;
-    background-color: $backcolor;
-    transition: all 0.5s ease;
+  height: 4.1rem;
+  padding: 1.2rem 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.2rem solid #000000;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: $fontcolor;
+  background-color: $backcolor;
+  transition: all 0.5s ease;
 
-    &:hover {
-        transform: scale(0.97);
-    }
+  &:hover {
+    transform: scale(0.97);
+  }
 
-    @media (max-width: 768px) {
-        height: 3.5rem;
-        padding: 1rem 1.5rem;
-        font-size: 1.2rem;
-    }
+  @media (max-width: 768px) {
+    height: 3.5rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+  }
 }
 
-@mixin title($fontSize, $lineHeight, $letterSpace){
-    font-size: $fontSize;
-    line-height: $lineHeight;
-    font-weight: 700;
-    color: $textColorDark;
-    letter-spacing: $letterSpace;
+@mixin title($fontSize, $lineHeight, $letterSpace) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-weight: 700;
+  color: $textColorDark;
+  letter-spacing: $letterSpace;
 }
 
-@mixin text($fontSize, $lineHeight){
-    font-size: $fontSize;
-    line-height: $lineHeight;
-    font-weight: 500;
-    color: $textColorGrey;
+@mixin text($fontSize, $lineHeight) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-weight: 500;
+  color: $textColorGrey;
+}
+
+@mixin decorSlider($posX, $posY, $valueX, $valueY) {
+  position: absolute;
+  z-index: 3;
+  #{$posX}: $valueX;
+  #{$posY}: $valueY;
 }
