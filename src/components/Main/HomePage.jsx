@@ -6,6 +6,13 @@ import decordown from "/image/homepage/hero-decor3.png";
 import google from "/image/homepage/googlepodcasts.png";
 import spotify from "/image/homepage/spotify.png";
 import youtube from "/image/homepage/youtube.png";
+import talkman from "/image/homepage/talk-man.svg";
+import talklamp from "/image/homepage/talk-lamp.svg";
+import quote from "/image/homepage/quote.png";
+import bannerdecor1 from "/image/homepage/banner-decor.png";
+import bannerdecor2 from "/image/homepage/blackstar.png";
+import banneravatar from "/image/homepage/avatar.png";
+import bannergreencircle from "/image/homepage/green-circle.svg";
 
 const HomePage = () => {
   return (
@@ -35,13 +42,74 @@ const HomePage = () => {
           </div>
         </div>
         <div className={style.herodecorleft}>
-          <img src={decorleft} alt="черная кривая с оранжевой звездочкой на конце"/>
+          <img
+            src={decorleft}
+            alt="черная кривая с оранжевой звездочкой на конце"
+          />
         </div>
         <div className={style.herodecorright}>
           <img src={decorright} alt="несколько разноцветных звездочек" />
         </div>
         <div className={style.herodecordown}>
+          +
           <img src={decordown} alt="красная кривая" />
+        </div>
+      </section>
+      <section className={style.talklisten}>
+        <div className="container">
+          <h2 className={style.talklistentitle}>
+            Talk. Listen. Get inspired by every minute of it.
+          </h2>
+          <div className={style.talklistenitems}>
+            <div className={style.talklistenitem}>
+              <div className={style.talklistenitemimg}>
+                <img
+                  src={talkman}
+                  alt="нарисованная голова мужчины, над ним облачко со знаками вопроса"
+                />
+              </div>
+              <p className={style.talklistenitemtext}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur ac ultrices odio.
+              </p>
+            </div>
+            <div className={style.talklistenitem}>
+              <div className={style.talklistenitemimg}>
+                <img
+                  src={talklamp}
+                  alt="нарисованная голова мужчины, над ним облачко со знаками вопроса"
+                />
+              </div>
+              <p className={style.talklistenitemtext}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur ac ultrices odio.
+              </p>
+            </div>
+          </div>
+          <div className={style.talklistenbanner}>
+            <div className={style.bannerquote}>
+              <img src={quote} alt="красные кавычки" />
+            </div>
+            <h3 className={style.bannertitle}>
+              One of the best daily podcasts that covers every topic on Spotify.
+            </h3>
+            <div className={style.bannermanblock}>
+              <div className={style.banneravatar}>
+                <img src={banneravatar} alt="фото John Smith" />
+              </div>
+              <p className={style.bannername}>John Smith,</p>
+              <div className={style.bannerpositionbody}>
+              <div className={style.bannergreencircle}>
+                <img
+                  src={bannergreencircle}
+                  alt="зеленый кружок с черными полосками"
+                />
+              </div>
+              <p className={style.bannerposition}>Social Community Manager</p>
+
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

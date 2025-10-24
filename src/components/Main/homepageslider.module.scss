@@ -1,20 +1,7 @@
 @use "../_variables.scss" as *;
 
-.slidercontainer {
-  margin: 0 auto;
-  width: 98%;
-}
-.slick-track {
-  display: flex !important;
-  gap: 2rem !important;
+.slider {
   text-align: center;
-
-
-}
-
-.slick-slide {
-    width: 37.3rem !important;
-    text-align: center;
 }
 
 .slideritem {
@@ -116,3 +103,11 @@
   @include decorSlider(right, top, 3.6rem, 17.2rem);
 }
 
+@media (max-width: 390px) {
+  .slideritem {
+    padding: 1rem;
+    img {
+      border-radius: 1.2rem;
+    }
+  }
+}
