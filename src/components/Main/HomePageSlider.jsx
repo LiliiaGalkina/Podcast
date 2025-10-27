@@ -28,7 +28,6 @@ import itemdecorblackstar3 from "/image/homepage/slider/slider-item3-decor10.png
 
 const HomePageSlider = () => {
   const settings = {
-    //centerMode:true,
     dots: true,
     centerPadding: "200px",
     centerMode: true,

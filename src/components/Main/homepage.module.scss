@@ -272,3 +272,48 @@
     margin-top: 2rem;
   }
 }
+
+/*feedback*/
+
+.feedback {
+  padding: 14rem 0 10rem;
+  position: relative;
+  background-color: $backgroundFeedback;
+}
+
+.feedbacktitleblock {
+  margin: 0 auto 2rem;
+   max-width: 72rem;
+  position: relative;
+  text-align: center;
+}
+
+.feedbacktitle {
+    @include title(5.93rem, 120%, -2%)
+}
+
+.feedbacktitledecor {
+  position: absolute;
+  top: -100%;
+  left: -10.5rem;
+  width: 10.5rem;
+  height: 10.5rem;
+}
+
+.feedbacktext {
+  @include text(2.265rem, 160%);
+  margin-bottom: 10rem;
+  text-align: center;
+}
+
+.feedbackupdecor {
+  @include decorSlider(left, top, 50%, -7.5rem) ;
+   transform: translate(-50%);
+}
+
+.feedbackdowndecor {
+  @include decorSlider(left, bottom, 50%, -7.5rem) ;
+   transform: translate(-50%);
+}
+
+

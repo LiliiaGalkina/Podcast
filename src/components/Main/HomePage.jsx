@@ -13,6 +13,9 @@ import bannerdecor1 from "/image/homepage/banner-decor.png";
 import bannerdecor2 from "/image/homepage/blackstar.png";
 import banneravatar from "/image/homepage/avatar.png";
 import bannergreencircle from "/image/homepage/green-circle.svg";
+import redsun from "/image/homepage/sparkle.png";
+import HomePageFeedbackSlider from "./HomePageFeedbackSlider";
+import blackdecorsection from "/image/homepage/blackdecorsection.png";
 
 const HomePage = () => {
   return (
@@ -99,17 +102,32 @@ const HomePage = () => {
               </div>
               <p className={style.bannername}>John Smith,</p>
               <div className={style.bannerpositionbody}>
-              <div className={style.bannergreencircle}>
-                <img
-                  src={bannergreencircle}
-                  alt="зеленый кружок с черными полосками"
-                />
-              </div>
-              <p className={style.bannerposition}>Social Community Manager</p>
-
+                <div className={style.bannergreencircle}>
+                  <img
+                    src={bannergreencircle}
+                    alt="зеленый кружок с черными полосками"
+                  />
+                </div>
+                <p className={style.bannerposition}>Social Community Manager</p>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section className={style.feedback}>
+        <div className={style.feedbacktitleblock}>
+          <h2 className={style.feedbacktitle}>What our listeners say</h2>
+          <img src={redsun} className={style.feedbacktitledecor} alt="красное солнышко" />
+        </div>
+        <p className={style.feedbacktext}>
+          Their experience throughout every platform
+        </p>
+        <HomePageFeedbackSlider />
+        <div className={style.feedbackupdecor}>
+          <img src={blackdecorsection} alt="черная кривая" />
+        </div>
+        <div className={style.feedbackdowndecor}>
+          <img src={blackdecorsection} alt="черная кривая" />
         </div>
       </section>
     </main>

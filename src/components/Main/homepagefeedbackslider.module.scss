@@ -1,0 +1,60 @@
+@use "../_variables.scss" as *;
+
+.sliderfeedbackcontainer {
+    margin: 0 auto 6.4rem;
+    width: 99%;
+    position: relative;
+}
+
+.sliderfeedbackitem {
+    max-width: 98%;
+    padding: 4rem;
+    border-radius: 0.8rem;
+    background-color: $textColorWhite;
+}
+
+.sliderfeedbackquote {
+    margin-bottom: 3rem;
+    width: 4.8rem;
+}
+
+.sliderfeedbacktext {
+    margin-bottom: 3.2rem;
+    @include text(2.265rem, 160%)
+}
+
+.sliderfeedbackperson {
+    display: flex;
+    align-items: center;
+}
+
+.sliderfeedbackpersonfoto {
+    margin-right: 1rem;
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+
+.sliderfeedbackpersonname {
+    @include text(1.4rem, 160%);
+    margin-right: 1rem;
+}
+
+.sliderfeedbackpersonimg1 {
+    max-width: 7.7rem;
+}
+
+.sliderfeedbackpersonimg2 {
+    max-width: 14.1rem;
+}
+
+.arrowleft {
+    @include decorSlider(left, bottom, 5rem, -20rem);
+    cursor: pointer;
+}
+
+.arrowright {
+    @include decorSlider(left, bottom, -10rem, -20rem);
+    cursor: pointer;
+}
+
