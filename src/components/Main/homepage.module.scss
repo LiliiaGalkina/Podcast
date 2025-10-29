@@ -261,7 +261,7 @@
   }
 
   .bannertitle {
-     @include title(3.2rem, 120%, -2%);
+    @include title(3.2rem, 120%, -2%);
   }
 
   .bannermanblock {
@@ -283,13 +283,13 @@
 
 .feedbacktitleblock {
   margin: 0 auto 2rem;
-   max-width: 72rem;
+  max-width: 72rem;
   position: relative;
   text-align: center;
 }
 
 .feedbacktitle {
-    @include title(5.93rem, 120%, -2%)
+  @include title(5.93rem, 120%, -2%);
 }
 
 .feedbacktitledecor {
@@ -307,13 +307,49 @@
 }
 
 .feedbackupdecor {
-  @include decorSlider(left, top, 50%, -7.5rem) ;
-   transform: translate(-50%);
+  @include decorSlider(left, top, 50%, -7.5rem);
+  transform: translate(-50%);
 }
 
 .feedbackdowndecor {
-  @include decorSlider(left, bottom, 50%, -7.5rem) ;
-   transform: translate(-50%);
+  @include decorSlider(left, bottom, 50%, -7.5rem);
+  transform: translate(-50%);
 }
 
+@media (max-width: 1024px) {
+  .feedbacktitle {
+    @include title(5rem, 120%, -2%);
+  }
 
+  .feedbacktitledecor {
+    width: 7rem;
+    height: 7rem;
+    left: -1rem;
+    top: -90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .feedbacktitledecor {
+    display: none;
+  }
+
+  .feedbackupdecor {
+    @include decorSlider(left, top, 50%, -5.6rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .feedbackdowndecor,
+  .feedbackupdecor {
+    display: none;
+  }
+
+  .feedback {
+      padding: 4rem 0 6rem;
+  }
+
+  .feedbacktext {
+    margin-bottom: 5rem;
+  }
+}
