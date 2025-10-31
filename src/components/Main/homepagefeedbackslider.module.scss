@@ -73,12 +73,11 @@
 }
 
 @media (max-width: 480px) {
-    .arrowleft {
-  @include decorSlider(left, bottom, 5rem, -22rem);
- 
-}
+  .arrowleft {
+    @include decorSlider(left, bottom, 5rem, -22rem);
+  }
 
-.arrowright {
-  @include decorSlider(left, bottom, -10rem, -22rem);
-}
+  .arrowright {
+    @include decorSlider(left, bottom, -10rem, -22rem);
+  }
 }

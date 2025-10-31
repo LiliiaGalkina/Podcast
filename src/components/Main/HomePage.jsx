@@ -16,6 +16,7 @@ import bannergreencircle from "/image/homepage/green-circle.svg";
 import redsun from "/image/homepage/sparkle.png";
 import HomePageFeedbackSlider from "./HomePageFeedbackSlider";
 import blackdecorsection from "/image/homepage/blackdecorsection.png";
+import Buttondark from "../Button/Buttondark";
 
 const HomePage = () => {
   return (
@@ -117,7 +118,11 @@ const HomePage = () => {
       <section className={style.feedback}>
         <div className={style.feedbacktitleblock}>
           <h2 className={style.feedbacktitle}>What our listeners say</h2>
-          <img src={redsun} className={style.feedbacktitledecor} alt="красное солнышко" />
+          <img
+            src={redsun}
+            className={style.feedbacktitledecor}
+            alt="красное солнышко"
+          />
         </div>
         <p className={style.feedbacktext}>
           Their experience throughout every platform
@@ -129,6 +134,104 @@ const HomePage = () => {
         <div className={style.feedbackdowndecor}>
           <img src={blackdecorsection} alt="черная кривая" />
         </div>
+      </section>
+      <section className={style.benefits}>
+        <div className="container">
+          <div className={style.benefitstitleblock}>
+            <h2 className={style.benefitstitle}>Membership benefits</h2>
+            <img
+              src="/image/homepage/benefits/benefitsdecor.png"
+              className={style.benefitstitledecor}
+              alt="черная кривая"
+            />
+          </div>
+          <p className={style.benefitstext}>
+            Become our sponsor and get all benefits
+          </p>
+          <div className={style.benefitsitems}>
+            <div className={style.benefitsitem}>
+              <div className={style.benefitsitemimg}>
+                <img
+                  src="/image/homepage/benefits/benefits1.png"
+                  alt="голубая кривая"
+                />
+              </div>
+              <h3 className={style.benefitsitemtitle}>Topic by Request</h3>
+              <p className={style.benefitsitemtext}>
+                Lorem ipsum dolor sit amet consectet pis cing elit, sed do
+                eiusmod tempor.
+              </p>
+            </div>
+            <div className={style.benefitsitem}>
+              <div className={style.benefitsitemimg}>
+                <img
+                  src="/image/homepage/benefits/benefits2.png"
+                  alt="цветные ромбики"
+                />
+              </div>
+              <h3 className={style.benefitsitemtitle}>Exclusive Content</h3>
+              <p className={style.benefitsitemtext}>
+                Lorem ipsum dolor sit amet consectet pis cing elit, sed do
+                eiusmod tempor.
+              </p>
+            </div>
+            <div className={style.benefitsitem}>
+              <div className={style.benefitsitemimg}>
+                <img
+                  src="/image/homepage/benefits/benefits3.png"
+                  alt="улыбающаяся рожица"
+                />
+              </div>
+              <h3 className={style.benefitsitemtitle}>Join the Community</h3>
+              <p className={style.benefitsitemtext}>
+                Lorem ipsum dolor sit amet consectet pis cing elit, sed do
+                eiusmod tempor.
+              </p>
+            </div>
+            <div className={style.benefitsitem}>
+              <div className={style.benefitsitemimg}>
+                <img
+                  src="/image/homepage/benefits/benefits4.png"
+                  alt="три улыбающиеся рожицы друг за другом"
+                />
+              </div>
+              <h3 className={style.benefitsitemtitle}>Livestreaming Access</h3>
+              <p className={style.benefitsitemtext}>
+                Lorem ipsum dolor sit amet consectet pis cing elit, sed do
+                eiusmod tempor.
+              </p>
+            </div>
+            <div className={style.benefitsitem}>
+              <div className={style.benefitsitemimg}>
+                <img src="/image/homepage/benefits/benefits5.png" alt="огонь" />
+              </div>
+              <h3 className={style.benefitsitemtitle}>
+                Exclusive Episodes & Merch
+              </h3>
+              <p className={style.benefitsitemtext}>
+                Lorem ipsum dolor sit amet consectet pis cing elit, sed do
+                eiusmod tempor.
+              </p>
+            </div>
+            <div className={style.benefitsitem}>
+              <div className={style.benefitsitemimg}>
+                <img
+                  src="/image/homepage/benefits/benefits6.png"
+                  alt="черная снежинка"
+                />
+              </div>
+              <h3 className={style.benefitsitemtitle}>And much more!</h3>
+              <p className={style.benefitsitemtext}>
+                Lorem ipsum dolor sit amet consectet pis cing elit, sed do
+                eiusmod tempor.
+              </p>
+            </div>
+          </div>
+          <div className={style.benefitsbutton}>
+            <Buttondark buttonText="SEE PRICING" />
+          </div>
+        </div>
+        <div className={style.benefitsdecor}><img src="/image/homepage/blackdecorsection.png" alt="черная кривая" /></div>
       </section>
     </main>
   );
