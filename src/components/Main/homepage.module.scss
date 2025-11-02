@@ -400,6 +400,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 .benefitsitemimg {
@@ -474,5 +475,13 @@
 
   .benefitsdecor {
     display: none;
+  }
+
+    .benefitstext {
+  margin-bottom: 6rem;
+}
+
+  .benefitsitems {
+	grid-template-columns: 1fr;
   }
 }

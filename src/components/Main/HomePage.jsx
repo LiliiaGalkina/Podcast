@@ -232,7 +232,8 @@ const HomePage = () => {
           </div>
         </div>
         <div className={style.benefitsdecor}><img src="/image/homepage/blackdecorsection.png" alt="черная кривая" /></div>
-      </section>
+		  </section>
+		  <section className={episodes}></section>
     </main>
   );
 };
