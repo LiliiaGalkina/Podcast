@@ -117,14 +117,14 @@ const HomePage = () => {
       </section>
       <section className={style.feedback}>
         <div className={style.feedbacktitleblock}>
-          <h2 className={style.feedbacktitle}>What our listeners say</h2>
+          <h2 className={style.sectiontitle}>What our listeners say</h2>
           <img
             src={redsun}
             className={style.feedbacktitledecor}
             alt="красное солнышко"
           />
         </div>
-        <p className={style.feedbacktext}>
+        <p className={style.sectiontext}>
           Their experience throughout every platform
         </p>
         <HomePageFeedbackSlider />
@@ -138,14 +138,14 @@ const HomePage = () => {
       <section className={style.benefits}>
         <div className="container">
           <div className={style.benefitstitleblock}>
-            <h2 className={style.benefitstitle}>Membership benefits</h2>
+            <h2 className={style.sectiontitle}>Membership benefits</h2>
             <img
               src="/image/homepage/benefits/benefitsdecor.png"
               className={style.benefitstitledecor}
               alt="черная кривая"
             />
           </div>
-          <p className={style.benefitstext}>
+          <p className={style.sectiontext}>
             Become our sponsor and get all benefits
           </p>
           <div className={style.benefitsitems}>
@@ -231,9 +231,245 @@ const HomePage = () => {
             <Buttondark buttonText="SEE PRICING" />
           </div>
         </div>
-        <div className={style.benefitsdecor}><img src="/image/homepage/blackdecorsection.png" alt="черная кривая" /></div>
-		  </section>
-		  <section className={episodes}></section>
+        <div className={style.benefitsdecor}>
+          <img
+            src="/image/homepage/blackdecorsection.png"
+            alt="черная кривая"
+          />
+        </div>
+      </section>
+      <section className={style.episodes}>
+        <div className="container">
+          <h2 className={style.sectiontitle}>Recent Episodes</h2>
+          <p className={style.sectiontext}>
+            Available on your favorite platform
+          </p>
+          <div className={style.episodescontent}>
+            <div className={style.episodesitems}>
+              <a href="#" className={style.episodesitemshdow}>
+                <div className={style.episodesitemup}>
+                  <div className={style.episodesitemimg}>
+                    <img
+                      src="/image/homepage/episodes/episod1.png"
+                      alt="на сером фоне на стульях сидят вирусы"
+                    />
+                  </div>
+                  <div className={style.episodesiteminfo}>
+                    <h4 className={style.episodesitemsubtitle}>Eps. 6</h4>
+                    <h3 className={style.episodesitemtitlered}>
+                      Pandemic Becoming Endemic
+                    </h3>
+                    <p className={style.episodesitemtext}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Curabitur ac ultrices odio.
+                    </p>
+                  </div>
+                </div>
+                <div className={style.episodesitemdown}>
+                  <div className={style.episodesitemcategories}>
+                    <div className={style.episodesitemcategoory}>covid-19</div>
+                    <div className={style.episodesitemcategoory}>health</div>
+                  </div>
+                  <div className={style.episodesitemhost}>
+                    <p className={style.episodesitemhosttext}>Hosted by: </p>
+                    <div className={style.episodesitemhostimg}>
+                      <img
+                        src="/image/homepage/episodes/host.png"
+                        alt="двойное фото авторов"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" className={style.episodesitem}>
+                <div className={style.episodesitemup}>
+                  <div className={style.episodesitemimg}>
+                    <img
+                      src="/image/homepage/episodes/episod2.png"
+                      alt="машина наклонилась на юок и стоит на двух колесах"
+                    />
+                  </div>
+                  <div className={style.episodesiteminfo}>
+                    <h4 className={style.episodesitemsubtitle}>Eps. 5</h4>
+                    <h3 className={style.episodesitemtitle}>
+                      Tesla Autopilot Controversy
+                    </h3>
+                    <p className={style.episodesitemtext}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Curabitur ac ultrices odio.
+                    </p>
+                  </div>
+                </div>
+                <div className={style.episodesitemdown}>
+                  <div className={style.episodesitemcategories}>
+                    <div className={style.episodesitemcategoory}>
+                      automation
+                    </div>
+                    <div className={style.episodesitemcategoory}>tech</div>
+                  </div>
+                  <div className={style.episodesitemhost}>
+                    <p className={style.episodesitemhosttext}>Hosted by: </p>
+                    <div className={style.episodesitemhostimg}>
+                      <img
+                        src="/image/homepage/episodes/host.png"
+                        alt="двойное фото авторов"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" className={style.episodesitem}>
+                <div className={style.episodesitemup}>
+                  <div className={style.episodesitemimg}>
+                    <img
+                      src="/image/homepage/episodes/episod3.png"
+                      alt="девушки и парни сидят на полу"
+                    />
+                  </div>
+                  <div className={style.episodesiteminfo}>
+                    <h4 className={style.episodesitemsubtitle}>Eps. 4</h4>
+                    <h3 className={style.episodesitemtitle}>
+                      Women's Rights? Is it alright?
+                    </h3>
+                    <p className={style.episodesitemtext}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Curabitur ac ultrices odio.
+                    </p>
+                  </div>
+                </div>
+                <div className={style.episodesitemdown}>
+                  <div className={style.episodesitemcategories}>
+                    <div className={style.episodesitemcategoory}>
+                      women’s rights
+                    </div>
+                  </div>
+                  <div className={style.episodesitemhost}>
+                    <p className={style.episodesitemhosttext}>Hosted by: </p>
+                    <div className={style.episodesitemhostimg}>
+                      <img
+                        src="/image/homepage/episodes/host.png"
+                        alt="двойное фото авторов"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" className={style.episodesitemshadow}>
+                <div className={style.episodesitemup}>
+                  <div className={style.episodesitemimg}>
+                    <img
+                      src="/image/homepage/episodes/episod4.png"
+                      alt="человек в сером облегающем косюие лежит на серой листве"
+                    />
+                  </div>
+                  <div className={style.episodesiteminfo}>
+                    <h4 className={style.episodesitemsubtitle}>Eps. 3</h4>
+                    <h3 className={style.episodesitemtitlered}>
+                      How to Deal with Self–Confidence
+                    </h3>
+                    <p className={style.episodesitemtext}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Curabitur ac ultrices odio.
+                    </p>
+                  </div>
+                </div>
+                <div className={style.episodesitemdown}>
+                  <div className={style.episodesitemcategories}>
+                    <div className={style.episodesitemcategoory}>
+                      self-esteem
+                    </div>
+                    <div className={style.episodesitemcategoory}>health</div>
+                  </div>
+                  <div className={style.episodesitemhost}>
+                    <p className={style.episodesitemhosttext}>Hosted by: </p>
+                    <div className={style.episodesitemhostimg}>
+                      <img
+                        src="/image/homepage/episodes/host.png"
+                        alt="двойное фото авторов"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" className={style.episodesitem}>
+                <div className={style.episodesitemup}>
+                  <div className={style.episodesitemimg}>
+                    <img
+                      src="/image/homepage/episodes/episod5.png"
+                      alt="мужчина в костюме сидит на опрокинутом стуле"
+                    />
+                  </div>
+                  <div className={style.episodesiteminfo}>
+                    <h4 className={style.episodesitemsubtitle}>Eps. 2</h4>
+                    <h3 className={style.episodesitemtitle}>
+                      Type of Social Classes of People
+                    </h3>
+                    <p className={style.episodesitemtext}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Curabitur ac ultrices odio.
+                    </p>
+                  </div>
+                </div>
+                <div className={style.episodesitemdown}>
+                  <div className={style.episodesitemcategories}>
+                    <div className={style.episodesitemcategoory}>
+                      social class
+                    </div>
+                    <div className={style.episodesitemcategoory}>wealth</div>
+                  </div>
+                  <div className={style.episodesitemhost}>
+                    <p className={style.episodesitemhosttext}>Hosted by: </p>
+                    <div className={style.episodesitemhostimg}>
+                      <img
+                        src="/image/homepage/episodes/host.png"
+                        alt="двойное фото авторов"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" className={style.episodesitemshadow}>
+                <div className={style.episodesitemup}>
+                  <div className={style.episodesitemimg}>
+                    <img
+                      src="/image/homepage/episodes/episod6.png"
+                      alt="лицо девушки, которая ержится за свое лицо"
+                    />
+                  </div>
+                  <div className={style.episodesiteminfo}>
+                    <h4 className={style.episodesitemsubtitle}>Eps. 1</h4>
+                    <h3 className={style.episodesitemtitlered}>
+                      Are you a Perplexed Mind Person?
+                    </h3>
+                    <p className={style.episodesitemtext}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Curabitur ac ultrices odio.
+                    </p>
+                  </div>
+                </div>
+                <div className={style.episodesitemdown}>
+                  <div className={style.episodesitemcategories}>
+                    <div className={style.episodesitemcategoory}>
+                      mind-behaviour
+                    </div>
+                    <div className={style.episodesitemcategoory}>health</div>
+                  </div>
+                  <div className={style.episodesitemhost}>
+                    <p className={style.episodesitemhosttext}>Hosted by: </p>
+                    <div className={style.episodesitemhostimg}>
+                      <img
+                        src="/image/homepage/episodes/host.png"
+                        alt="двойное фото авторов"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <Buttondark buttonText="BROWSE ALL EPISODES" />
+        </div>
+      </section>
     </main>
   );
 };
