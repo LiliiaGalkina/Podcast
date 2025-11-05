@@ -463,3 +463,70 @@
 	grid-template-columns: 1fr;
   }
 }
+
+/*episodes*/
+.episodes {
+  padding: 14rem 0;
+  background-color: $backgroundHeaderHero;
+}
+
+.episodesitems {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.episodesitem,
+.episodesitemshadow {
+  padding: 1.6rem;
+  border: 0.2rem solid $textColorDark;
+  border-radius: 1.2rem;
+  background-color: $textColorWhite;
+}
+
+.episodesitemshadow {
+  box-shadow: 1rem 1rem 0 $textColorSliderTitle;
+}
+
+.episodesitemup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.episodesitemimg {
+  margin-right: 2rem;
+  max-width: 16.6rem;
+  img {
+    width: 100%;
+  }
+}
+
+.episodesiteminfo {
+  max-width: 35.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+.episodesitemsubtitle {
+  @include title(1.6rem, 160%, 0);
+  margin-bottom: 0.4rem;
+  color: $textColorRed;
+}
+
+.episodesitemtitle,
+.episodesitemtitlered {
+  @include title(2.265rem, 140%, -2%);
+  margin-bottom: 1.5rem;
+}
+
+.episodesitemtitlered {
+  color: $textColorRed;
+}
+
+.episodesitemdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

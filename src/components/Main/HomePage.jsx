@@ -246,11 +246,11 @@ const HomePage = () => {
           </p>
           <div className={style.episodescontent}>
             <div className={style.episodesitems}>
-              <a href="#" className={style.episodesitemshdow}>
+              <a href="#" className={style.episodesitemshadow}>
                 <div className={style.episodesitemup}>
                   <div className={style.episodesitemimg}>
                     <img
-                      src="/image/homepage/episodes/episod1.png"
+                      src="/image/homepage/episodes/episode1.png"
                       alt="на сером фоне на стульях сидят вирусы"
                     />
                   </div>
@@ -285,7 +285,7 @@ const HomePage = () => {
                 <div className={style.episodesitemup}>
                   <div className={style.episodesitemimg}>
                     <img
-                      src="/image/homepage/episodes/episod2.png"
+                      src="/image/homepage/episodes/episode2.png"
                       alt="машина наклонилась на юок и стоит на двух колесах"
                     />
                   </div>
@@ -322,7 +322,7 @@ const HomePage = () => {
                 <div className={style.episodesitemup}>
                   <div className={style.episodesitemimg}>
                     <img
-                      src="/image/homepage/episodes/episod3.png"
+                      src="/image/homepage/episodes/episode3.png"
                       alt="девушки и парни сидят на полу"
                     />
                   </div>
@@ -358,7 +358,7 @@ const HomePage = () => {
                 <div className={style.episodesitemup}>
                   <div className={style.episodesitemimg}>
                     <img
-                      src="/image/homepage/episodes/episod4.png"
+                      src="/image/homepage/episodes/episode4.png"
                       alt="человек в сером облегающем косюие лежит на серой листве"
                     />
                   </div>
@@ -395,7 +395,7 @@ const HomePage = () => {
                 <div className={style.episodesitemup}>
                   <div className={style.episodesitemimg}>
                     <img
-                      src="/image/homepage/episodes/episod5.png"
+                      src="/image/homepage/episodes/episode5.png"
                       alt="мужчина в костюме сидит на опрокинутом стуле"
                     />
                   </div>
@@ -432,7 +432,7 @@ const HomePage = () => {
                 <div className={style.episodesitemup}>
                   <div className={style.episodesitemimg}>
                     <img
-                      src="/image/homepage/episodes/episod6.png"
+                      src="/image/homepage/episodes/episode6.png"
                       alt="лицо девушки, которая ержится за свое лицо"
                     />
                   </div>
