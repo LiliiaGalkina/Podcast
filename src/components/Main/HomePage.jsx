@@ -245,7 +245,12 @@ const HomePage = () => {
             Available on your favorite platform
           </p>
           <div className={style.episodescontent}>
-            <div className={style.episodesdecor}><img src="./image/homepage/episodes/decor.png" alt="три красные черточки" /></div>
+            <div className={style.episodesdecor}>
+              <img
+                src="./image/homepage/episodes/decor.png"
+                alt="три красные черточки"
+              />
+            </div>
             <div className={style.episodesitems}>
               <a href="#" className={style.episodesitemshadow}>
                 <div className={style.episodesitemup}>
@@ -472,12 +477,71 @@ const HomePage = () => {
             <Buttondark buttonText="BROWSE ALL EPISODES" />
           </div>
         </div>
-          <div className={style.episodesdecorblack}>
+        <div className={style.episodesdecorblack}>
           <img
             src="/image/homepage/blackdecorsection.png"
             alt="черная кривая"
           />
+        </div>
+      </section>
+      <section className={style.pricing}>
+        <div className="container">
+          <div className={style.pricingktitleblock}>
+            <h2 className={style.sectiontitle}>Become our sponsor</h2>
+            <img
+              src="/image/homepage/pricing/decorred.png"
+              className={style.pricingtitledecor}
+              alt="красное солнышко"
+            />
           </div>
+          <p className={style.sectiontext}>
+            Get exclusive episodes, merch and more
+          </p>
+          <div className={style.pricingitems}>
+            <div className={style.pricingitem}>
+              <h3 className={style.pricingitemtitle}>Member</h3>
+              <p className={style.pricingitemtext}>
+                Lorem ipsum dolor sit amet consectet cing elit, sed do eiusmod
+                tempor.
+              </p>
+              <div className={style.pricingitemblock}>
+                <Buttondark buttonText="SUBSCRIBE" />
+                <div className={style.pricingitemprice}>
+                  <span>$9.99</span>
+                  <span>/month</span>
+                </div>
+              </div>
+            </div>
+            <div className={style.pricingitemred}>
+              <h3 className={style.pricingitemtitle}>Family</h3>
+              <p className={style.pricingitemtext}>
+                Lorem ipsum dolor sit amet consectet cing elit, sed do eiusmod
+                tempor.
+              </p>
+              <div className={style.pricingitemblock}>
+                <Buttondark buttonText="SUBSCRIBE" />
+                <div className={style.pricingitemprice}>
+                  <span>$14.99</span>
+                  <span>/month</span>
+                </div>
+              </div>
+            </div>
+            <div className={style.pricingitem}>
+              <h3 className={style.pricingitemtitle}>Official</h3>
+              <p className={style.pricingitemtext}>
+                Lorem ipsum dolor sit amet consectet cing elit, sed do eiusmod
+                tempor.
+              </p>
+              <div className={style.pricingitemblock}>
+                <Buttondark buttonText="SUBSCRIBE" />
+                <div className={style.pricingitemprice}>
+                  <span>$29.99</span>
+                  <span>/month</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   );
