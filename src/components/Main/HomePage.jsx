@@ -245,6 +245,7 @@ const HomePage = () => {
             Available on your favorite platform
           </p>
           <div className={style.episodescontent}>
+            <div className={style.episodesdecor}><img src="./image/homepage/episodes/decor.png" alt="три красные черточки" /></div>
             <div className={style.episodesitems}>
               <a href="#" className={style.episodesitemshadow}>
                 <div className={style.episodesitemup}>
@@ -467,8 +468,16 @@ const HomePage = () => {
               </a>
             </div>
           </div>
-          <Buttondark buttonText="BROWSE ALL EPISODES" />
+          <div className={style.episodesbutton}>
+            <Buttondark buttonText="BROWSE ALL EPISODES" />
+          </div>
         </div>
+          <div className={style.episodesdecorblack}>
+          <img
+            src="/image/homepage/blackdecorsection.png"
+            alt="черная кривая"
+          />
+          </div>
       </section>
     </main>
   );

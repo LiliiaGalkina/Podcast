@@ -391,6 +391,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .benefitsitemimg {
@@ -422,6 +423,7 @@
   left: 50%;
   bottom: -7.5rem;
   transform: translate(-50%);
+  z-index: 2;
 }
 
 @media (max-width: 1024px) {
@@ -446,7 +448,7 @@
   }
 
   .benefitsitem {
-     padding: 0 1rem;
+    padding: 0 1rem;
   }
 }
 
@@ -460,17 +462,23 @@
   }
 
   .benefitsitems {
-	grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
 /*episodes*/
 .episodes {
+  position: relative;
   padding: 14rem 0;
   background-color: $backgroundHeaderHero;
 }
 
+.episodescontent {
+  position: relative;
+}
+
 .episodesitems {
+  margin-bottom: 10rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
@@ -489,6 +497,7 @@
 }
 
 .episodesitemup {
+  margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -496,7 +505,8 @@
 
 .episodesitemimg {
   margin-right: 2rem;
-  max-width: 16.6rem;
+  flex: 0 0 16.6rem;
+  height: 16.6rem;
   img {
     width: 100%;
   }
@@ -506,7 +516,7 @@
   max-width: 35.2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .episodesitemsubtitle {
@@ -519,14 +529,159 @@
 .episodesitemtitlered {
   @include title(2.265rem, 140%, -2%);
   margin-bottom: 1.5rem;
+  min-height: 6.4rem;
 }
 
 .episodesitemtitlered {
   color: $textColorRed;
 }
 
+.episodesitemtext {
+  @include text(1.4rem, 160%);
+}
+
 .episodesitemdown {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.episodesitemcategories {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.episodesitemcategoory {
+  @include text(1.2rem, 160%);
+  padding: 0.6rem 1.2rem;
+  border: 0.1rem solid $textColorGrey;
+  border-radius: 0.4rem;
+  color: $textColorGrey;
+}
+
+.episodesitemhost {
+  @include title(1.2rem, 160%, 0);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.episodesbutton {
+  display: flex;
+  justify-content: center;
+}
+
+.episodesdecor {
+  position: absolute;
+  top: -11rem;
+  right: -8rem;
+  img {
+    width: 100%;
+  }
+}
+
+.episodesdecorblack {
+  position: absolute;
+  left: 50%;
+  bottom: -7.5rem;
+  transform: translate(-50%);
+  z-index: 2;
+}
+
+@media (max-width: 1400px) {
+  .episodesdecor {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .episodesitem,
+  .episodesitemshadow {
+    padding: 1rem;
+  }
+
+  .episodesitemimg {
+    flex: 0 0 15rem;
+  }
+
+  .episodesitemsubtitle {
+    @include title(1.4rem, 120%, 0);
+    color: $textColorRed;
+  }
+
+  .episodesitemtitle,
+  .episodesitemtitlered {
+    @include title(1.8rem, 140%, -2%);
+    margin-bottom: 1rem;
+    min-height: 7.4rem;
+  }
+
+  .episodesitemtitlered {
+    color: $textColorRed;
+  }
+}
+
+@media (max-width: 768px) {
+  .episodes {
+    padding: 10rem 0;
+  }
+
+  .episodesitems {
+    grid-template-columns: 1fr;
+  }
+
+  .episodesitemimg {
+    flex: 0 0 16.6rem;
+  }
+
+  .episodesiteminfo {
+    max-width: 100%;
+  }
+
+  .episodesitemtitle,
+  .episodesitemtitlered {
+    @include title(1.8rem, 140%, -2%);
+    margin-bottom: 1rem;
+    min-height: auto;
+  }
+
+  .episodesitemshadow {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .episodes {
+    padding: 8rem 0;
+  }
+
+  .episodesitems {
+    margin-bottom: 8rem;
+  }
+
+  .episodesitemimg {
+    flex: 0 0 15rem;
+  }
+
+  .episodesitemtitle,
+  .episodesitemtitlered {
+    @include title(1.6rem, 140%, -2%);
+  }
+
+  .episodesitemtext {
+    @include text(1.2rem, 140%);
+  }
+
+  .episodesdecorblack {
+    display: none;
+  }
+
+  .episodesitemcategoory {
+    @include text(1rem, 140%);
+    padding: 0.6rem 1rem;
+    border: 0.1rem solid $textColorGrey;
+    border-radius: 0.4rem;
+    color: $textColorGrey;
+  }
 }
