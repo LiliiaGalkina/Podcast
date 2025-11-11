@@ -685,3 +685,84 @@
     color: $textColorGrey;
   }
 }
+
+/*pricing*/
+.pricing {
+  padding: 14rem 0;
+}
+
+.pricingtitleblock {
+  position: relative;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.pricingtitledecor {
+  max-width: 24rem;
+  position: absolute;
+  top: -3rem;
+  left: -5rem;
+  img {
+    width: 100%;
+  }
+}
+
+.pricingitems {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.pricingitem,
+.pricingitemred {
+  padding: 6rem 4rem;
+  border-radius: 0.8rem;
+}
+
+.pricingitem,
+.pricingitemdop {
+  border: 0.15rem solid $textColorDark;
+}
+
+.pricingitemred,
+.pricingitemdopred {
+  border: 0.15rem solid $textColorRed;
+  background-color: $backgroundHeaderHero;
+}
+
+.pricingitemtitle {
+  @include title(3.665rem, 140%, 2%);
+  margin-bottom: 2rem;
+}
+
+.pricingitemtext {
+  @include text(1.4rem, 160%);
+  margin-bottom: 9rem;
+  color: $textColorGrey;
+}
+
+.pricingitemblock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pricingitemprice {
+  display: flex;
+  flex-direction: column;
+
+  span:first-child {
+    @include title(2.265rem, 140%, 2%);
+    color: $textColorRed;
+  }
+  span:last-child {
+    @include text(1.4rem, 160%);
+    color: $textColorGrey;
+  }
+}
+
+.pricingitemdop,
+.pricingitemdopred {
+  padding: 4rem;
+  border-radius: 0.8rem;
+}

@@ -486,7 +486,7 @@ const HomePage = () => {
       </section>
       <section className={style.pricing}>
         <div className="container">
-          <div className={style.pricingktitleblock}>
+          <div className={style.pricingtitleblock}>
             <h2 className={style.sectiontitle}>Become our sponsor</h2>
             <img
               src="/image/homepage/pricing/decorred.png"
@@ -539,6 +539,59 @@ const HomePage = () => {
                   <span>/month</span>
                 </div>
               </div>
+            </div>
+            <div className={style.pricingitemdop}>
+              <p className={style.pricingitemdoptext}>What’s included:</p>
+              <ul className={style.pricingitemdoplist}>
+                <li className={style.pricingitemdopitem}>Exclusive Content</li>
+                <li className={style.pricingitemdopitem}>
+                  5% Discount on Merch
+                </li>
+                <li className={style.pricingitemdopitem}>Join the Community</li>
+                <li className={style.pricingitemdopitem}>
+                  Livestreaming Access
+                </li>
+              </ul>
+            </div>
+            <div className={style.pricingitemdopred}>
+              <p className={style.pricingitemdoptext}>What’s included:</p>
+              <ul className={style.pricingitemdoplist}>
+                <li className={style.pricingitemdopitembold}>
+                  Everything in Tier 1
+                </li>
+                <li className={style.pricingitemdopitem}>
+                  Free tickets to Events
+                </li>
+                <li className={style.pricingitemdopitem}>
+                  Limited Edition Merch
+                </li>
+                <li className={style.pricingitemdopitem}>
+                  Promote your Product
+                </li>
+                <li className={style.pricingitemdopitem}>
+                  Promote your Product
+                </li>
+              </ul>
+            </div>
+            <div className={style.pricingitemdop}>
+              <p className={style.pricingitemdoptext}>What’s included:</p>
+              <ul className={style.pricingitemdoplist}>
+                <li className={style.pricingitemdopitembold}>
+                  Everything in Tier 2
+                </li>
+                <li className={style.pricingitemdopitem}>
+                  Exclusive Badge on Livestreaming
+                </li>
+                <li className={style.pricingitemdopitem}>
+                  Become an Official Sponsor
+                </li>
+                <li className={style.pricingitemdopitem}>
+                  Early Access to All Episodes
+                </li>
+                <li className={style.pricingitemdopitem}>
+                  Free Stikers and Merch
+                </li>
+              </ul>
             </div>
           </div>
         </div>
