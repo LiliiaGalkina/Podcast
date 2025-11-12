@@ -608,7 +608,70 @@ const HomePage = () => {
           </div>
         </div>
         <div className={style.pricingdecor}>
-          <img src="/image/homepage/blackdecorsection.png" alt="черная кривая" />
+          <img
+            src="/image/homepage/blackdecorsection.png"
+            alt="черная кривая"
+          />
+        </div>
+      </section>
+      <section className={style.news}>
+        <div className="container">
+          <h2 className={style.sectiontitle}>Article and News</h2>
+          <p className={style.sectiontext}>News, tips, tricks and more</p>
+          <div className={style.newsitems}>
+            <div className={style.newsitemshadow}>
+              <div className={style.newsimg}>
+                <img
+                  src="/image/homepage/news/news1.png"
+                  alt="аудио аппаратура"
+                />
+              </div>
+              <div className={style.newscontent}>
+                <h4 className={style.newssubtitle}>PODCAST</h4>
+                <h3 className={style.newstitlered}>Setup your own podcast</h3>
+                <p className={style.newstext}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minimvel iam, quis nostrud exercitation ullamco
+                  laboris...
+                </p>
+              </div>
+              <div className={style.newscategories}>
+                <div className={style.newscategoriesbody}>
+                  <div className={style.newscategory}>business</div>
+                  <div className={style.newscategory}>startup</div>
+                </div>
+                <div className={style.date}>Sep 14, 2021</div>
+              </div>
+            </div>
+            <div className={style.newsitem}>
+              <div className={style.newsimg}>
+                <img
+                  src="/image/homepage/news/news2.png"
+                  alt="дtвушка в маске рисует на стене"
+                />
+              </div>
+              <div className={style.newscontent}>
+                <h4 className={style.newssubtitle}>TIPS & TRICK</h4>
+                <h3 className={style.newstitle}>Doodle artwork 101</h3>
+                <p className={style.newstext}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minimvel iam, quis nostrud exercitation ullamco
+                  laboris...
+                </p>
+              </div>
+              <div className={style.newscategories}>
+                <div className={style.newscategoriesbody}>
+                  <div className={style.newscategory}>art</div>
+                  <div className={style.newscategory}>creative</div>
+                  <div className={style.newscategory}>tips and trick</div>
+                </div>
+                <div className={style.date}>Sep 12, 2021</div>
+              </div>
+            </div>
+          </div>
+          <Buttondark buttonText="BROWSE ALL" />
         </div>
       </section>
     </main>
