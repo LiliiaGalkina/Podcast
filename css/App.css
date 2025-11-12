@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Montserrat Alternates";
+  font-weight: 500;
+  src: url("./components/fonts/Montserrat_Alternates/MontserratAlternates-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  font-weight: 700;
+  src: url("./components/fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf") format("truetype");
+}
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 119rem;
+  padding: 0 1.5rem;
+}

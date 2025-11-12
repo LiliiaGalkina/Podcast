@@ -1,0 +1,166 @@
+.slider {
+  text-align: center;
+}
+
+.slideritem {
+  position: relative;
+  max-width: 37.3rem;
+  height: 37.3rem;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+.slideritem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sliderTitle {
+  position: absolute;
+  z-index: 3;
+  bottom: 2rem;
+  left: 2rem;
+  font-size: 3.67rem;
+  line-height: 120%;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: -8%;
+  color: #81adc8;
+}
+
+.slidericons {
+  position: absolute;
+  z-index: 3;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.itemdecorblack1 {
+  position: absolute;
+  z-index: 3;
+  left: 12.49rem;
+  top: 13.69rem;
+}
+
+.itemdecororange1 {
+  position: absolute;
+  z-index: 3;
+  left: 17.7rem;
+  top: 13.8rem;
+}
+
+.itemdecorblue1 {
+  position: absolute;
+  z-index: 3;
+  left: 16.4rem;
+  bottom: 10.18rem;
+}
+
+.itemdecorblack2 {
+  position: absolute;
+  z-index: 3;
+  right: 10rem;
+  bottom: 7rem;
+}
+
+.itemdecorblue2 {
+  position: absolute;
+  z-index: 3;
+  left: 12rem;
+  top: 14.7rem;
+}
+
+.itemdecororange2 {
+  position: absolute;
+  z-index: 3;
+  right: 7.6rem;
+  top: 6.2rem;
+}
+
+.itemdecorwhite2 {
+  position: absolute;
+  z-index: 3;
+  right: 15.8rem;
+  top: 5.6rem;
+}
+
+.itemdecorrainbow3 {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  top: 0;
+}
+
+.itemdecororange31 {
+  position: absolute;
+  z-index: 3;
+  left: 5rem;
+  top: 15.4rem;
+}
+
+.itemdecororange32 {
+  position: absolute;
+  z-index: 3;
+  left: 6.1rem;
+  top: 14rem;
+}
+
+.itemdecorblue3 {
+  position: absolute;
+  z-index: 3;
+  left: 13.6rem;
+  top: 9.6rem;
+}
+
+.itemdecororangeblue3 {
+  position: absolute;
+  z-index: 3;
+  left: 12.8rem;
+  top: 20.6rem;
+}
+
+.itemdecorblueblack3 {
+  position: absolute;
+  z-index: 3;
+  right: 9rem;
+  top: 13.1rem;
+}
+
+.itemdecororangestar3 {
+  position: absolute;
+  z-index: 3;
+  right: 3.2rem;
+  top: 15.8rem;
+}
+
+.itemdecorblackstar3 {
+  position: absolute;
+  z-index: 3;
+  right: 2.8rem;
+  top: 16.6rem;
+}
+
+.itemdecororangeline3 {
+  position: absolute;
+  z-index: 3;
+  right: 4.6rem;
+  top: 16.8rem;
+}
+
+.itemdecorblackline3 {
+  position: absolute;
+  z-index: 3;
+  right: 3.6rem;
+  top: 17.2rem;
+}
+
+@media (max-width: 390px) {
+  .slideritem {
+    padding: 1rem;
+  }
+  .slideritem img {
+    border-radius: 1.2rem;
+  }
+}

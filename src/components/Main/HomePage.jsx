@@ -498,6 +498,12 @@ const HomePage = () => {
             Get exclusive episodes, merch and more
           </p>
           <div className={style.pricingitems}>
+            <div className={style.pricingitemsdecorup}>
+              <img
+                src="/image/homepage/pricing/decorstarblack.png"
+                alt="черная звезда"
+              />
+            </div>
             <div className={style.pricingitem}>
               <h3 className={style.pricingitemtitle}>Member</h3>
               <p className={style.pricingitemtext}>
@@ -507,7 +513,7 @@ const HomePage = () => {
               <div className={style.pricingitemblock}>
                 <Buttondark buttonText="SUBSCRIBE" />
                 <div className={style.pricingitemprice}>
-                  <span>$9.99</span>
+                  <span>9.99$</span>
                   <span>/month</span>
                 </div>
               </div>
@@ -521,7 +527,7 @@ const HomePage = () => {
               <div className={style.pricingitemblock}>
                 <Buttondark buttonText="SUBSCRIBE" />
                 <div className={style.pricingitemprice}>
-                  <span>$14.99</span>
+                  <span>14.99$</span>
                   <span>/month</span>
                 </div>
               </div>
@@ -535,7 +541,7 @@ const HomePage = () => {
               <div className={style.pricingitemblock}>
                 <Buttondark buttonText="SUBSCRIBE" />
                 <div className={style.pricingitemprice}>
-                  <span>$29.99</span>
+                  <span>29.99$</span>
                   <span>/month</span>
                 </div>
               </div>
@@ -556,7 +562,7 @@ const HomePage = () => {
             <div className={style.pricingitemdopred}>
               <p className={style.pricingitemdoptext}>What’s included:</p>
               <ul className={style.pricingitemdoplist}>
-                <li className={style.pricingitemdopitembold}>
+                <li className={style.pricingitemdopitem}>
                   Everything in Tier 1
                 </li>
                 <li className={style.pricingitemdopitem}>
@@ -576,7 +582,7 @@ const HomePage = () => {
             <div className={style.pricingitemdop}>
               <p className={style.pricingitemdoptext}>What’s included:</p>
               <ul className={style.pricingitemdoplist}>
-                <li className={style.pricingitemdopitembold}>
+                <li className={style.pricingitemdopitem}>
                   Everything in Tier 2
                 </li>
                 <li className={style.pricingitemdopitem}>
@@ -593,7 +599,16 @@ const HomePage = () => {
                 </li>
               </ul>
             </div>
+            <div className={style.pricingitemsdecordonw}>
+              <img
+                src="/image/homepage/pricing/decorblue.png"
+                alt="голубая кривая"
+              />
+            </div>
           </div>
+        </div>
+        <div className={style.pricingdecor}>
+          <img src="/image/homepage/blackdecorsection.png" alt="черная кривая" />
         </div>
       </section>
     </main>

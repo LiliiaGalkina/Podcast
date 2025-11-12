@@ -1,23 +1,28 @@
-@use "../_variables.scss" as *;
-
 .hero {
   position: relative;
   padding: 6.4rem 0 14rem;
-  background-color: $backgroundHeaderHero;
+  background-color: #f7ede8;
 }
 
 .herotitle {
-  @include title(9.6rem, 100%, -4%);
+  font-size: 9.6rem;
+  line-height: 100%;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: -4%;
   margin-bottom: 4rem;
   text-align: center;
 }
 
 .herotitlered {
-  color: $textColorRed;
+  color: #cd4631;
 }
 
 .herotext {
-  @include text(1.6rem, 160%);
+  font-size: 1.6rem;
+  line-height: 160%;
+  font-weight: 500;
+  color: #4d4d4d;
   margin: 0 auto 24.5rem;
   max-width: 37.4rem;
   text-align: center;
@@ -33,80 +38,95 @@
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  border-top: 0.15rem solid $textColorDark;
-  border-bottom: 0.15rem solid $textColorDark;
+  border-top: 0.15rem solid #000000;
+  border-bottom: 0.15rem solid #000000;
 }
 
 .herolinkstitle {
-  @include title(2.265rem, 140%, -2%);
+  font-size: 2.265rem;
+  line-height: 140%;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: -2%;
 }
 
-.herolink {
-  img {
-    width: 100%;
-  }
+.herolink img {
+  width: 100%;
 }
 
 .herodecorleft {
-  @include decorSlider(left, top, 0, 0);
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  top: 0;
   max-width: 32rem;
-  img {
-    width: 100%;
-  }
+}
+.herodecorleft img {
+  width: 100%;
 }
 
 .herodecorright {
-  @include decorSlider(right, top, 0, 13.7rem);
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  top: 13.7rem;
 }
 
 .herodecordown {
-  @include decorSlider(left, bottom, 50%, -7.5rem);
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: -7.5rem;
   transform: translate(-50%);
 }
 
 @media (max-width: 1180px) {
   .herotitle {
-    @include title(8rem, 100%, -4%);
+    font-size: 8rem;
+    line-height: 100%;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -4%;
   }
-
   .herodecorleft {
     max-width: 26rem;
   }
 }
-
 @media (max-width: 970px) {
-  .herolink {
-    &:first-child,
-    &:last-child {
-      max-width: 10rem;
-    }
-    &:nth-child(2) {
-      max-width: 18rem;
-    }
+  .herolink:first-child, .herolink:last-child {
+    max-width: 10rem;
   }
-
+  .herolink:nth-child(2) {
+    max-width: 18rem;
+  }
   .herodecorleft {
-    @include decorSlider(left, top, 0, 18rem);
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 18rem;
     max-width: 20rem;
   }
-
   .herodecorright {
-    @include decorSlider(right, top, 0, 27rem);
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    top: 27rem;
   }
 }
-
 @media (max-width: 833px) {
   .herolinkstitle {
     display: none;
   }
 }
-
 @media (max-width: 600px) {
   .herotitle {
-    @include title(6rem, 100%, -4%);
+    font-size: 6rem;
+    line-height: 100%;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -4%;
   }
 }
-
 @media (max-width: 480px) {
   .hero {
     padding: 6.4rem 0;
@@ -120,14 +140,17 @@
     display: none;
   }
 }
-
 /*Talk-Listen*/
 .talklisten {
   padding: 14rem 0;
 }
 
 .talklistentitle {
-  @include title(5.93rem, 120%, -2%);
+  font-size: 5.93rem;
+  line-height: 120%;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: -2%;
   margin: 0 auto 10rem;
   max-width: 77rem;
   text-align: center;
@@ -151,13 +174,16 @@
 .talklistenitemimg {
   margin-bottom: 4rem;
   max-width: 27.5rem;
-  img {
-    width: 100%;
-  }
+}
+.talklistenitemimg img {
+  width: 100%;
 }
 
 .talklistenitemtext {
-  @include text(1.6rem, 160%);
+  font-size: 1.6rem;
+  line-height: 160%;
+  font-weight: 500;
+  color: #4d4d4d;
   max-width: 47.2rem;
   text-align: center;
 }
@@ -168,19 +194,23 @@
   flex-direction: column;
   align-items: center;
   border-radius: 0.8rem;
-  background-color: $backgroundHeaderHero;
+  background-color: #f7ede8;
 }
 
 .bannerquote {
   margin-bottom: 4rem;
   max-width: 43.8rem;
-  img {
-    width: 100%;
-  }
+}
+.bannerquote img {
+  width: 100%;
 }
 
 .bannertitle {
-  @include title(3.665rem, 140%, -2%);
+  font-size: 3.665rem;
+  line-height: 140%;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: -2%;
   margin-bottom: 4rem;
   max-width: 70rem;
   text-align: center;
@@ -194,13 +224,16 @@
 .banneravatar {
   margin-right: 1rem;
   max-width: 4.8rem;
-  img {
-    width: 100%;
-  }
+}
+.banneravatar img {
+  width: 100%;
 }
 
 .bannername {
-  @include text(1.4rem, 160%);
+  font-size: 1.4rem;
+  line-height: 160%;
+  font-weight: 500;
+  color: #4d4d4d;
   margin-right: 1rem;
 }
 
@@ -212,73 +245,81 @@
 .bannergreencircle {
   margin-right: 0.8rem;
   max-width: 1.6rem;
-  img {
-    width: 100%;
-  }
+}
+.bannergreencircle img {
+  width: 100%;
 }
 
 .bannerposition {
-  @include title(1.4rem, 160%, 0%);
+  font-size: 1.4rem;
+  line-height: 160%;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 0%;
 }
 
 @media (max-width: 768px) {
   .talklistentitle {
-    @include title(4.5rem, 120%, -2%);
+    font-size: 4.5rem;
+    line-height: 120%;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -2%;
   }
-
   .talklistenitemimg {
     max-width: 20rem;
   }
-
   .bannerquote {
     margin-bottom: 3rem;
     max-width: 36rem;
   }
-
   .bannertitle {
-    @include title(3rem, 140%, -2%);
+    font-size: 3rem;
+    line-height: 140%;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -2%;
     max-width: 60rem;
   }
 }
-
 @media (max-width: 480px) {
   .talklisten {
     padding: 6rem 0;
   }
-
   .talklistentitle {
-    @include title(4rem, 120%, -2%);
+    font-size: 4rem;
+    line-height: 120%;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -2%;
     margin-bottom: 6rem;
   }
-
   .talklistenitems {
     margin-bottom: 6rem;
     flex-direction: column;
   }
-
   .bannerquote {
     max-width: 26rem;
   }
-
   .bannertitle {
-    @include title(3.2rem, 120%, -2%);
+    font-size: 3.2rem;
+    line-height: 120%;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -2%;
   }
-
   .bannermanblock {
     flex-wrap: wrap;
   }
-
   .bannerpositionbody {
     margin-top: 2rem;
   }
 }
-
 /*feedback*/
-
 .feedback {
   padding: 14rem 0 10rem;
   position: relative;
-  background-color: $backgroundFeedback;
+  background-color: #EDF3F7;
 }
 
 .feedbacktitleblock {
@@ -289,7 +330,11 @@
 }
 
 .sectiontitle {
-  @include title(5.93rem, 120%, -2%);
+  font-size: 5.93rem;
+  line-height: 120%;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: -2%;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -303,26 +348,38 @@
 }
 
 .sectiontext {
-  @include text(2.265rem, 160%);
+  font-size: 2.265rem;
+  line-height: 160%;
+  font-weight: 500;
+  color: #4d4d4d;
   margin-bottom: 10rem;
   text-align: center;
 }
 
 .feedbackupdecor {
-  @include decorSlider(left, top, 50%, -7.5rem);
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  top: -7.5rem;
   transform: translate(-50%);
 }
 
 .feedbackdowndecor {
-  @include decorSlider(left, bottom, 50%, -7.5rem);
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: -7.5rem;
   transform: translate(-50%);
 }
 
 @media (max-width: 1024px) {
   .sectiontitle {
-    @include title(5rem, 120%, -2%);
+    font-size: 5rem;
+    line-height: 120%;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -2%;
   }
-
   .feedbacktitledecor {
     width: 7rem;
     height: 7rem;
@@ -330,32 +387,29 @@
     top: -90%;
   }
 }
-
 @media (max-width: 768px) {
   .feedbacktitledecor {
     display: none;
   }
-
   .feedbackupdecor {
-    @include decorSlider(left, top, 50%, -5.6rem);
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    top: -5.6rem;
   }
 }
-
 @media (max-width: 480px) {
   .feedbackdowndecor,
   .feedbackupdecor {
     display: none;
   }
-
   .feedback {
     padding: 4rem 0 6rem;
   }
-
   .sectiontext {
     margin-bottom: 5rem;
   }
 }
-
 /*benefits*/
 .benefits {
   padding: 14rem 0;
@@ -373,9 +427,9 @@
   position: absolute;
   top: -6rem;
   right: -7rem;
-  img {
-    width: 100%;
-  }
+}
+.benefitstitledecor img {
+  width: 100%;
 }
 
 .benefitsitems {
@@ -397,19 +451,26 @@
 .benefitsitemimg {
   margin-bottom: 3rem;
   max-width: 7.8rem;
-  img {
-    width: 100%;
-  }
+}
+.benefitsitemimg img {
+  width: 100%;
 }
 
 .benefitsitemtitle {
-  @include title(2.265rem, 140%, -2%);
+  font-size: 2.265rem;
+  line-height: 140%;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: -2%;
   margin-bottom: 1rem;
   text-align: center;
 }
 
 .benefitsitemtext {
-  @include text(1.6rem, 160%);
+  font-size: 1.6rem;
+  line-height: 160%;
+  font-weight: 500;
+  color: #4d4d4d;
   text-align: center;
 }
 
@@ -433,7 +494,6 @@
     right: -3rem;
   }
 }
-
 @media (max-width: 768px) {
   .benefits {
     padding: 8rem 0 14rem;
@@ -441,36 +501,30 @@
   .benefitstitledecor {
     display: none;
   }
-
   .benefitsitems {
     margin-bottom: 8rem;
     grid-template-columns: repeat(2, 1fr);
   }
-
   .benefitsitem {
     padding: 0 1rem;
   }
 }
-
 @media (max-width: 480px) {
   .benefits {
     padding: 8rem 0;
   }
-
   .benefitsdecor {
     display: none;
   }
-
   .benefitsitems {
     grid-template-columns: 1fr;
   }
 }
-
 /*episodes*/
 .episodes {
   position: relative;
   padding: 14rem 0;
-  background-color: $backgroundHeaderHero;
+  background-color: #f7ede8;
 }
 
 .episodescontent {
@@ -487,13 +541,13 @@
 .episodesitem,
 .episodesitemshadow {
   padding: 1.6rem;
-  border: 0.2rem solid $textColorDark;
+  border: 0.2rem solid #000000;
   border-radius: 1.2rem;
-  background-color: $textColorWhite;
+  background-color: #ffffff;
 }
 
 .episodesitemshadow {
-  box-shadow: 1rem 1rem 0 $textColorSliderTitle;
+  box-shadow: 1rem 1rem 0 #81adc8;
 }
 
 .episodesitemup {
@@ -507,9 +561,9 @@
   margin-right: 2rem;
   flex: 0 0 16.6rem;
   height: 16.6rem;
-  img {
-    width: 100%;
-  }
+}
+.episodesitemimg img {
+  width: 100%;
 }
 
 .episodesiteminfo {
@@ -520,24 +574,35 @@
 }
 
 .episodesitemsubtitle {
-  @include title(1.6rem, 160%, 0);
+  font-size: 1.6rem;
+  line-height: 160%;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 0;
   margin-bottom: 0.4rem;
-  color: $textColorRed;
+  color: #cd4631;
 }
 
 .episodesitemtitle,
 .episodesitemtitlered {
-  @include title(2.265rem, 140%, -2%);
+  font-size: 2.265rem;
+  line-height: 140%;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: -2%;
   margin-bottom: 1.5rem;
   min-height: 6.4rem;
 }
 
 .episodesitemtitlered {
-  color: $textColorRed;
+  color: #cd4631;
 }
 
 .episodesitemtext {
-  @include text(1.4rem, 160%);
+  font-size: 1.4rem;
+  line-height: 160%;
+  font-weight: 500;
+  color: #4d4d4d;
 }
 
 .episodesitemdown {
@@ -553,15 +618,22 @@
 }
 
 .episodesitemcategoory {
-  @include text(1.2rem, 160%);
+  font-size: 1.2rem;
+  line-height: 160%;
+  font-weight: 500;
+  color: #4d4d4d;
   padding: 0.6rem 1.2rem;
-  border: 0.1rem solid $textColorGrey;
+  border: 0.1rem solid #4d4d4d;
   border-radius: 0.4rem;
-  color: $textColorGrey;
+  color: #4d4d4d;
 }
 
 .episodesitemhost {
-  @include title(1.2rem, 160%, 0);
+  font-size: 1.2rem;
+  line-height: 160%;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 0;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -576,9 +648,9 @@
   position: absolute;
   top: -11rem;
   right: -8rem;
-  img {
-    width: 100%;
-  }
+}
+.episodesdecor img {
+  width: 100%;
 }
 
 .episodesdecorblack {
@@ -594,102 +666,104 @@
     display: none;
   }
 }
-
 @media (max-width: 1024px) {
   .episodesitem,
   .episodesitemshadow {
     padding: 1rem;
   }
-
   .episodesitemimg {
     flex: 0 0 15rem;
   }
-
   .episodesitemsubtitle {
-    @include title(1.4rem, 120%, 0);
-    color: $textColorRed;
+    font-size: 1.4rem;
+    line-height: 120%;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: 0;
+    color: #cd4631;
   }
-
   .episodesitemtitle,
   .episodesitemtitlered {
-    @include title(1.8rem, 140%, -2%);
+    font-size: 1.8rem;
+    line-height: 140%;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -2%;
     margin-bottom: 1rem;
     min-height: 7.4rem;
   }
-
   .episodesitemtitlered {
-    color: $textColorRed;
+    color: #cd4631;
   }
 }
-
 @media (max-width: 768px) {
   .episodes {
     padding: 10rem 0;
   }
-
   .episodesitems {
     grid-template-columns: 1fr;
   }
-
   .episodesitemimg {
     flex: 0 0 16.6rem;
   }
-
   .episodesiteminfo {
     max-width: 100%;
   }
-
   .episodesitemtitle,
   .episodesitemtitlered {
-    @include title(1.8rem, 140%, -2%);
+    font-size: 1.8rem;
+    line-height: 140%;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -2%;
     margin-bottom: 1rem;
     min-height: auto;
   }
-
   .episodesitemshadow {
     box-shadow: none;
   }
 }
-
 @media (max-width: 480px) {
   .episodes {
     padding: 8rem 0;
   }
-
   .episodesitems {
     margin-bottom: 8rem;
   }
-
   .episodesitemimg {
     flex: 0 0 15rem;
   }
-
   .episodesitemtitle,
   .episodesitemtitlered {
-    @include title(1.6rem, 140%, -2%);
+    font-size: 1.6rem;
+    line-height: 140%;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -2%;
   }
-
   .episodesitemtext {
-    @include text(1.2rem, 140%);
+    font-size: 1.2rem;
+    line-height: 140%;
+    font-weight: 500;
+    color: #4d4d4d;
   }
-
   .episodesdecorblack {
     display: none;
   }
-
   .episodesitemcategoory {
-    @include text(1rem, 140%);
+    font-size: 1rem;
+    line-height: 140%;
+    font-weight: 500;
+    color: #4d4d4d;
     padding: 0.6rem 1rem;
-    border: 0.1rem solid $textColorGrey;
+    border: 0.1rem solid #4d4d4d;
     border-radius: 0.4rem;
-    color: $textColorGrey;
+    color: #4d4d4d;
   }
 }
-
 /*pricing*/
 .pricing {
   padding: 14rem 0;
-  position: relative;
 }
 
 .pricingtitleblock {
@@ -703,17 +777,15 @@
   position: absolute;
   top: -3rem;
   left: -5rem;
-  img {
-    width: 100%;
-  }
+}
+.pricingtitledecor img {
+  width: 100%;
 }
 
 .pricingitems {
-  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  z-index: 3;
 }
 
 .pricingitem,
@@ -724,25 +796,31 @@
 
 .pricingitem,
 .pricingitemdop {
-  border: 0.15rem solid $textColorDark;
-  background-color: $textColorWhite;
+  border: 0.15rem solid #000000;
 }
 
 .pricingitemred,
 .pricingitemdopred {
-  border: 0.15rem solid $textColorRed;
-  background-color: $backgroundHeaderHero;
+  border: 0.15rem solid #cd4631;
+  background-color: #f7ede8;
 }
 
 .pricingitemtitle {
-  @include title(3.665rem, 140%, 2%);
+  font-size: 3.665rem;
+  line-height: 140%;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 2%;
   margin-bottom: 2rem;
 }
 
 .pricingitemtext {
-  @include text(1.4rem, 160%);
+  font-size: 1.4rem;
+  line-height: 160%;
+  font-weight: 500;
+  color: #4d4d4d;
   margin-bottom: 9rem;
-  color: $textColorGrey;
+  color: #4d4d4d;
 }
 
 .pricingitemblock {
@@ -754,65 +832,25 @@
 .pricingitemprice {
   display: flex;
   flex-direction: column;
-
-  span:first-child {
-    @include title(2.265rem, 140%, 2%);
-    color: $textColorRed;
-  }
-  span:last-child {
-    @include text(1.4rem, 160%);
-    color: $textColorGrey;
-  }
+}
+.pricingitemprice span:first-child {
+  font-size: 2.265rem;
+  line-height: 140%;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 2%;
+  color: #cd4631;
+}
+.pricingitemprice span:last-child {
+  font-size: 1.4rem;
+  line-height: 160%;
+  font-weight: 500;
+  color: #4d4d4d;
+  color: #4d4d4d;
 }
 
 .pricingitemdop,
 .pricingitemdopred {
   padding: 4rem;
   border-radius: 0.8rem;
-}
-
-.pricingitemdoptext {
-  @include title(1.4rem, 160%, 0); 
-  margin-bottom: 2rem;
-  color: $textColorGrey;
-}
-
-.pricingitemdopitem {
-  @include text(1.6rem, 160%);
-  list-style-type: disc;
-  &:not(:last-child){
-    margin-bottom: 1rem;
-  }
-}
-
-.pricingitemsdecorup {
-  position: absolute;
-  top: -9rem;
-  right: -8.7rem;
-  width: 20rem;
-  height: 20rem;
-  z-index: -1;
-  img {
-    width: 100%;
-  }
-}
-
-.pricingitemsdecordonw {
-  position: absolute;
-  bottom: -4rem;
-  left: -7rem;
-  width: 12rem;
-  height: 12rem;
-  z-index: -1;
-  img {
-    width: 100%;
-  }
-}
-
-.pricingdecor {
-  position: absolute;
-  left: 50%;
-  bottom: -7.5rem;
-  transform: translate(-50%);
-  z-index: 2;
 }

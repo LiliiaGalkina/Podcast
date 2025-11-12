@@ -1,0 +1,98 @@
+.sliderfeedbackcontainer {
+  margin: 0 auto 6.4rem;
+  padding-left: 1%;
+  width: 99%;
+  position: relative;
+}
+
+.sliderfeedbackitem {
+  max-width: 98%;
+  padding: 4rem;
+  border-radius: 0.8rem;
+  background-color: #ffffff;
+}
+
+.sliderfeedbackquote {
+  margin-bottom: 3rem;
+  width: 4.8rem;
+}
+
+.sliderfeedbacktext {
+  margin-bottom: 3.2rem;
+  font-size: 2.265rem;
+  line-height: 160%;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+
+.sliderfeedbackperson {
+  display: flex;
+  align-items: center;
+}
+
+.sliderfeedbackpersonfoto {
+  margin-right: 1rem;
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+.sliderfeedbackpersonname {
+  font-size: 1.4rem;
+  line-height: 160%;
+  font-weight: 500;
+  color: #4d4d4d;
+  margin-right: 1rem;
+}
+
+.sliderfeedbackpersonimg1 {
+  max-width: 7.7rem;
+}
+
+.sliderfeedbackpersonimg2 {
+  max-width: 14.1rem;
+}
+
+.arrowleft {
+  position: absolute;
+  z-index: 3;
+  left: 5rem;
+  bottom: -25rem;
+  cursor: pointer;
+}
+
+.arrowright {
+  position: absolute;
+  z-index: 3;
+  left: -10rem;
+  bottom: -25rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .sliderfeedbackitem {
+    padding: 2rem;
+  }
+  .sliderfeedbackquote {
+    width: 4rem;
+  }
+  .sliderfeedbacktext {
+    font-size: 2rem;
+    line-height: 160%;
+    font-weight: 500;
+    color: #4d4d4d;
+  }
+}
+@media (max-width: 480px) {
+  .arrowleft {
+    position: absolute;
+    z-index: 3;
+    left: 5rem;
+    bottom: -22rem;
+  }
+  .arrowright {
+    position: absolute;
+    z-index: 3;
+    left: -10rem;
+    bottom: -22rem;
+  }
+}
