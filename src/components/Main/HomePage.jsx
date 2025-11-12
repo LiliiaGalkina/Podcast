@@ -546,7 +546,7 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div className={style.pricingitemdop}>
+            <div className={style.pricingitemdoppos}>
               <p className={style.pricingitemdoptext}>What’s included:</p>
               <ul className={style.pricingitemdoplist}>
                 <li className={style.pricingitemdopitem}>Exclusive Content</li>

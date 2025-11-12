@@ -351,6 +351,10 @@
     padding: 4rem 0 6rem;
   }
 
+  .sectiontitle {
+    @include title(4rem, 120%, -2%);
+  }
+
   .sectiontext {
     margin-bottom: 5rem;
   }
@@ -723,7 +727,8 @@
 }
 
 .pricingitem,
-.pricingitemdop {
+.pricingitemdop,
+.pricingitemdoppos {
   border: 0.15rem solid $textColorDark;
   background-color: $textColorWhite;
 }
@@ -766,7 +771,8 @@
 }
 
 .pricingitemdop,
-.pricingitemdopred {
+.pricingitemdopred,
+.pricingitemdoppos {
   padding: 4rem;
   border-radius: 0.8rem;
 }
@@ -815,4 +821,85 @@
   bottom: -7.5rem;
   transform: translate(-50%);
   z-index: 2;
+}
+
+@media (max-width: 1400px) {
+  .pricingitemsdecorup,
+  .pricingitemsdecordonw {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .pricingitem,
+  .pricingitemred {
+    padding: 2rem;
+  }
+
+  .pricingitemdop,
+  .pricingitemdopred,
+  .pricingitemdoppos {
+    padding: 2rem 2rem 2rem 3rem;
+  }
+
+  .pricingitemtitle {
+     @include title(3rem, 140%, 2%);
+  }
+  .pricingitemblock {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .pricingitemprice {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing {
+    padding: 10rem 0;
+  }
+
+  .pricingdecor {
+    display: none;
+  }
+
+  .pricingtitledecor {
+    display: none;
+  }
+
+  .pricingitems {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricingitemdoppos {
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+  }
+
+  .pricingitemdopred {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  .pricingitemtext {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing {
+    padding: 8rem 0;
+  }
+  .pricingitems {
+    grid-template-columns: 1fr;
+  }
+
+  .pricingitemdopred {
+    grid-row: 4 /5;
+    grid-column: 1 / 2;
+  }
 }
