@@ -111,9 +111,15 @@
   .hero {
     padding: 6.4rem 0;
   }
+
+  .herotitle {
+    @include title(4rem, 100%, -4%);
+  }
+
   .herotext {
     margin: 0 auto 8rem;
   }
+
   .herodecorleft,
   .herodecorright,
   .herodecordown {
@@ -247,7 +253,7 @@
   }
 
   .talklistentitle {
-    @include title(4rem, 120%, -2%);
+    @include title(3.2rem, 120%, -2%);
     margin-bottom: 6rem;
   }
 
@@ -261,7 +267,7 @@
   }
 
   .bannertitle {
-    @include title(3.2rem, 120%, -2%);
+    @include title(2.8rem, 120%, -2%);
   }
 
   .bannermanblock {
@@ -352,10 +358,11 @@
   }
 
   .sectiontitle {
-    @include title(4rem, 120%, -2%);
+    @include title(3.2rem, 120%, -2%);
   }
 
   .sectiontext {
+    @include text(1.8rem, 160%);
     margin-bottom: 5rem;
   }
 }
@@ -690,6 +697,26 @@
   }
 }
 
+@media (max-width: 420px) {
+  .episodesitemup {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .episodesitemdown {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .episodesitemcategories {
+    align-self: start;
+  }
+
+  .episodesitemhost {
+    align-self: flex-end;
+  }
+}
+
 /*pricing*/
 .pricing {
   padding: 14rem 0;
@@ -778,7 +805,7 @@
 }
 
 .pricingitemdoptext {
-  @include title(1.4rem, 160%, 0); 
+  @include title(1.4rem, 160%, 0);
   margin-bottom: 2rem;
   color: $textColorGrey;
 }
@@ -786,7 +813,7 @@
 .pricingitemdopitem {
   @include text(1.6rem, 160%);
   list-style-type: disc;
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-bottom: 1rem;
   }
 }
@@ -843,7 +870,7 @@
   }
 
   .pricingitemtitle {
-     @include title(3rem, 140%, 2%);
+    @include title(3rem, 140%, 2%);
   }
   .pricingitemblock {
     flex-direction: column-reverse;
@@ -876,8 +903,8 @@
   }
 
   .pricingitemdoppos {
-      grid-row: 2 / 3;
-      grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
   }
 
   .pricingitemdopred {
@@ -904,12 +931,15 @@
   }
 }
 
+
 /*news*/
 .news {
+  position: relative;
   padding: 14rem 0;
 }
 
 .newsitems {
+  position: relative;
   margin-bottom: 10rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -920,8 +950,11 @@
 .newsitem,
 .newsitemshadow {
   padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
   border-radius: 0.8rem;
   border: 0.2rem solid $textColorDark;
+  background-color: $textColorWhite;
 }
 
 .newsitemshadow {
@@ -940,8 +973,18 @@
 }
 
 .newscontent {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.newscontentup {
   padding-bottom: 2.6rem;
-  border-bottom: 0.05rem solid $textColorGrey;  
+  border-bottom: 0.05rem solid $textColorGrey;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .newssubtitle {
@@ -963,6 +1006,7 @@
 
 .newstext {
   @include text(1.4rem, 160%);
+  margin-top: auto;
 }
 
 .newscategories {
@@ -976,6 +1020,7 @@
   display: flex;
   align-items: center;
   gap: 0.6rem;
+  flex-wrap: wrap;
 }
 
 .newscategory {
@@ -988,4 +1033,104 @@
 
 .date {
   @include title(1.2rem, 160%, 0);
+}
+
+.newsitemsdecorup {
+  position: absolute;
+  left: -9rem;
+  top: -6.5rem;
+  width: 18.5rem;
+  z-index: -1;
+  img {
+    width: 100%;
+  }
+}
+
+.newsitemsdecordown {
+  position: absolute;
+  right: -14rem;
+  bottom: -20rem;
+}
+
+.newsbutton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.newsdecor {
+  position: absolute;
+  bottom: -7.5rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@media (max-width: 1480px) {
+  .newsitemsdecorup,
+  .newsitemsdecordown {
+    display: none;
+  }
+
+  .newstitle,
+  .newstitlered {
+    @include title(3rem, 140%, 2%);
+  }
+
+  .newstitlered {
+    color: $textColorRed;
+  }
+
+  .newscategories {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .newscategoriesbody {
+    align-self: start;
+  }
+
+  .date {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 1024px) {
+  .newsitems {
+    grid-template-columns: 1fr;
+  }
+
+  .newsimg {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .news {
+    padding: 3rem 0 4rem ;
+  }
+
+  .newsitems {
+    margin-bottom: 8rem;
+  }
+
+  .newsdecor {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .newsitemshadow {
+    box-shadow: none;
+  }
+
+  .newstitle,
+  .newstitlered {
+    @include title(2.6rem, 140%, 2%);
+  }
+
+  .newstitlered {
+    color: $textColorRed;
+  }
 }

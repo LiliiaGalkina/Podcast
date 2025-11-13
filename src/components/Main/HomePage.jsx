@@ -55,7 +55,6 @@ const HomePage = () => {
           <img src={decorright} alt="несколько разноцветных звездочек" />
         </div>
         <div className={style.herodecordown}>
-          +
           <img src={decordown} alt="красная кривая" />
         </div>
       </section>
@@ -619,6 +618,12 @@ const HomePage = () => {
           <h2 className={style.sectiontitle}>Article and News</h2>
           <p className={style.sectiontext}>News, tips, tricks and more</p>
           <div className={style.newsitems}>
+            <div className={style.newsitemsdecorup}>
+              <img
+                src="/image/homepage/news/decorup.png"
+                alt="черная снежинка"
+              />
+            </div>
             <div className={style.newsitemshadow}>
               <div className={style.newsimg}>
                 <img
@@ -627,21 +632,23 @@ const HomePage = () => {
                 />
               </div>
               <div className={style.newscontent}>
-                <h4 className={style.newssubtitle}>PODCAST</h4>
-                <h3 className={style.newstitlered}>Setup your own podcast</h3>
-                <p className={style.newstext}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minimvel iam, quis nostrud exercitation ullamco
-                  laboris...
-                </p>
-              </div>
+                <div className={style.newscontentup}>
+                  <h4 className={style.newssubtitle}>PODCAST</h4>
+                  <h3 className={style.newstitlered}>Setup your own podcast</h3>
+                  <p className={style.newstext}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minimvel iam, quis nostrud exercitation
+                    ullamco laboris...
+                  </p>
+                </div>
               <div className={style.newscategories}>
                 <div className={style.newscategoriesbody}>
                   <div className={style.newscategory}>business</div>
                   <div className={style.newscategory}>startup</div>
                 </div>
                 <div className={style.date}>Sep 14, 2021</div>
+              </div>
               </div>
             </div>
             <div className={style.newsitem}>
@@ -652,15 +659,16 @@ const HomePage = () => {
                 />
               </div>
               <div className={style.newscontent}>
-                <h4 className={style.newssubtitle}>TIPS & TRICK</h4>
-                <h3 className={style.newstitle}>Doodle artwork 101</h3>
-                <p className={style.newstext}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minimvel iam, quis nostrud exercitation ullamco
-                  laboris...
-                </p>
-              </div>
+                <div className={style.newscontentup}>
+                  <h4 className={style.newssubtitle}>TIPS & TRICK</h4>
+                  <h3 className={style.newstitle}>Doodle artwork 101</h3>
+                  <p className={style.newstext}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minimvel iam, quis nostrud exercitation
+                    ullamco laboris...
+                  </p>
+                </div>
               <div className={style.newscategories}>
                 <div className={style.newscategoriesbody}>
                   <div className={style.newscategory}>art</div>
@@ -669,9 +677,21 @@ const HomePage = () => {
                 </div>
                 <div className={style.date}>Sep 12, 2021</div>
               </div>
+              </div>
+            </div>
+            <div className={style.newsitemsdecordown}>
+              <img
+                src="/image/homepage/news/decordown.png"
+                alt="черная кривая"
+              />
             </div>
           </div>
-          <Buttondark buttonText="BROWSE ALL" />
+          <div className={style.newsbutton}>
+            <Buttondark buttonText="BROWSE ALL" />
+          </div>
+        </div>
+        <div className={style.newsdecor}>
+          <img src="/image/homepage/hero-decor3.png" alt="красная кривая" />
         </div>
       </section>
     </main>
