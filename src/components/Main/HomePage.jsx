@@ -642,13 +642,13 @@ const HomePage = () => {
                     ullamco laboris...
                   </p>
                 </div>
-              <div className={style.newscategories}>
-                <div className={style.newscategoriesbody}>
-                  <div className={style.newscategory}>business</div>
-                  <div className={style.newscategory}>startup</div>
+                <div className={style.newscategories}>
+                  <div className={style.newscategoriesbody}>
+                    <div className={style.newscategory}>business</div>
+                    <div className={style.newscategory}>startup</div>
+                  </div>
+                  <div className={style.date}>Sep 14, 2021</div>
                 </div>
-                <div className={style.date}>Sep 14, 2021</div>
-              </div>
               </div>
             </div>
             <div className={style.newsitem}>
@@ -669,14 +669,14 @@ const HomePage = () => {
                     ullamco laboris...
                   </p>
                 </div>
-              <div className={style.newscategories}>
-                <div className={style.newscategoriesbody}>
-                  <div className={style.newscategory}>art</div>
-                  <div className={style.newscategory}>creative</div>
-                  <div className={style.newscategory}>tips and trick</div>
+                <div className={style.newscategories}>
+                  <div className={style.newscategoriesbody}>
+                    <div className={style.newscategory}>art</div>
+                    <div className={style.newscategory}>creative</div>
+                    <div className={style.newscategory}>tips and trick</div>
+                  </div>
+                  <div className={style.date}>Sep 12, 2021</div>
                 </div>
-                <div className={style.date}>Sep 12, 2021</div>
-              </div>
               </div>
             </div>
             <div className={style.newsitemsdecordown}>
@@ -692,6 +692,78 @@ const HomePage = () => {
         </div>
         <div className={style.newsdecor}>
           <img src="/image/homepage/hero-decor3.png" alt="красная кривая" />
+        </div>
+      </section>
+      <section className={style.downloadapp}>
+        <div className="container">
+          <div className={style.version}>BETA</div>
+          <h2 className={style.sectiontitle}>Recent Episodes</h2>
+          <p className={style.sectiontext}>
+            Available on your favorite platform
+          </p>
+          <div className={style.buttonblock}>
+            <div className={style.buttondecor}>
+              <img
+                src="/image/homepage/downloadapp/button-decor.png"
+                alt="три красные черточки"
+              />
+            </div>
+            <div className={style.downloadappbutton}>
+              <Buttondark buttonText="DOWNLOAD NOW" />
+            </div>
+          </div>
+          <p className={style.socialtext}>Content also available on:</p>
+          <div className={style.social}>
+            <img
+              src="/image/homepage/downloadapp/google.svg"
+              className={style.socialitem}
+              alt="google podcast"
+            />
+            <img
+              src="/image/homepage/downloadapp/spotify.svg"
+              className={style.socialitem}
+              alt="google podcast"
+            />
+            <img
+              src="/image/homepage/downloadapp/youtube.svg"
+              className={style.socialitem}
+              alt="google podcast"
+            />
+          </div>
+          <div className={style.leftdecorblock}>
+            <img
+              src="/image/homepage/downloadapp/phoneleft.png"
+              className={style.leftdecormainimg}
+              alt="мобильный телефон с открытым сайтом Podcast"
+            />
+            <img
+              src="/image/homepage/downloadapp/big-red-decor.png"
+              className={style.leftdecorbigred}
+              alt="красное солнышко"
+            />
+            <img
+              src="/image/homepage/downloadapp/middle-red-decor.png"
+              className={style.leftdecormiddlered}
+              alt="красное солнышко"
+            />
+            <img
+              src="/image/homepage/downloadapp/little-red-decor.png"
+              className={style.leftdecorlittlered}
+              alt="красное солнышко"
+            />
+          </div>
+          <div className={style.rightdecorblock}>
+            <img
+              src="public/image/homepage/downloadapp/phoneright.png"
+              className={style.rightdecormainimg}
+              alt="мобильный телефон с открытым сайтом Podcast"
+            />
+            <img
+              src="public/image/homepage/downloadapp/black-decor.png"
+              className={style.rightdecorblack}
+              alt="абстракция из черных кругов"
+            />
+          </div>
         </div>
       </section>
     </main>
