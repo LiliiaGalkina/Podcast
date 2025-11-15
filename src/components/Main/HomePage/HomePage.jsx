@@ -1,7 +1,7 @@
 import style from "./homepage.module.scss";
 import HomePageSlider from "./HomePageSlider";
 import HomePageFeedbackSlider from "./HomePageFeedbackSlider";
-import Buttondark from "../Button/Buttondark";
+import Buttondark from "../../Button/Buttondark";
 
 const HomePage = () => {
   return (
