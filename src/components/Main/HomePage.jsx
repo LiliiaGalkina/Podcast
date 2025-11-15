@@ -1,21 +1,6 @@
 import style from "./homepage.module.scss";
 import HomePageSlider from "./HomePageSlider";
-import decorleft from "/image/homepage/hero-decor1.png";
-import decorright from "/image/homepage/hero-decor2.png";
-import decordown from "/image/homepage/hero-decor3.png";
-import google from "/image/homepage/googlepodcasts.png";
-import spotify from "/image/homepage/spotify.png";
-import youtube from "/image/homepage/youtube.png";
-import talkman from "/image/homepage/talk-man.svg";
-import talklamp from "/image/homepage/talk-lamp.svg";
-import quote from "/image/homepage/quote.png";
-import bannerdecor1 from "/image/homepage/banner-decor.png";
-import bannerdecor2 from "/image/homepage/blackstar.png";
-import banneravatar from "/image/homepage/avatar.png";
-import bannergreencircle from "/image/homepage/green-circle.svg";
-import redsun from "/image/homepage/sparkle.png";
 import HomePageFeedbackSlider from "./HomePageFeedbackSlider";
-import blackdecorsection from "/image/homepage/blackdecorsection.png";
 import Buttondark from "../Button/Buttondark";
 
 const HomePage = () => {
@@ -35,27 +20,27 @@ const HomePage = () => {
           <div className={style.herolinks}>
             <p className={style.herolinkstitle}>Supported by:</p>
             <a href="#" className={style.herolink}>
-              <img src={spotify} alt="spotify" />
+              <img src="/image/homepage/spotify.png" alt="spotify" />
             </a>
             <a href="#" className={style.herolink}>
-              <img src={google} alt="google podcasts" />
+              <img src="/image/homepage/googlepodcasts.png" alt="google podcasts" />
             </a>
             <a href="#" className={style.herolink}>
-              <img src={youtube} alt="youtube" />
+              <img src="/image/homepage/youtube.png" alt="youtube" />
             </a>
           </div>
         </div>
         <div className={style.herodecorleft}>
           <img
-            src={decorleft}
+            src="/image/homepage/hero-decor1.png"
             alt="черная кривая с оранжевой звездочкой на конце"
           />
         </div>
         <div className={style.herodecorright}>
-          <img src={decorright} alt="несколько разноцветных звездочек" />
+          <img src="/image/homepage/hero-decor2.png" alt="несколько разноцветных звездочек" />
         </div>
         <div className={style.herodecordown}>
-          <img src={decordown} alt="красная кривая" />
+          <img src="/image/homepage/hero-decor3.png" alt="красная кривая" />
         </div>
       </section>
       <section className={style.talklisten}>
@@ -67,7 +52,7 @@ const HomePage = () => {
             <div className={style.talklistenitem}>
               <div className={style.talklistenitemimg}>
                 <img
-                  src={talkman}
+                  src="/image/homepage/talk-man.svg"
                   alt="нарисованная голова мужчины, над ним облачко со знаками вопроса"
                 />
               </div>
@@ -79,7 +64,7 @@ const HomePage = () => {
             <div className={style.talklistenitem}>
               <div className={style.talklistenitemimg}>
                 <img
-                  src={talklamp}
+                  src="/image/homepage/talk-lamp.svg"
                   alt="нарисованная голова мужчины, над ним облачко со знаками вопроса"
                 />
               </div>
@@ -91,20 +76,20 @@ const HomePage = () => {
           </div>
           <div className={style.talklistenbanner}>
             <div className={style.bannerquote}>
-              <img src={quote} alt="красные кавычки" />
+              <img src="/image/homepage/quote.png" alt="красные кавычки" />
             </div>
             <h3 className={style.bannertitle}>
               One of the best daily podcasts that covers every topic on Spotify.
             </h3>
             <div className={style.bannermanblock}>
               <div className={style.banneravatar}>
-                <img src={banneravatar} alt="фото John Smith" />
+                <img src="/image/homepage/avatar.png" alt="фото John Smith" />
               </div>
               <p className={style.bannername}>John Smith,</p>
               <div className={style.bannerpositionbody}>
                 <div className={style.bannergreencircle}>
                   <img
-                    src={bannergreencircle}
+                    src="/image/homepage/green-circle.svg"
                     alt="зеленый кружок с черными полосками"
                   />
                 </div>
@@ -118,7 +103,7 @@ const HomePage = () => {
         <div className={style.feedbacktitleblock}>
           <h2 className={style.sectiontitle}>What our listeners say</h2>
           <img
-            src={redsun}
+            src="/image/homepage/sparkle.png"
             className={style.feedbacktitledecor}
             alt="красное солнышко"
           />
@@ -128,10 +113,10 @@ const HomePage = () => {
         </p>
         <HomePageFeedbackSlider />
         <div className={style.feedbackupdecor}>
-          <img src={blackdecorsection} alt="черная кривая" />
+          <img src="/image/homepage/blackdecorsection.png" alt="черная кривая" />
         </div>
         <div className={style.feedbackdowndecor}>
-          <img src={blackdecorsection} alt="черная кривая" />
+          <img src="/image/homepage/blackdecorsection.png" alt="черная кривая" />
         </div>
       </section>
       <section className={style.benefits}>
