@@ -739,12 +739,12 @@ const HomePage = () => {
           </div>
           <div className={style.rightdecorblock}>
             <img
-              src="public/image/homepage/downloadapp/phoneright.png"
+              src="/image/homepage/downloadapp/phoneright.png"
               className={style.rightdecormainimg}
               alt="мобильный телефон с открытым сайтом Podcast"
             />
             <img
-              src="public/image/homepage/downloadapp/black-decor.png"
+              src="/image/homepage/downloadapp/black-decor.png"
               className={style.rightdecorblack}
               alt="абстракция из черных кругов"
             />
