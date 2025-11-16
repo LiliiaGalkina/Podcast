@@ -1,0 +1,115 @@
+@use "../../_variables.scss" as *;
+
+
+/*benefits*/
+.benefits {
+  padding: 14rem 0;
+  position: relative;
+}
+
+.titleblock {
+  position: relative;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.titledecor {
+  max-width: 24rem;
+  position: absolute;
+  top: -6rem;
+  right: -7rem;
+  img {
+    width: 100%;
+  }
+}
+
+.items {
+  margin-bottom: 10rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8rem 2rem;
+}
+
+.item {
+  padding: 0 1.78rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.itemimg {
+  margin-bottom: 3rem;
+  max-width: 7.8rem;
+  img {
+    width: 100%;
+  }
+}
+
+.itemtitle {
+  @include title(2.265rem, 140%, -2%);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.itemtext {
+  @include text(1.6rem, 160%);
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  button {
+	height: 6.2rem;
+  }
+}
+
+.decor {
+  position: absolute;
+  left: 50%;
+  bottom: -7.5rem;
+  transform: translate(-50%);
+  z-index: 2;
+}
+
+@media (max-width: 1024px) {
+  .titledecor {
+    width: 7rem;
+    top: -2rem;
+    right: -3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits {
+    padding: 10rem 0 14rem;
+  }
+  .titledecor {
+    display: none;
+  }
+
+  .items {
+    margin-bottom: 8rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .item {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .benefits {
+    padding: 8rem 0;
+  }
+
+  .decor {
+    display: none;
+  }
+
+  .items {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,245 @@
+@use "../../_variables.scss" as *;
+
+/*episodes*/
+.episodes {
+  position: relative;
+  padding: 14rem 0;
+  background-color: $backgroundHeaderHero;
+}
+
+.content {
+  position: relative;
+}
+
+.items {
+  margin-bottom: 10rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.item,
+.itemshadow {
+  padding: 1.6rem;
+  border: 0.2rem solid $textColorDark;
+  border-radius: 1.2rem;
+  background-color: $textColorWhite;
+}
+
+.itemshadow {
+  box-shadow: 1rem 1rem 0 $textColorSliderTitle;
+}
+
+.itemup {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemimg {
+  margin-right: 2rem;
+  flex: 0 0 16.6rem;
+  height: 16.6rem;
+  img {
+    width: 100%;
+  }
+}
+
+.iteminfo {
+  max-width: 35.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.itemsubtitle {
+  @include title(1.6rem, 160%, 0);
+  margin-bottom: 0.4rem;
+  color: $textColorRed;
+}
+
+.itemtitle,
+.itemtitlered {
+  @include title(2.265rem, 140%, -2%);
+  margin-bottom: 1.5rem;
+  min-height: 6.4rem;
+}
+
+.itemtitlered {
+  color: $textColorRed;
+}
+
+.itemtext {
+  @include text(1.4rem, 160%);
+}
+
+.itemdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemcategories {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.itemcategory {
+  @include text(1.2rem, 160%);
+  padding: 0.6rem 1.2rem;
+  border: 0.1rem solid $textColorGrey;
+  border-radius: 0.4rem;
+  color: $textColorGrey;
+}
+
+.itemhost {
+  @include title(1.2rem, 160%, 0);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  button {
+	height: 6.2rem;
+  }
+}
+
+.decor {
+  position: absolute;
+  top: -11rem;
+  right: -8rem;
+  img {
+    width: 100%;
+  }
+}
+
+.decorblack {
+  position: absolute;
+  left: 50%;
+  bottom: -7.5rem;
+  transform: translate(-50%);
+  z-index: 2;
+}
+
+@media (max-width: 1400px) {
+  .decor {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .item,
+  .itemshadow {
+    padding: 1rem;
+  }
+
+  .itemimg {
+    flex: 0 0 15rem;
+  }
+
+  .itemsubtitle {
+    @include title(1.4rem, 120%, 0);
+    color: $textColorRed;
+  }
+
+  .itemtitle,
+  .itemtitlered {
+    @include title(1.8rem, 140%, -2%);
+    margin-bottom: 1rem;
+    min-height: 7.4rem;
+  }
+
+  .itemtitlered {
+    color: $textColorRed;
+  }
+}
+
+@media (max-width: 768px) {
+  .episodes {
+    padding: 10rem 0 12rem;
+  }
+
+  .items {
+    grid-template-columns: 1fr;
+  }
+
+  .itemimg {
+    flex: 0 0 16.6rem;
+  }
+
+  .iteminfo {
+    max-width: 100%;
+  }
+
+  .itemtitle,
+  .itemtitlered {
+    @include title(1.8rem, 140%, -2%);
+    margin-bottom: 1rem;
+    min-height: auto;
+  }
+
+  .itemshadow {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .episodes {
+    padding: 8rem 0;
+  }
+
+  .items {
+    margin-bottom: 8rem;
+  }
+
+  .itemimg {
+    flex: 0 0 15rem;
+  }
+
+  .itemtitle,
+  .itemtitlered {
+    @include title(1.6rem, 140%, -2%);
+  }
+
+  .itemtext {
+    @include text(1.2rem, 140%);
+  }
+
+  .decorblack {
+    display: none;
+  }
+
+  .itemcategory {
+    @include text(1rem, 140%);
+    padding: 0.6rem 1rem;
+    border: 0.1rem solid $textColorGrey;
+    border-radius: 0.4rem;
+    color: $textColorGrey;
+  }
+}
+
+@media (max-width: 420px) {
+  .itemup {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .itemdown {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .itemcategories {
+    align-self: start;
+  }
+
+  .itemhost {
+    align-self: flex-end;
+  }
+}
+

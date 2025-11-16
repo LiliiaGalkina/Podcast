@@ -1,0 +1,215 @@
+@use "../../_variables.scss" as *;
+
+/*pricing*/
+.pricing {
+  padding: 14rem 0;
+  position: relative;
+}
+
+.titleblock {
+  position: relative;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.titledecor {
+  max-width: 24rem;
+  position: absolute;
+  top: -3rem;
+  left: -5rem;
+  img {
+    width: 100%;
+  }
+}
+
+.items {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  z-index: 3;
+}
+
+.item,
+.itemred {
+  padding: 6rem 4rem;
+  border-radius: 0.8rem;
+}
+
+.item,
+.itemdop,
+.itemdoppos {
+  border: 0.15rem solid $textColorDark;
+  background-color: $textColorWhite;
+}
+
+.itemred,
+.itemdopred {
+  border: 0.15rem solid $textColorRed;
+  background-color: $backgroundHeaderHero;
+}
+
+.itemtitle {
+  @include title(3.665rem, 140%, 2%);
+  margin-bottom: 2rem;
+}
+
+.itemtext {
+  @include text(1.4rem, 160%);
+  margin-bottom: 9rem;
+  color: $textColorGrey;
+}
+
+.itemblock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemprice {
+  display: flex;
+  flex-direction: column;
+
+  span:first-child {
+    @include title(2.265rem, 140%, 2%);
+    color: $textColorRed;
+  }
+  span:last-child {
+    @include text(1.4rem, 160%);
+    color: $textColorGrey;
+  }
+}
+
+.itemdop,
+.itemdopred,
+.itemdoppos {
+  padding: 4rem;
+  border-radius: 0.8rem;
+}
+
+.itemdoptext {
+  @include title(1.4rem, 160%, 0);
+  margin-bottom: 2rem;
+  color: $textColorGrey;
+}
+
+.itemdopitem {
+  @include text(1.6rem, 160%);
+  list-style-type: disc;
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+.itemsdecorup {
+  position: absolute;
+  top: -9rem;
+  right: -8.7rem;
+  width: 20rem;
+  height: 20rem;
+  z-index: -1;
+  img {
+    width: 100%;
+  }
+}
+
+.itemsdecordonw {
+  position: absolute;
+  bottom: -4rem;
+  left: -7rem;
+  width: 12rem;
+  height: 12rem;
+  z-index: -1;
+  img {
+    width: 100%;
+  }
+}
+
+.decor {
+  position: absolute;
+  left: 50%;
+  bottom: -7.5rem;
+  transform: translate(-50%);
+  z-index: 2;
+}
+
+@media (max-width: 1400px) {
+  .itemsdecorup,
+  .itemsdecordonw {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .item,
+  .itemred {
+    padding: 2rem;
+  }
+
+  .itemdop,
+  .itemdopred,
+  .itemdoppos {
+    padding: 2rem 2rem 2rem 3rem;
+  }
+
+  .itemtitle {
+    @include title(3rem, 140%, 2%);
+  }
+  .itemblock {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .itemprice {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing {
+    padding: 10rem 0 2rem;
+  }
+
+  .decor {
+    display: none;
+  }
+
+  .titledecor {
+    display: none;
+  }
+
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .itemdoppos {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+
+  .itemdopred {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  .itemtext {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing {
+    padding: 8rem 0;
+  }
+  .items {
+    grid-template-columns: 1fr;
+  }
+
+  .itemdopred {
+    grid-row: 4 /5;
+    grid-column: 1 / 2;
+  }
+}

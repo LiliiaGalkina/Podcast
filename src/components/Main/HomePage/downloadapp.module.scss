@@ -1,0 +1,144 @@
+@use "../../_variables.scss" as *;
+
+/*downloadapp*/
+.downloadapp {
+	padding: 14rem 0 ;
+	position: relative;
+	background-color: $backgroundFeedback;
+	overflow: hidden;
+}
+
+.version {
+	@include title(1.4rem, 160%, 0);
+	margin: 0 auto 2rem;
+	width: fit-content;
+	padding: 0.3rem 0.6rem;
+	border: 0.1rem solid $textColorRed;
+	border-radius: 0.4rem;
+	color: $textColorRed;
+}
+
+.buttonblock {
+	margin: 0 auto 2.4rem;
+	width: fit-content;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	button {
+		height: 6.2rem;
+	}
+}
+
+.buttondecor {
+	width: 6.257rem;
+	position: absolute;
+	top: -4rem;
+	right: -4rem;
+	img {
+		width: 100%;
+	}
+}
+
+.socialtext {
+	@include text(1.4rem, 160%);
+	margin-bottom: 1rem;
+	color: $textColorGrey;
+	text-align: center;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.leftdecorblock {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	max-width: 37.3rem;
+	.leftdecormainimg {
+		width: 100%;
+	}
+}
+
+.rightdecorblock {
+	position: absolute;
+	right: -8rem;
+	bottom: 0;
+	max-width: 33rem;
+	.rightdecormainimg {
+		position: relative;
+		width: 100%;
+		z-index: 2;
+	}
+}
+
+.rightdecorblack {
+	position: absolute;
+	left: 3rem;
+	bottom: 0;
+	max-width: 20.7rem;
+	z-index: 1;
+}
+
+.leftdecorbigred {
+	position: absolute;
+	left: 0;
+	top: -8.5rem;
+	max-width: 14rem;
+}
+
+.leftdecormiddlered {
+	position: absolute;
+	top: -7rem;
+	left: 11rem;
+	max-width: 6.4rem;
+}
+
+.leftdecorlittlered {
+	position: absolute;
+	top: -10rem;
+	left: 10rem;
+}
+
+@media (max-width: 1130px) {
+	.rightdecorblock{
+		bottom: -20rem;
+	}
+	.rightdecorblack {
+		display: none;
+	}
+}
+
+@media (max-width: 1024px) {
+	.downloadapp {
+		padding: 10rem 0 16rem;
+	}
+	.leftdecorblock {
+		left: -10rem;
+	}
+
+	.leftdecorbigred,
+	.leftdecormiddlered,
+	.leftdecorlittlered {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.downloadapp {
+		padding-bottom: 10rem;
+	}
+
+	.leftdecorblock,
+	.rightdecorblock {
+		display: none;
+	}
+}
+
+@media (max-width: 480px) {
+	.downloadapp {
+		padding: 8rem 0;
+	}
+}
