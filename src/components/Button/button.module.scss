@@ -6,5 +6,6 @@
 
 .buttondark {
     @include button(#000000, $textColorWhite );
+	height: 6.2rem;
     box-shadow: 0.3rem 0.3rem 0 #BFBFBF;
 }

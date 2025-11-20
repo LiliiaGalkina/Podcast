@@ -1,13 +1,15 @@
-import allstyle from "./homepage.module.scss";
+import allstyle from "../allstyles.module.scss";
 import style from "./episodes.module.scss";
 import Buttondark from "../../Button/Buttondark";
 
 const Episodes = () => {
-	return (
+  return (
     <section className={style.episodes}>
       <div className="container">
         <h2 className={allstyle.sectiontitle}>Recent Episodes</h2>
-        <p className={allstyle.sectiontext}>Available on your favorite platform</p>
+        <p className={allstyle.sectiontext}>
+          Available on your favorite platform
+        </p>
         <div className={style.content}>
           <div className={style.decor}>
             <img
@@ -107,9 +109,7 @@ const Episodes = () => {
               </div>
               <div className={style.itemdown}>
                 <div className={style.itemcategories}>
-                  <div className={style.itemcategoory}>
-                    women’s rights
-                  </div>
+                  <div className={style.itemcategoory}>women’s rights</div>
                 </div>
                 <div className={style.itemhost}>
                   <p className={style.itemhosttext}>Hosted by: </p>
@@ -178,9 +178,7 @@ const Episodes = () => {
               </div>
               <div className={style.itemdown}>
                 <div className={style.itemcategories}>
-                  <div className={style.itemcategory}>
-                    social class
-                  </div>
+                  <div className={style.itemcategory}>social class</div>
                   <div className={style.itemcategory}>wealth</div>
                 </div>
                 <div className={style.itemhost}>
@@ -215,9 +213,7 @@ const Episodes = () => {
               </div>
               <div className={style.itemdown}>
                 <div className={style.itemcategories}>
-                  <div className={style.itemcategory}>
-                    mind-behaviour
-                  </div>
+                  <div className={style.itemcategory}>mind-behaviour</div>
                   <div className={style.itemcategory}>health</div>
                 </div>
                 <div className={style.itemhost}>
@@ -242,6 +238,6 @@ const Episodes = () => {
       </div>
     </section>
   );
-}
+};
 
 export default Episodes;

@@ -1,14 +1,15 @@
-import allstyle from "./homepage.module.scss";
+import allstyle from "../allstyles.module.scss";
 import style from "./downloadapp.module.scss";
 import Buttondark from "../../Button/Buttondark";
 
 const DownloadApp = () => {
-	return (
+  return (
     <section className={style.downloadapp}>
       <div className="container">
         <div className={style.version}>BETA</div>
         <h2 className={allstyle.sectiontitle}>
-          Available now <br />Pod of Cast App
+          Available now <br />
+          Pod of Cast App
         </h2>
         <p className={allstyle.sectiontext}>
           We just launched our podcast app!
@@ -79,6 +80,6 @@ const DownloadApp = () => {
       </div>
     </section>
   );
-}
+};
 
 export default DownloadApp;

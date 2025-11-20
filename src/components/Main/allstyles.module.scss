@@ -1,0 +1,118 @@
+@use "../_variables.scss" as *;
+
+.hero {
+  position: relative;
+  padding: 6.4rem 0 14rem;
+  background-color: $backgroundHeaderHero;
+}
+
+.herotitle {
+  @include title(9.6rem, 100%, -4%);
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.herotitlered {
+  color: $textColorRed;
+}
+
+.herotext {
+  @include text(1.6rem, 160%);
+  margin: 0 auto 7rem;
+  max-width: 37.4rem;
+  text-align: center;
+}
+
+.herobutton {
+  margin-bottom: 14rem;
+  display: flex;
+  justify-content: center;
+  button {
+    width: 19.3rem;
+  }
+}
+
+@media (max-width: 1180px) {
+  .herotitle {
+    @include title(8rem, 100%, -4%);
+  }
+}
+
+.sectiontitle {
+  @include title(5.93rem, 120%, -2%);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.herodecorleft {
+  @include decorSlider(left, top, 0, 0);
+  max-width: 32rem;
+  img {
+    width: 100%;
+  }
+}
+
+.herodecorright {
+  @include decorSlider(right, top, 0, 13.7rem);
+}
+
+@media (max-width: 1180px) {
+  .herodecorleft {
+    max-width: 26rem;
+  }
+}
+
+@media (max-width: 970px) {
+  .herodecorleft {
+    @include decorSlider(left, top, 0, 18rem);
+    max-width: 20rem;
+  }
+
+  .herodecorright {
+    @include decorSlider(right, top, 0, 27rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .herotitle {
+    @include title(6rem, 100%, -4%);
+  }
+}
+
+@media (max-width: 480px) {
+  .herotitle {
+    @include title(4rem, 100%, -4%);
+  }
+
+  .herotext {
+    margin: 0 auto 8rem;
+  }
+
+  .herodecorleft,
+  .herodecorright {
+    display: none;
+  }
+}
+
+.sectiontext {
+  @include text(2.265rem, 160%);
+  margin-bottom: 10rem;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .sectiontitle {
+    @include title(5rem, 120%, -2%);
+  }
+}
+
+@media (max-width: 480px) {
+  .sectiontitle {
+    @include title(3.2rem, 120%, -2%);
+  }
+
+  .sectiontext {
+    @include text(1.8rem, 160%);
+    margin-bottom: 5rem;
+  }
+}

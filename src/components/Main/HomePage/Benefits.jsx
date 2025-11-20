@@ -1,9 +1,9 @@
-import allstyle from "./homepage.module.scss";
+import allstyle from "../allstyles.module.scss";
 import style from "./benefits.module.scss";
 import Buttondark from "../../Button/Buttondark";
 
 const Benefits = () => {
-	return (
+  return (
     <section className={style.benefits}>
       <div className="container">
         <div className={style.titleblock}>
@@ -74,9 +74,7 @@ const Benefits = () => {
             <div className={style.itemimg}>
               <img src="/image/homepage/benefits/benefits5.png" alt="огонь" />
             </div>
-            <h3 className={style.itemtitle}>
-              Exclusive Episodes & Merch
-            </h3>
+            <h3 className={style.itemtitle}>Exclusive Episodes & Merch</h3>
             <p className={style.itemtext}>
               Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod
               tempor.
@@ -105,6 +103,6 @@ const Benefits = () => {
       </div>
     </section>
   );
-}
+};
 
 export default Benefits;

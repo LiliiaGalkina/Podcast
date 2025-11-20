@@ -1,28 +1,5 @@
 @use "../../_variables.scss" as *;
 
-.hero {
-  position: relative;
-  padding: 6.4rem 0 14rem;
-  background-color: $backgroundHeaderHero;
-}
-
-.herotitle {
-  @include title(9.6rem, 100%, -4%);
-  margin-bottom: 4rem;
-  text-align: center;
-}
-
-.herotitlered {
-  color: $textColorRed;
-}
-
-.herotext {
-  @include text(1.6rem, 160%);
-  margin: 0 auto 24.5rem;
-  max-width: 37.4rem;
-  text-align: center;
-}
-
 .heroslider {
   margin-bottom: 12rem;
 }
@@ -47,31 +24,9 @@
   }
 }
 
-.herodecorleft {
-  @include decorSlider(left, top, 0, 0);
-  max-width: 32rem;
-  img {
-    width: 100%;
-  }
-}
-
-.herodecorright {
-  @include decorSlider(right, top, 0, 13.7rem);
-}
-
 .herodecordown {
   @include decorSlider(left, bottom, 50%, -7.5rem);
   transform: translate(-50%);
-}
-
-@media (max-width: 1180px) {
-  .herotitle {
-    @include title(8rem, 100%, -4%);
-  }
-
-  .herodecorleft {
-    max-width: 26rem;
-  }
 }
 
 @media (max-width: 970px) {
@@ -84,15 +39,6 @@
       max-width: 18rem;
     }
   }
-
-  .herodecorleft {
-    @include decorSlider(left, top, 0, 18rem);
-    max-width: 20rem;
-  }
-
-  .herodecorright {
-    @include decorSlider(right, top, 0, 27rem);
-  }
 }
 
 @media (max-width: 833px) {
@@ -101,27 +47,11 @@
   }
 }
 
-@media (max-width: 600px) {
-  .herotitle {
-    @include title(6rem, 100%, -4%);
-  }
-}
-
 @media (max-width: 480px) {
   .hero {
     padding: 6.4rem 0;
   }
 
-  .herotitle {
-    @include title(4rem, 100%, -4%);
-  }
-
-  .herotext {
-    margin: 0 auto 8rem;
-  }
-
-  .herodecorleft,
-  .herodecorright,
   .herodecordown {
     display: none;
   }
@@ -142,24 +72,12 @@
   text-align: center;
 }
 
-.sectiontitle {
-  @include title(5.93rem, 120%, -2%);
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
 .feedbacktitledecor {
   position: absolute;
   top: -100%;
   left: -10.5rem;
   width: 10.5rem;
   height: 10.5rem;
-}
-
-.sectiontext {
-  @include text(2.265rem, 160%);
-  margin-bottom: 10rem;
-  text-align: center;
 }
 
 .feedbackupdecor {
@@ -173,10 +91,6 @@
 }
 
 @media (max-width: 1024px) {
-  .sectiontitle {
-    @include title(5rem, 120%, -2%);
-  }
-
   .feedbacktitledecor {
     width: 7rem;
     height: 7rem;
@@ -203,14 +117,5 @@
 
   .feedback {
     padding: 4rem 0 6rem;
-  }
-
-  .sectiontitle {
-    @include title(3.2rem, 120%, -2%);
-  }
-
-  .sectiontext {
-    @include text(1.8rem, 160%);
-    margin-bottom: 5rem;
   }
 }

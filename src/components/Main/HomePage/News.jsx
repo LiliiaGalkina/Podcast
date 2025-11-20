@@ -1,9 +1,9 @@
-import allstyle from "./homepage.module.scss";
+import allstyle from "../allstyles.module.scss";
 import style from "./news.module.scss";
 import Buttondark from "../../Button/Buttondark";
 
 const News = () => {
-	return (
+  return (
     <section className={style.news}>
       <div className="container">
         <h2 className={allstyle.sectiontitle}>Article and News</h2>
@@ -80,6 +80,6 @@ const News = () => {
       </div>
     </section>
   );
-}
+};
 
 export default News;

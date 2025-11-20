@@ -1,9 +1,9 @@
-import allstyle from "./homepage.module.scss";
+import allstyle from "../allstyles.module.scss";
 import style from "./pricing.module.scss";
 import Buttondark from "../../Button/Buttondark";
 
 const Pricing = () => {
-	return (
+  return (
     <section className={style.pricing}>
       <div className="container">
         <div className={style.titleblock}>
@@ -79,12 +79,8 @@ const Pricing = () => {
             <p className={style.itemdoptext}>What’s included:</p>
             <ul className={style.itemdoplist}>
               <li className={style.itemdopitem}>Everything in Tier 1</li>
-              <li className={style.itemdopitem}>
-                Free tickets to Events
-              </li>
-              <li className={style.itemdopitem}>
-                Limited Edition Merch
-              </li>
+              <li className={style.itemdopitem}>Free tickets to Events</li>
+              <li className={style.itemdopitem}>Limited Edition Merch</li>
               <li className={style.itemdopitem}>Promote your Product</li>
               <li className={style.itemdopitem}>Promote your Product</li>
             </ul>
@@ -96,15 +92,11 @@ const Pricing = () => {
               <li className={style.itemdopitem}>
                 Exclusive Badge on Livestreaming
               </li>
-              <li className={style.itemdopitem}>
-                Become an Official Sponsor
-              </li>
+              <li className={style.itemdopitem}>Become an Official Sponsor</li>
               <li className={style.itemdopitem}>
                 Early Access to All Episodes
               </li>
-              <li className={style.itemdopitem}>
-                Free Stikers and Merch
-              </li>
+              <li className={style.itemdopitem}>Free Stikers and Merch</li>
             </ul>
           </div>
           <div className={style.itemsdecordonw}>
@@ -120,6 +112,6 @@ const Pricing = () => {
       </div>
     </section>
   );
-}
+};
 
 export default Pricing;
