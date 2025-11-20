@@ -77,6 +77,11 @@
   .herotitle {
     @include title(6rem, 100%, -4%);
   }
+
+  .herodecorleft,
+  .herodecorright {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -86,11 +91,6 @@
 
   .herotext {
     margin: 0 auto 8rem;
-  }
-
-  .herodecorleft,
-  .herodecorright {
-    display: none;
   }
 }
 

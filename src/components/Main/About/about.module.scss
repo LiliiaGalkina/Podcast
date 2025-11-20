@@ -2,8 +2,14 @@
 
 /*hero*/
 
+.heroabout {
+position: relative;
+  padding: 6.4rem 1.5rem 0;
+  background-color: $backgroundHeaderHero;
+}
+
 .buttons {
-	margin-bottom: 14rem;
+	margin-bottom: 4rem;
 	display: flex;
 	justify-content: center;
 	gap: 2rem;
@@ -16,14 +22,16 @@
 }
 
 .items {
+	position: relative;
+	top: 12rem;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 2rem;
+	justify-content: space-between;
 }
 
 .item {
 	padding: 5.9rem 0;
-	min-width: 37.3rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -31,6 +39,7 @@
 	border: 0.15rem solid $textColorDark;
 	border-radius: 0.8rem;
 	box-shadow: 0.6rem 0.6rem $textColorRed;
+	text-align: center;
 }
 
 .digittext {
@@ -44,4 +53,52 @@
 
 .text {
 	@include text(1.6rem, 160%);
+}
+
+.herodecorred {
+	position: absolute;
+	right: 0;
+	bottom: -6rem;
+}
+
+@media (max-width: 1420px) {
+	.herodecorred {
+		display: none;
+	}
+}
+
+@media (max-width: 1024px) {
+	.item {
+		padding: 4rem 1rem;
+	}
+	.digittext {
+		@include title(4rem, 120%, 2%)
+	}
+
+	.text {
+	@include text(1.4rem, 160%);
+}
+}
+
+@media (max-width: 768px) {
+	.digittext {
+		@include title(3.2rem, 120%, 2%)
+	}
+}
+
+@media (max-width: 600px) {
+	.items {
+		grid-template-columns: 1fr;
+	}
+
+	.buttons {
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 375px) {
+	.buttons {
+		flex-direction: column;
+		align-items: center;
+	}
 }

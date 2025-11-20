@@ -6,7 +6,7 @@ import Button from "../../Button/Button";
 const About = () => {
   return (
     <main>
-      <section className={allstyle.hero}>
+      <section className={style.heroabout}>
         <h1 className={allstyle.herotitle}>
           About <p className={allstyle.herotitlered}>Pod of Cast</p>
         </h1>
@@ -40,7 +40,19 @@ const About = () => {
               <p className={style.text}>Daily Listeners</p>
             </div>
           </div>
-        </div>
+			  </div>
+			  <div className={style.herodecorred}>
+				  <img src="/image/about/hero-decor.png" alt="красная кривая"/>
+			  </div>
+			   <div className={allstyle.herodecorleft}>
+						<img
+						  src="/image/homepage/hero-decor1.png"
+						  alt="черная кривая с оранжевой звездочкой на конце"
+						/>
+					  </div>
+					  <div className={allstyle.herodecorright}>
+						<img src="/image/homepage/hero-decor2.png" alt="несколько разноцветных звездочек" />
+					  </div>
       </section>
     </main>
   );
