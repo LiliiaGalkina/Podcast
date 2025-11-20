@@ -1,0 +1,50 @@
+@use "../../_variables.scss" as *;
+
+.listenerssay {
+	padding: 14rem 0;
+}
+
+.mainimg {
+	margin-bottom: 6rem;
+	img {
+		width: 100%;
+	}
+}
+
+.subtitleblock {
+	position: relative;
+		margin: 0 auto 8rem;
+		width: fit-content;
+}
+
+.subtitle {
+	@include title(3.665rem, 140%, 2%);
+	text-align: center;
+}
+
+.subtitledecorred {
+	position: absolute;
+	top: -6.5rem;
+	left: -7rem;
+}
+
+.textitems {
+	padding-bottom: 8.1rem;
+	display: flex;
+	justify-content: space-between;
+	gap: 2rem;
+	border-bottom: 0.05rem solid $textColorGrey;
+}
+
+.textitem {
+	@include text(1.6rem, 160%);
+	width: 50%;
+	p {
+		&:not(:last-child){
+			margin-bottom: 2rem;
+		}
+	}
+	span {
+		font-weight: 700;
+	}
+}

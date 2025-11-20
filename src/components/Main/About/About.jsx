@@ -2,6 +2,7 @@ import allstyle from "../allstyles.module.scss";
 import style from "./about.module.scss";
 import Buttondark from "../../Button/Buttondark";
 import Button from "../../Button/Button";
+import Listenerssay from "./Listenerssay";
 
 const About = () => {
   return (
@@ -53,7 +54,8 @@ const About = () => {
 					  <div className={allstyle.herodecorright}>
 						<img src="/image/homepage/hero-decor2.png" alt="несколько разноцветных звездочек" />
 					  </div>
-      </section>
+		  </section>
+		  <Listenerssay/>
     </main>
   );
 };
