@@ -124,3 +124,18 @@ position: relative;
 		width: 100%;
 	}
 }
+
+@media (max-width: 768px) {
+	.sponsortitledecor {
+		max-width: 6rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.sponsor {
+		padding: 6rem 0 10rem;
+	}
+	.sponsortitledecor {
+		display: none;
+	}
+}
