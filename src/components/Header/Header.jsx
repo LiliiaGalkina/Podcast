@@ -4,6 +4,7 @@ import arrowdown from "/image/header/arrowdown.svg";
 import Button from "../Button/Button";
 import Buttondark from "../Button/Buttondark";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [showInnerMenu, setShowInnerMenu] = useState(false);
@@ -23,14 +24,14 @@ const toggleMenu = () => {
             <nav className={style.menu}>
               <ul className={style.menulist}>
                 <li className={style.menuitem}>
-                  <a href="#" className={style.menulink}>
-                    Episodes
-                  </a>
+                  <Link to={"/"} className={style.menulink}>
+                    Home
+                  </Link>
                 </li>
                 <li className={style.menuitem}>
-                  <a href="#" className={style.menulink}>
+                  <Link to={"/about"} className={style.menulink}>
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className={style.menuitem}>
                   <div>
@@ -53,6 +54,11 @@ const toggleMenu = () => {
                     className={style.innermenu}
                     style={{ display: showInnerMenu ? "block" : "none" }}
                   >
+                    <li className={style.innermenuitem}>
+                      <a href="#" className={style.menulink}>
+                        Episodes
+                      </a>
+                    </li>
                     <li className={style.innermenuitem}>
                       <a href="#" className={style.menulink}>
                         Pricing

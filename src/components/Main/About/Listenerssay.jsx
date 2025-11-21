@@ -66,7 +66,7 @@ const Listenerssay = () => {
             <div className={style.itemcontent}>
               <div className={style.itemcontentup}>
                 <p className={style.itemsubtitle}>Host 1</p>
-                <h3 className={style.itemtitle}>Porter Severus</h3>
+                <h3 className={style.itemtitle}>Porter <br/> Severus</h3>
                 <p className={style.itemtext}>
                   Lorem ipsum dolor sit amet con sectet piscing elit, sed do
                   eiusmod tempor rarylet podofcast.
@@ -89,7 +89,7 @@ const Listenerssay = () => {
                   </a>
                 </div>
               </div>
-              <div className={style.itemdecorfirst}>
+              <div className={style.itemdecor}>
                 <img
                   src="/image/about/item-decor1.png"
                   alt="улыбающаяся рожица"
@@ -104,7 +104,7 @@ const Listenerssay = () => {
             <div className={style.itemcontent}>
               <div className={style.itemcontentup}>
                 <p className={style.itemsubtitle}>Host 2</p>
-                <h3 className={style.itemtitle}>Marques Keith</h3>
+                <h3 className={style.itemtitle}>Marques <br /> Keith</h3>
                 <p className={style.itemtext}>
                   Lorem ipsum dolor sit amet con sectet piscing elit, sed do
                   eiusmod tempor rarylet podofcast.
@@ -127,7 +127,7 @@ const Listenerssay = () => {
                   </a>
                 </div>
               </div>
-              <div className={style.itemdecorsecond}>
+              <div className={style.itemdecor}>
                 <img
                   src="/image/about/item-decor2.png"
                   alt="улыбающаяся рожица"

@@ -29,6 +29,7 @@
 }
 
 .textitems {
+	margin-bottom: 10rem;
 	padding-bottom: 8.1rem;
 	display: flex;
 	justify-content: space-between;
@@ -46,5 +47,180 @@
 	}
 	span {
 		font-weight: 700;
+	}
+}
+
+.subtitledecorblue {
+	position: absolute;
+	top: -8rem;
+	right: -7rem;
+}
+
+.imgitems {
+	display: flex;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+.imgitem {
+	width: 50%;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	gap: 2rem;
+	padding: 1rem;
+	border: 0.2rem solid $textColorDark;
+	border-radius: 0.8rem;
+	box-shadow: 1rem 1rem 0 $textColorDark;
+}
+
+.itemimg {
+	width: 45%;
+	height: 48.8rem;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.itemcontent {
+	width: 55%;
+}
+
+
+.itemcontentup {
+	padding-bottom: 2rem;
+	border-bottom: 0.05rem solid $textColorGrey;
+}
+
+.itemsubtitle {
+	@include text(1.4rem, 160%);
+	margin-bottom: 0.6rem;
+	color: $textColorDark;
+}
+
+.itemtitle {
+	@include title(3.665rem, 100%, 2%);
+	margin-bottom: 2rem;
+	color: $textColorDark;
+}
+
+.itemtext {
+	@include text(1.4rem, 160%);
+}
+
+.itemdecor {
+	position: absolute;
+	top: 0;
+	right: 0;
+	max-width: 13rem;
+	img {
+		width: 100%;
+	}
+}
+
+.itemcontentdown {
+	padding-top: 1rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 1.9rem;
+}
+
+.social {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.socialtitle {
+	@include title(1.2rem, 160%, 0)
+}
+
+@media (max-width: 1024px) {
+	.itemimg {
+		height: 40rem;
+	}
+	.itemtitle {
+		@include title(3rem, 100%, 2%);
+	}
+
+	.itemdecor {
+		max-width: 8rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.imgitems {
+		flex-direction: column;
+	}
+
+	.imgitem {
+		width: 100%;
+	}
+
+	.itemimg {
+		height: 48.8rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.itemimg {
+		height: 40rem;
+	}
+
+	.subtitledecorblue,
+	.subtitledecorred {
+		display: none;
+	}
+
+	.subtitleblock {
+		margin-bottom: 4rem;
+	}
+
+	.subtitle {
+		@include title(2.8rem, 140%, 2%);
+	}
+
+	.textitems {
+		margin-bottom: 6rem;
+		padding-bottom: 6rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.textitems {
+		flex-direction: column;
+	}
+
+	.textitem {
+		width: 100%;
+	}
+
+		.itemimg {
+		height: 34rem;
+	}
+
+		.itemdecor {
+		max-width: 6rem;
+	}
+}
+
+@media (max-width: 375px) {
+		.itemimg {
+		height: 30rem;
+	}
+
+	.itemtitle {
+		@include title(2.4rem, 100%, 2%);
+	}
+
+	.itemdecor {
+		display: none;
+	}
+
+	.socialtitle {
+		display: none;
 	}
 }
