@@ -25,6 +25,7 @@
 	display: flex;
 	justify-content: center;
 	img {
+		max-width: 90%;
 		height: 5.4rem;
 	}
 }
@@ -46,12 +47,19 @@
 
 @media (max-width: 1024px) {
   .slidersponsoritem {
-    padding: 2rem;
+    padding: 4rem 2rem;
   }
 
+  .itemimg {
+	width: 30rem;
+  }
 }
 
 @media (max-width: 480px) {
+	 .itemimg {
+	width: 20rem;
+  }
+
   .arrowleft {
     @include decorSlider(left, bottom, 5rem, -22rem);
   }
