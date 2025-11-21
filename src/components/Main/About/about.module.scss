@@ -139,3 +139,42 @@ position: relative;
 		display: none;
 	}
 }
+
+/*getintouch*/
+.getintouch {
+	position: relative;
+	padding: 14rem 0;
+}
+
+.getintouchtitleblock {
+	margin: 0 auto;
+	position: relative;
+	width: fit-content;
+}
+
+.getintouchtitledecor {
+	position: absolute;
+	top: -2rem;
+	right: -4rem;
+}
+
+	.formdecordown {
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+		bottom: -7.5rem;
+		z-index: 2;
+	}
+
+	@media (max-width: 480px) {
+		.getintouch {
+			padding: 8rem 0;
+		}
+		.formdecordown {
+			display: none;
+		}
+
+		.getintouchtitledecor {
+			display: none;
+		}
+	}

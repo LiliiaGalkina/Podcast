@@ -4,6 +4,8 @@ import Buttondark from "../../Button/Buttondark";
 import Button from "../../Button/Button";
 import Listenerssay from "./Listenerssay";
 import AboutSponsorSlider from "./Aboutsponsorslider";
+import MessageForm from "./MessageForm";
+import DownloadApp from "../HomePage/DownloadApp";
 
 const About = () => {
   return (
@@ -69,9 +71,27 @@ const About = () => {
             alt="красное солнышко"
           />
         </div>
-			  <p className={allstyle.sectiontext}>Our current official sponsor</p>
-			  <AboutSponsorSlider/>
+        <p className={allstyle.sectiontext}>Our current official sponsor</p>
+        <AboutSponsorSlider />
       </section>
+      <section className={style.getintouch}>
+        <div className="container">
+          <div className={style.getintouchtitleblock}>
+            <h2 className={allstyle.sectiontitle}>Get in touch</h2>
+            <img
+              src="/image/about/getintouch-decor.png"
+              className={style.getintouchtitledecor}
+              alt="красное солнышко"
+            />
+          </div>
+          <p className={allstyle.sectiontext}>Send your message to us</p>
+          <MessageForm />
+        </div>
+        <div className={style.formdecordown}>
+          <img src="/image/homepage/hero-decor3.png" alt="красная кривая" />
+        </div>
+      </section>
+      <DownloadApp />
     </main>
   );
 };

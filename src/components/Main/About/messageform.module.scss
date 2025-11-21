@@ -1,0 +1,97 @@
+@use "../../_variables.scss" as *;
+
+.getintoushform {
+	margin: 0 auto;
+	max-width: 76.6rem;
+	padding-top: 4rem;
+	border-top: 0.05rem solid $textColorGrey;
+}
+
+.fields {
+	margin-bottom: 6rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 2rem;
+	row-gap: 4rem;
+}
+
+.field {
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+	&:last-child {
+		grid-column: span 2;
+	}
+	textarea {
+		height: 16.5rem
+	}
+}
+
+.fieldlabel {
+	@include title(1.4rem, 160%, 0);
+	span {
+		color: $textColorRed;
+	}
+}
+
+.fildinput,
+.fieldmessage {
+	@include title(1.6rem, 160%, 0);
+	padding: 1.9rem 2rem;
+	color: $textColorDark;
+	border: 0.15rem solid $textColorDark;
+	border-radius: 0.8rem;
+}
+
+.buttonblock {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.text {
+	@include text(1.4rem, 160%);
+	span {
+		color: $textColorRed;
+	}
+}
+
+.info {
+	@include text(1.4rem, 160%);
+	max-width: 17.6rem;
+	}
+
+	.infolink {
+		@include text(1.4rem, 160%);
+		color: $textColorRed;
+		text-decoration: underline;
+	}
+
+@media (max-width: 768px) {
+	.fields {
+		grid-template-columns: 1fr;
+	}
+
+	.field {
+		&:last-child {
+			grid-column: span 1;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.fildinput,
+.fieldmessage {
+	@include title(1.4rem, 160%, 0);
+	padding: 2rem 1rem;
+}
+		.buttonblock {
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 2rem;
+		}
+
+		.info {
+			max-width: 100%;
+		}
+}
