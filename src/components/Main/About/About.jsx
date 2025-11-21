@@ -3,6 +3,7 @@ import style from "./about.module.scss";
 import Buttondark from "../../Button/Buttondark";
 import Button from "../../Button/Button";
 import Listenerssay from "./Listenerssay";
+import AboutSponsorSlider from "./Aboutsponsorslider";
 
 const About = () => {
   return (
@@ -41,21 +42,36 @@ const About = () => {
               <p className={style.text}>Daily Listeners</p>
             </div>
           </div>
-			  </div>
-			  <div className={style.herodecorred}>
-				  <img src="/image/about/hero-decor.png" alt="красная кривая"/>
-			  </div>
-			   <div className={allstyle.herodecorleft}>
-						<img
-						  src="/image/homepage/hero-decor1.png"
-						  alt="черная кривая с оранжевой звездочкой на конце"
-						/>
-					  </div>
-					  <div className={allstyle.herodecorright}>
-						<img src="/image/homepage/hero-decor2.png" alt="несколько разноцветных звездочек" />
-					  </div>
-		  </section>
-		  <Listenerssay/>
+        </div>
+        <div className={style.herodecorred}>
+          <img src="/image/about/hero-decor.png" alt="красная кривая" />
+        </div>
+        <div className={allstyle.herodecorleft}>
+          <img
+            src="/image/homepage/hero-decor1.png"
+            alt="черная кривая с оранжевой звездочкой на конце"
+          />
+        </div>
+        <div className={allstyle.herodecorright}>
+          <img
+            src="/image/homepage/hero-decor2.png"
+            alt="несколько разноцветных звездочек"
+          />
+        </div>
+      </section>
+      <Listenerssay />
+      <section className={style.sponsor}>
+        <div className={style.sponsortitleblock}>
+          <h2 className={allstyle.sectiontitle}>Our Sponsor</h2>
+          <img
+            src="/image/homepage/sparkle.png"
+            className={style.sponsortitledecor}
+            alt="красное солнышко"
+          />
+        </div>
+			  <p className={allstyle.sectiontext}>Our current official sponsor</p>
+			  <AboutSponsorSlider/>
+      </section>
     </main>
   );
 };

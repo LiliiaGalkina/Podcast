@@ -102,3 +102,25 @@ position: relative;
 		align-items: center;
 	}
 }
+
+/*sponsor*/
+.sponsor {
+	padding: 14rem 0;
+	background-color: $backgroundHeaderHero;
+}
+
+.sponsortitleblock {
+	margin: 0 auto;
+	position: relative;
+	width: fit-content;
+}
+
+.sponsortitledecor {
+	position: absolute;
+	top: -4rem;
+	left: -6rem;
+	max-width: 7.4rem;
+	img {
+		width: 100%;
+	}
+}
