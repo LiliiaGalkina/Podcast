@@ -16,6 +16,8 @@
 }
 
 .field {
+	position: relative;
+	padding-bottom: 2rem;
 	display: flex;
 	flex-direction: column;
 	gap: 1.6rem;
@@ -65,6 +67,14 @@
 		@include text(1.4rem, 160%);
 		color: $textColorRed;
 		text-decoration: underline;
+	}
+
+	.error {
+		@include text(1.6rem, 100%);
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		color: $textColorRed;
 	}
 
 @media (max-width: 768px) {
