@@ -76,7 +76,7 @@ const News = () => {
         </div>
       </div>
       <div className={style.decor}>
-        <img src="/image/homepage/hero-decor3.png" alt="красная кривая" />
+        <img src="/image/reddecorsection.png" alt="красная кривая" />
       </div>
     </section>
   );

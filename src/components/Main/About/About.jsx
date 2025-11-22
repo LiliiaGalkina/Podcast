@@ -88,7 +88,13 @@ const About = () => {
           <MessageForm />
         </div>
         <div className={style.formdecordown}>
-          <img src="/image/homepage/hero-decor3.png" alt="красная кривая" />
+          <img src="/image/reddecorsection.png" alt="красная кривая" />
+        </div>
+        <div className={style.formdecorleft}>
+          <img src="/image/about/hero-decor.png" alt="красная кривая" />
+        </div>
+        <div className={style.formdecorright}>
+          <img src="/image/homepage/benefits/benefits2.png" alt="" />
         </div>
       </section>
       <DownloadApp />

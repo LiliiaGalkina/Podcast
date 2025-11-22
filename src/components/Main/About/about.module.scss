@@ -3,178 +3,197 @@
 /*hero*/
 
 .heroabout {
-position: relative;
+  position: relative;
   padding: 6.4rem 1.5rem 0;
   background-color: $backgroundHeaderHero;
 }
 
 .buttons {
-	margin-bottom: 4rem;
-	display: flex;
-	justify-content: center;
-	gap: 2rem;
-	button {
-		height: 6.2rem;
-		&:first-child {
-			box-shadow: 0.6rem 0.6rem 0 $buttonDarkShadowColor;
-		}
-	}
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  button {
+    height: 6.2rem;
+    &:first-child {
+      box-shadow: 0.6rem 0.6rem 0 $buttonDarkShadowColor;
+    }
+  }
 }
 
 .items {
-	position: relative;
-	top: 12rem;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 2rem;
-	justify-content: space-between;
+  position: relative;
+  top: 12rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-content: space-between;
 }
 
 .item {
-	padding: 5.9rem 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: $textColorWhite;
-	border: 0.15rem solid $textColorDark;
-	border-radius: 0.8rem;
-	box-shadow: 0.6rem 0.6rem $textColorRed;
-	text-align: center;
+  padding: 5.9rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $textColorWhite;
+  border: 0.15rem solid $textColorDark;
+  border-radius: 0.8rem;
+  box-shadow: 0.6rem 0.6rem $textColorRed;
+  text-align: center;
 }
 
 .digittext {
-	@include title(5.93rem, 120%, 2%);
-	margin-bottom: 2rem;
+  @include title(5.93rem, 120%, 2%);
+  margin-bottom: 2rem;
 }
 
 .digittextred {
-	color: $textColorRed;
+  color: $textColorRed;
 }
 
 .text {
-	@include text(1.6rem, 160%);
+  @include text(1.6rem, 160%);
 }
 
 .herodecorred {
-	position: absolute;
-	right: 0;
-	bottom: -6rem;
+  position: absolute;
+  right: 0;
+  bottom: -6rem;
 }
 
 @media (max-width: 1420px) {
-	.herodecorred {
-		display: none;
-	}
+  .herodecorred {
+    display: none;
+  }
 }
 
 @media (max-width: 1024px) {
-	.item {
-		padding: 4rem 1rem;
-	}
-	.digittext {
-		@include title(4rem, 120%, 2%)
-	}
+  .item {
+    padding: 4rem 1rem;
+  }
+  .digittext {
+    @include title(4rem, 120%, 2%);
+  }
 
-	.text {
-	@include text(1.4rem, 160%);
-}
+  .text {
+    @include text(1.4rem, 160%);
+  }
 }
 
 @media (max-width: 768px) {
-	.digittext {
-		@include title(3.2rem, 120%, 2%)
-	}
+  .digittext {
+    @include title(3.2rem, 120%, 2%);
+  }
 }
 
 @media (max-width: 600px) {
-	.items {
-		grid-template-columns: 1fr;
-	}
+  .items {
+    grid-template-columns: 1fr;
+  }
 
-	.buttons {
-		margin-bottom: 0;
-	}
+  .buttons {
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 375px) {
-	.buttons {
-		flex-direction: column;
-		align-items: center;
-	}
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /*sponsor*/
 .sponsor {
-	padding: 14rem 0;
-	background-color: $backgroundHeaderHero;
+  padding: 14rem 0;
+  background-color: $backgroundHeaderHero;
 }
 
 .sponsortitleblock {
-	margin: 0 auto;
-	position: relative;
-	width: fit-content;
+  margin: 0 auto;
+  position: relative;
+  width: fit-content;
 }
 
 .sponsortitledecor {
-	position: absolute;
-	top: -4rem;
-	left: -6rem;
-	max-width: 7.4rem;
-	img {
-		width: 100%;
-	}
+  position: absolute;
+  top: -4rem;
+  left: -6rem;
+  max-width: 7.4rem;
+  img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
-	.sponsortitledecor {
-		max-width: 6rem;
-	}
+  .sponsortitledecor {
+    max-width: 6rem;
+  }
 }
 
 @media (max-width: 480px) {
-	.sponsor {
-		padding: 6rem 0 10rem;
-	}
-	.sponsortitledecor {
-		display: none;
-	}
+  .sponsor {
+    padding: 6rem 0 10rem;
+  }
+  .sponsortitledecor {
+    display: none;
+  }
 }
 
 /*getintouch*/
 .getintouch {
-	position: relative;
-	padding: 14rem 0;
+  position: relative;
+  padding: 14rem 0;
 }
 
 .getintouchtitleblock {
-	margin: 0 auto;
-	position: relative;
-	width: fit-content;
+  margin: 0 auto;
+  position: relative;
+  width: fit-content;
 }
 
 .getintouchtitledecor {
-	position: absolute;
-	top: -2rem;
-	right: -4rem;
+  position: absolute;
+  top: -2rem;
+  right: -4rem;
 }
 
-	.formdecordown {
-		position: absolute;
-		left: 50%;
-		transform: translate(-50%);
-		bottom: -7.5rem;
-		z-index: 2;
-	}
+.formdecordown {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -7.5rem;
+  z-index: 2;
+}
 
-	@media (max-width: 480px) {
-		.getintouch {
-			padding: 8rem 0;
-		}
-		.formdecordown {
-			display: none;
-		}
+.formdecorleft {
+	position: absolute;
+	left: 0;
+	bottom: 26.2rem;
+}
 
-		.getintouchtitledecor {
-			display: none;
-		}
+.formdecorright {
+	position: absolute;
+	right: 0;
+	top: 32.7rem;
+}
+
+@media (max-width: 1024px) {
+	.formdecorleft,
+	.formdecorright {
+		display: none;
 	}
+}
+
+@media (max-width: 480px) {
+  .getintouch {
+    padding: 8rem 0;
+  }
+  .formdecordown {
+    display: none;
+  }
+
+  .getintouchtitledecor {
+    display: none;
+  }
+}

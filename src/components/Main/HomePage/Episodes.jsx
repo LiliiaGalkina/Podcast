@@ -234,7 +234,7 @@ const Episodes = () => {
         </div>
       </div>
       <div className={style.decorblack}>
-        <img src="/image/homepage/blackdecorsection.png" alt="черная кривая" />
+        <img src="/image/blackdecorsection.png" alt="черная кривая" />
       </div>
     </section>
   );

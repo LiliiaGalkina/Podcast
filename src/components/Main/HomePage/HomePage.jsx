@@ -50,7 +50,7 @@ const HomePage = () => {
           <img src="/image/homepage/hero-decor2.png" alt="несколько разноцветных звездочек" />
         </div>
         <div className={style.herodecordown}>
-          <img src="/image/homepage/hero-decor3.png" alt="красная кривая" />
+          <img src="/image/reddecorsection.png" alt="красная кривая" />
         </div>
       </section>
       <TalkListen/>
@@ -68,10 +68,10 @@ const HomePage = () => {
         </p>
         <HomePageFeedbackSlider />
         <div className={style.feedbackupdecor}>
-          <img src="/image/homepage/blackdecorsection.png" alt="черная кривая" />
+          <img src="/image/blackdecorsection.png" alt="черная кривая" />
         </div>
         <div className={style.feedbackdowndecor}>
-          <img src="/image/homepage/blackdecorsection.png" alt="черная кривая" />
+          <img src="/image/blackdecorsection.png" alt="черная кривая" />
         </div>
       </section>
      <Benefits/>

@@ -108,7 +108,7 @@ const Pricing = () => {
         </div>
       </div>
       <div className={style.decor}>
-        <img src="/image/homepage/blackdecorsection.png" alt="черная кривая" />
+        <img src="/image/blackdecorsection.png" alt="черная кривая" />
       </div>
     </section>
   );
