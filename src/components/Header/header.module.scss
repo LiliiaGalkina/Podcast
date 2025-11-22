@@ -162,3 +162,16 @@
     }
   }
 }
+
+@media (max-width: 340px) {
+	.navigation {
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.logo {
+		align-self: start;
+	}
+}
+
+

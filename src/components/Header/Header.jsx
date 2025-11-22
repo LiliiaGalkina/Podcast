@@ -33,14 +33,13 @@ const toggleMenu = () => {
                     About
                   </Link>
                 </li>
-                <li className={style.menuitem}>
+                <li className={style.menuitem} onClick={toggleMenu}>
                   <div>
                     <a href="#" className={style.menulink}>
                       More
                     </a>
                     <div
                       className={style.arrowdown}
-                      onClick={toggleMenu}
                       style={{
                         transform: showInnerMenu
                           ? "rotate(180deg)"
