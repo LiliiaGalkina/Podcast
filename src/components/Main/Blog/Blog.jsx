@@ -2,8 +2,11 @@ import allstyle from "../allstyles.module.scss";
 import style from "./blog.module.scss";
 import NewsItem from "../Newsitem/Newsitem";
 import DownloadApp from "../HomePage/DownloadApp";
+import { useState } from "react";
 
 const Blog = () => {
+	const [search, setSearch] = useState("");
+
   return (
     <main>
       <section className={style.heroblog}>
@@ -15,7 +18,7 @@ const Blog = () => {
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
           veniam–quis.
         </p>
-        <input type="text" className={style.search} placeholder="Search..." />
+        <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} className={style.search} placeholder="Search..." />
         <div className={allstyle.herodecorleft}>
           <img
             src="/image/homepage/hero-decor1.png"
