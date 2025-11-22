@@ -1,23 +1,81 @@
 @use "../../_variables.scss" as *;
 
 .heroblog {
-	position: relative;
-	padding: 6.4rem 0 11.7rem;
-	background-color: $backgroundHeaderHero;
+  position: relative;
+  padding: 6.4rem 0 11.7rem;
+  background-color: $backgroundHeaderHero;
 }
 
 .search {
-	@include text(1.6rem, 160%);
+  @include text(1.6rem, 160%);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  width: 57rem;
+  padding: 2.4rem 2.4rem 2.4rem 8.8rem;
+  border: 0.15rem solid $textColorDark;
+  border-radius: 1.6rem;
+  background-image: url("/image/search.svg");
+  background-repeat: no-repeat;
+  background-position: 4rem 50%;
+  box-shadow: 0.6rem 0.6rem 0 $textColorSliderTitle;
+}
+
+/*posts*/
+.posts {
+	position: relative;
+  padding: 14rem 0;
+}
+
+.titleblock {
+  position: relative;
+  margin: 0 auto 8rem;
+  width: fit-content;
+}
+
+.titledecor {
+  max-width: 24rem;
+  position: absolute;
+  top: -3rem;
+  left: -5rem;
+  img {
+    width: 100%;
+  }
+}
+
+.categories {
+	margin-bottom: 10rem;
+	padding-bottom: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+	border-bottom: 0.15rem solid $textColorGrey;
+}
+
+.category {
+	@include text(2.265rem, 160%);
+	color: $textColorGrey;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.postsitems {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.postsdecordown {
 	position: absolute;
 	left: 50%;
-	bottom: 0;
-	transform: translate(-50%, 50%);
-	width: 57rem;
-	padding: 2.4rem 2.4rem 2.4rem 8.8rem;
-	border: 0.15rem solid $textColorDark;
-	border-radius: 1.6rem;
-	background-image: url("/image/search.svg");
-	background-repeat: no-repeat;
-	background-position: 4rem 50%;
-	box-shadow: 0.6rem 0.6rem 0 $textColorSliderTitle;
+	bottom: -7.5rem;
+	transform: translate(-50%);
+	z-index: 2;
 }

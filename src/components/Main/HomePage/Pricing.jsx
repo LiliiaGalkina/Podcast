@@ -11,7 +11,7 @@ const Pricing = ({pricing}) => {
           <img
             src="/image/homepage/pricing/decorred.png"
             className={style.titledecor}
-            alt="красное солнышко"
+            alt="три красные линии"
           />
         </div>
         <p className={allstyle.sectiontext}>
