@@ -2,9 +2,9 @@ import allstyle from "../allstyles.module.scss";
 import style from "./episodes.module.scss";
 import Buttondark from "../../Button/Buttondark";
 
-const Episodes = () => {
+const Episodes = ({episodes}) => {
   return (
-    <section className={style.episodes}>
+	  <section ref={episodes} className={style.episodes}>
       <div className="container">
         <h2 className={allstyle.sectiontitle}>Recent Episodes</h2>
         <p className={allstyle.sectiontext}>

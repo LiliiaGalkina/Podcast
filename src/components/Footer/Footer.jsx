@@ -8,8 +8,9 @@ import spotify from "/image/footer/spotify.png";
 import youtube from "/image/footer/youtube.png";
 import appstore from "/image/footer/appstore.svg";
 import googleplay from "/image/footer/google_play.svg";
+import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({ episodes, pricing, feedback, benefits, scrollToSection }) => {
   return (
     <footer className={style.footer}>
       <div className="container">
@@ -36,26 +37,38 @@ const Footer = () => {
           </div>
           <div className={style.footermenu}>
             <div className={style.footermenucolumn}>
-              <a href="#" className={style.footermenuitemdark}>
+              <Link to={"/about"} className={style.footermenuitemdark}>
                 About
-              </a>
-              <a href="#" className={style.footermenuitemred}>
-                Testimonials
-              </a>
-              <a href="#" className={style.footermenuitemdark}>
-                Features
-              </a>
+              </Link>
+              <Link
+                onClick={() => scrollToSection(episodes)}
+                className={style.footermenuitemred}
+              >
+                Episodes
+              </Link>
+              <Link
+                onClick={() => scrollToSection(pricing)}
+                className={style.footermenuitemdark}
+              >
+                Pricing
+              </Link>
             </div>
             <div className={style.footermenucolumn}>
-              <a href="#" className={style.footermenuitemred}>
-                Episodes
-              </a>
-              <a href="#" className={style.footermenuitemdark}>
-                Pricing
-              </a>
-              <a href="#" className={style.footermenuitemdark}>
+              <Link
+                onClick={() => scrollToSection(feedback)}
+                className={style.footermenuitemred}
+              >
+                Feedback
+              </Link>
+              <Link
+                onClick={() => scrollToSection(benefits)}
+                className={style.footermenuitemdark}
+              >
+                Benefits
+              </Link>
+              <Link to="/blog" className={style.footermenuitemdark}>
                 Blog
-              </a>
+              </Link>
             </div>
           </div>
           <div className={style.navigatioinfo}>

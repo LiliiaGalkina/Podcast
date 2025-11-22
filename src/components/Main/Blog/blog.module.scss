@@ -1,0 +1,23 @@
+@use "../../_variables.scss" as *;
+
+.heroblog {
+	position: relative;
+	padding: 6.4rem 0 11.7rem;
+	background-color: $backgroundHeaderHero;
+}
+
+.search {
+	@include text(1.6rem, 160%);
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%, 50%);
+	width: 57rem;
+	padding: 2.4rem 2.4rem 2.4rem 8.8rem;
+	border: 0.15rem solid $textColorDark;
+	border-radius: 1.6rem;
+	background-image: url("/image/search.svg");
+	background-repeat: no-repeat;
+	background-position: 4rem 50%;
+	box-shadow: 0.6rem 0.6rem 0 $textColorSliderTitle;
+}

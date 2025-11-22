@@ -10,7 +10,7 @@ import Episodes from "./Episodes";
 import Benefits from "./Benefits";
 import TalkListen from "./TalkListen";
 
-const HomePage = () => {
+const HomePage = ({episodes, pricing, feedback, benefits}) => {
   return (
     <main className={style.main}>
       <section className={allstyle.hero}>
@@ -54,7 +54,7 @@ const HomePage = () => {
         </div>
       </section>
       <TalkListen/>
-      <section className={style.feedback}>
+      <section ref={feedback} className={style.feedback}>
         <div className={style.feedbacktitleblock}>
           <h2 className={allstyle.sectiontitle}>What our listeners say</h2>
           <img
@@ -74,9 +74,9 @@ const HomePage = () => {
           <img src="/image/blackdecorsection.png" alt="черная кривая" />
         </div>
       </section>
-     <Benefits/>
-      <Episodes/>
-      <Pricing/>
+		  <Benefits benefits={benefits} />
+		  <Episodes episodes={episodes} />
+		  <Pricing pricing={pricing} />
      <News/>
       <DownloadApp/>
     </main>

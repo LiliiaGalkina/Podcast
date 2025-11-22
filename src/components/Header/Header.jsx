@@ -6,12 +6,12 @@ import Buttondark from "../Button/Buttondark";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ episodes, pricing, feedback, benefits, scrollToSection }) => {
   const [showInnerMenu, setShowInnerMenu] = useState(false);
 
-const toggleMenu = () => {
-    setShowInnerMenu (!showInnerMenu);
-  }
+  const toggleMenu = () => {
+    setShowInnerMenu(!showInnerMenu);
+  };
 
   return (
     <div className={style.header}>
@@ -35,9 +35,7 @@ const toggleMenu = () => {
                 </li>
                 <li className={style.menuitem} onClick={toggleMenu}>
                   <div>
-                    <a href="#" className={style.menulink}>
-                      More
-                    </a>
+                    <Link className={style.menulink}>More</Link>
                     <div
                       className={style.arrowdown}
                       style={{
@@ -54,29 +52,41 @@ const toggleMenu = () => {
                     style={{ display: showInnerMenu ? "block" : "none" }}
                   >
                     <li className={style.innermenuitem}>
-                      <a href="#" className={style.menulink}>
+                      <Link
+                        onClick={() => scrollToSection(episodes)}
+                        className={style.menulink}
+                      >
                         Episodes
-                      </a>
+                      </Link>
                     </li>
                     <li className={style.innermenuitem}>
-                      <a href="#" className={style.menulink}>
+                      <Link
+                        onClick={() => scrollToSection(pricing)}
+                        className={style.menulink}
+                      >
                         Pricing
-                      </a>
+                      </Link>
                     </li>
                     <li className={style.innermenuitem}>
-                      <a href="#" className={style.menulink}>
-                        Testimonials
-                      </a>
+                      <Link
+                        onClick={() => scrollToSection(feedback)}
+                        className={style.menulink}
+                      >
+                        Feedback
+                      </Link>
                     </li>
                     <li className={style.innermenuitem}>
-                      <a href="#" className={style.menulink}>
-                        Features
-                      </a>
+                      <Link
+                        onClick={() => scrollToSection(benefits)}
+                        className={style.menulink}
+                      >
+                        Benefits
+                      </Link>
                     </li>
                     <li className={style.innermenuitem}>
-                      <a href="#" className={style.menulink}>
+                      <Link to="/blog" className={style.menulink}>
                         Blog
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>

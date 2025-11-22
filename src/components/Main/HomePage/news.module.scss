@@ -15,19 +15,19 @@
   gap: 2rem;
 }
 
-.item,
-.itemshadow {
+.item {
   padding: 1.6rem;
   display: flex;
   flex-direction: column;
   border-radius: 0.8rem;
   border: 0.2rem solid $textColorDark;
   background-color: $textColorWhite;
+  transition: all 0.5s ease;
+  &:hover {
+	box-shadow: 1rem 1rem 0 $textColorDark;
+  }
 }
 
-.itemshadow {
-  box-shadow: 1rem 1rem 0 $textColorDark;
-}
 
 .img {
   margin-bottom: 4rem;

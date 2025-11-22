@@ -2,9 +2,9 @@ import allstyle from "../allstyles.module.scss";
 import style from "./pricing.module.scss";
 import Buttondark from "../../Button/Buttondark";
 
-const Pricing = () => {
+const Pricing = ({pricing}) => {
   return (
-    <section className={style.pricing}>
+    <section ref={pricing} className={style.pricing}>
       <div className="container">
         <div className={style.titleblock}>
           <h2 className={allstyle.sectiontitle}>Become our sponsor</h2>
