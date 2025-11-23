@@ -18,7 +18,13 @@ const Blog = () => {
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
           veniam–quis.
         </p>
-        <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} className={style.search} placeholder="Search..." />
+        <input
+          type="text"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className={style.search}
+          placeholder="Search..."
+        />
         <div className={allstyle.herodecorleft}>
           <img
             src="/image/homepage/hero-decor1.png"
@@ -53,10 +59,10 @@ const Blog = () => {
           <div className={style.postsitems}>
             <NewsItem
               image="/image/homepage/news/news1.png"
-              description="девушка в маске рисует на стене"
+              description="аудио аппаратура"
               subtitle="PODCAST"
               title="Setup your own podcast"
-              text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minimvel iam, quis nostrud exercitation ullamco
                   laboris..."
@@ -66,7 +72,7 @@ const Blog = () => {
             />
             <NewsItem
               image="/image/homepage/news/news2.png"
-              description="аудио аппаратура"
+              description="девушка в маске рисует на стене"
               subtitle="TIPS & TRICK"
               title="Doodle artwork 101"
               text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -76,7 +82,7 @@ const Blog = () => {
               category1="art"
               category2="creative"
               category3="tips and trick"
-              date="Sep 14, 2021"
+              date="Sep 12, 2021"
             />
             <NewsItem
               image="/image/homepage/news/news3.png"
@@ -105,12 +111,12 @@ const Blog = () => {
               date="Sep 8, 2021"
             />
           </div>
-			  </div>
-			    <div className={style.postsdecordown}>
-						<img src="/image/reddecorsection.png" alt="красная кривая" />
-					  </div>
-		  </section>
-		  <DownloadApp/>
+        </div>
+        <div className={style.postsdecordown}>
+          <img src="/image/reddecorsection.png" alt="красная кривая" />
+        </div>
+      </section>
+      <DownloadApp />
     </main>
   );
 };

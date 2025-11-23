@@ -24,7 +24,7 @@
 
 /*posts*/
 .posts {
-	position: relative;
+  position: relative;
   padding: 14rem 0;
 }
 
@@ -45,23 +45,23 @@
 }
 
 .categories {
-	margin-bottom: 10rem;
-	padding-bottom: 2rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 2rem;
-	border-bottom: 0.15rem solid $textColorGrey;
+  margin-bottom: 10rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 0.15rem solid $textColorGrey;
 }
 
 .category {
-	@include text(2.265rem, 160%);
-	color: $textColorGrey;
-	transition: all 0.5s ease;
-	cursor: pointer;
-	&:hover {
-		text-decoration: underline;
-	}
+  @include text(2.265rem, 160%);
+  color: $textColorGrey;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .postsitems {
@@ -73,9 +73,67 @@
 }
 
 .postsdecordown {
-	position: absolute;
-	left: 50%;
-	bottom: -7.5rem;
-	transform: translate(-50%);
-	z-index: 2;
+  position: absolute;
+  left: 50%;
+  bottom: -7.5rem;
+  transform: translate(-50%);
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .category {
+    font-size: 1.8rem;
+  }
+  .postsitems {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroblog {
+    padding: 6.4rem 0;
+  }
+  .search {
+    width: 37rem;
+    padding: 2rem 1rem 2rem 4rem;
+    background-position: 1rem 50%;
+  }
+
+  .categories {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroblog {
+    padding: 6.4rem 0 4rem;
+  }
+  .titleblock {
+    margin-bottom: 6rem;
+  }
+
+  .titledecor {
+    max-width: 4rem;
+    top: -2rem;
+    left: -3rem;
+  }
+
+  .search {
+    width: 26rem;
+    padding: 1.5rem 1rem 1.5rem 4rem;
+    background-position: 1rem 50%;
+  }
+
+  .posts {
+    padding: 10rem 0;
+  }
+
+  .categories {
+	margin-bottom: 6rem;
+  }
+
+  .postsdecordown {
+    display: none;
+  }
 }

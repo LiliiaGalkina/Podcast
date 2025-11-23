@@ -1,0 +1,38 @@
+const posts = [
+  {
+    image: "/image/homepage/news/news1.png",
+    description: "аудио аппаратура",
+    category: "PODCAST",
+    title: "Setup your own podcast",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...",
+    categories: ["business", "startup"],
+    date: "Sep 14, 2021",
+  },
+  {
+    image: "/image/homepage/news/news2.png",
+    description: "девушка в маске рисует на стене",
+    category: "TIPS & TRICK",
+    title: "Doodle artwork 101",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...",
+    categories: ["art", "creative", "tips and trick"],
+    date: "Sep 12, 2021",
+  },
+  {
+    image: "/image/homepage/news/news3.png",
+    description: "рамка из листочков и веточек",
+    category: "NEWS",
+    title: "Mother Nature Taking Over",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...",
+    categories: ["news", "nature"],
+    date: "Sep 10, 2021",
+  },
+  {
+    image: "/image/homepage/news/news4.png",
+    description: "парень и девушка в наушниках сидят на диване",
+    category: "PRODUCTIVITY",
+    title: "How to Be Productive",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...",
+    categories: ["productivity", "mindset"],
+    date: "Sep 8, 2021",
+  },
+];
