@@ -3,7 +3,7 @@ import style from "./blog.module.scss";
 import NewsItem from "../Newsitem/Newsitem";
 import DownloadApp from "../HomePage/DownloadApp";
 import { useState } from "react";
-import { posts } from "../newsitems";
+import { posts, categories } from "../newsitems";
 
 const Blog = () => {
 	const [search, setSearch] = useState("");
@@ -50,12 +50,7 @@ const Blog = () => {
             />
           </div>
           <div className={style.categories}>
-            <div className={style.category}>All</div>
-            <div className={style.category}>Business</div>
-            <div className={style.category}>News</div>
-            <div className={style.category}>Tips & Trick</div>
-            <div className={style.category}>Podcast</div>
-            <div className={style.category}>Productivity</div>
+           {}
           </div>
           <div className={style.postsitems}>
             <NewsItem

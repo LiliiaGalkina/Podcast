@@ -7,9 +7,10 @@ const NewsItem = ({
   category,
   title,
   text,
- categories,
-  date
+  themes,
+  date,
 }) => {
+	
   return (
     <Link className={style.item}>
       <div className={style.img}>
@@ -23,7 +24,11 @@ const NewsItem = ({
         </div>
         <div className={style.categories}>
           <div className={style.categoriesbody}>
-					  {categories.map(category => <div className={style.category}>{category}</div>)}
+            {themes.map((theme, index) => (
+              <div key={index} className={style.category}>
+                {theme}
+              </div>
+            ))}
           </div>
           <div className={style.date}>{date}</div>
         </div>

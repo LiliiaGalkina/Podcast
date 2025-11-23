@@ -2,12 +2,19 @@ import allstyle from "../allstyles.module.scss";
 import style from "./blog.module.scss";
 import NewsItem from "../Newsitem/Newsitem";
 import DownloadApp from "../HomePage/DownloadApp";
-import { useState } from "react";
-import { posts } from "../newsitems";
+import { useEffect, useState } from "react";
+import { posts, categories } from "../newsitems";
 
 const Blog = () => {
-	const [search, setSearch] = useState("");
-	const [postItems, setPostItems] = useState(posts);
+  const [search, setSearch] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
+  const filterItems = () => {
+    if (selectedCategory === "All") {
+      return posts;
+    }
+    return posts.filter((post) => post.category.toLowerCase() === selectedCategory.toLowerCase());
+  };
 
   return (
     <main>
@@ -51,15 +58,23 @@ const Blog = () => {
             />
           </div>
           <div className={style.categories}>
-            <div className={style.category}>All</div>
-            <div className={style.category}>Business</div>
-            <div className={style.category}>News</div>
-            <div className={style.category}>Tips & Trick</div>
-            <div className={style.category}>Podcast</div>
-            <div className={style.category}>Productivity</div>
+            {categories.map((category, index) => (
+              <div
+                key={index}
+                className={style.category}
+                onClick={() => setSelectedCategory(category)}
+                style={{
+                  color: category === selectedCategory ? "#cd4631" : "#4d4d4d",
+                }}
+              >
+                {category}
+              </div>
+            ))}
           </div>
           <div className={style.postsitems}>
-					  {postItems.map(post => (<NewsItem {...post} />))}
+            {filterItems().map((postItem) => (
+              <NewsItem key={postItem.id} {...postItem} />
+            ))}
           </div>
         </div>
         <div className={style.postsdecordown}>
