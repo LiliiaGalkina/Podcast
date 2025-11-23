@@ -1,5 +1,6 @@
-const posts = [
+export const posts = [
   {
+    id: 1,
     image: "/image/homepage/news/news1.png",
     description: "аудио аппаратура",
     category: "PODCAST",
@@ -9,6 +10,7 @@ const posts = [
     date: "Sep 14, 2021",
   },
   {
+    id: 2,
     image: "/image/homepage/news/news2.png",
     description: "девушка в маске рисует на стене",
     category: "TIPS & TRICK",
@@ -18,6 +20,7 @@ const posts = [
     date: "Sep 12, 2021",
   },
   {
+    id: 3,
     image: "/image/homepage/news/news3.png",
     description: "рамка из листочков и веточек",
     category: "NEWS",
@@ -27,6 +30,7 @@ const posts = [
     date: "Sep 10, 2021",
   },
   {
+    id: 4,
     image: "/image/homepage/news/news4.png",
     description: "парень и девушка в наушниках сидят на диване",
     category: "PRODUCTIVITY",

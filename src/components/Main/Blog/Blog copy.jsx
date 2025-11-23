@@ -7,7 +7,6 @@ import { posts } from "../newsitems";
 
 const Blog = () => {
 	const [search, setSearch] = useState("");
-	const [postItems, setPostItems] = useState(posts);
 
   return (
     <main>
@@ -59,7 +58,59 @@ const Blog = () => {
             <div className={style.category}>Productivity</div>
           </div>
           <div className={style.postsitems}>
-					  {postItems.map(post => (<NewsItem {...post} />))}
+            <NewsItem
+              image="/image/homepage/news/news1.png"
+              description="аудио аппаратура"
+              subtitle="PODCAST"
+              title="Setup your own podcast"
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minimvel iam, quis nostrud exercitation ullamco
+                  laboris..."
+              category1="business"
+              category2="startup"
+              date="Sep 14, 2021"
+            />
+            <NewsItem
+              image="/image/homepage/news/news2.png"
+              description="девушка в маске рисует на стене"
+              subtitle="TIPS & TRICK"
+              title="Doodle artwork 101"
+              text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minimvel iam, quis nostrud exercitation ullamco
+                  laboris..."
+              category1="art"
+              category2="creative"
+              category3="tips and trick"
+              date="Sep 12, 2021"
+            />
+            <NewsItem
+              image="/image/homepage/news/news3.png"
+              description="рамка из листочков и веточек"
+              subtitle="NEWS"
+              title="Mother Nature Taking Over"
+              text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minimvel iam, quis nostrud exercitation ullamco
+                  laboris..."
+              category1="news"
+              category2="nature"
+              date="Sep 10, 2021"
+            />
+            <NewsItem
+              image="/image/homepage/news/news4.png"
+              description="парень и девушка в наушниках сидят на диване"
+              subtitle="PRODUCTIVITY"
+              title="How to Be Productive"
+              text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minimvel iam, quis nostrud exercitation ullamco
+                  laboris..."
+              category1="productivity"
+              category2="mindset"
+              date="Sep 8, 2021"
+            />
           </div>
         </div>
         <div className={style.postsdecordown}>
