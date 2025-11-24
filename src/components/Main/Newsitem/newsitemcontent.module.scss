@@ -1,0 +1,149 @@
+@use "../../_variables.scss" as *;
+
+.hero {
+  position: relative;
+  padding: 8rem 0 4.6rem;
+  background-color: $backgroundHeaderHero;
+}
+
+.heroheader {
+  @include text(1.4rem, 160%);
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+}
+
+.linktoback {
+  margin-bottom: 4.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.5s ease;
+
+  &:hover {
+	text-decoration: underline
+  }
+}
+
+.category {
+  @include title(1.4rem, 160%, 0);
+  margin-bottom: 1rem;
+  color: $textColorRed;
+  text-align: center;
+}
+
+.title {
+  @include title(5.93rem, 120%, 2%);
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.theme {
+  @include text(1.2rem, 160%);
+  max-width: fit-content;
+  margin: 0 auto 4rem;
+  padding: 0.6rem 1.2rem;
+  border: 0.1rem solid $textColorGrey;
+  border-radius: 0.4rem;
+  color: $textColorGrey;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.mainimg {
+  margin-bottom: 10rem;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 96rem;
+  object-fit: cover;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.content {
+  margin-bottom: 10rem;
+  padding-bottom: 8rem;
+  border-bottom: 0.05rem solid $textColorGrey;
+}
+
+.subtitle {
+  @include title(3.665rem, 140%, 2%);
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.contentext {
+  @include text(1.6rem, 160%);
+}
+
+.articles {
+  background-color: $backgroundHeaderHero;
+}
+
+.dopinfo {
+  padding: 10rem 0;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 13rem 2rem;
+}
+
+.itemtitle {
+  @include title(2.265rem, 140%, 2%);
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.notnumberlist,
+.numberlist {
+  @include text(1.6rem, 160%);
+
+  li:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+}
+
+.notnumberlist {
+  li {
+    list-style: disc;
+  }
+}
+
+.itemimg {
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.firstitemcaption,
+.seconditemcaption {
+  @include text(1.4rem, 160%);
+  text-align: center;
+  color: $textColorGrey;
+
+  a {
+    color: $textColorRed;
+    transition: all 0.5s ease;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

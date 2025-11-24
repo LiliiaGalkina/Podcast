@@ -1,4 +1,5 @@
 import style from "./talklisten.module.scss";
+import Banner from "../Banner";
 
 const TalkListen = () => {
 	return (
@@ -33,29 +34,9 @@ const TalkListen = () => {
             </p>
           </div>
         </div>
-        <div className={style.banner}>
-          <div className={style.bannerquote}>
-            <img src="/image/homepage/quote.png" alt="красные кавычки" />
-          </div>
-          <h3 className={style.bannertitle}>
-            One of the best daily podcasts that covers every topic on Spotify.
-          </h3>
-          <div className={style.bannermanblock}>
-            <div className={style.banneravatar}>
-              <img src="/image/homepage/avatar.png" alt="фото John Smith" />
-            </div>
-            <p className={style.bannername}>John Smith</p>
-            <div className={style.bannerpositionbody}>
-              <div className={style.bannergreencircle}>
-                <img
-                  src="/image/homepage/green-circle.svg"
-                  alt="зеленый кружок с черными полосками"
-                />
-              </div>
-              <p className={style.bannerposition}>Social Community Manager</p>
-            </div>
-          </div>
-        </div>
+        <Banner
+          bannertext="One of the best daily podcasts that covers every topic on Spotify."
+        />
       </div>
     </section>
   );
