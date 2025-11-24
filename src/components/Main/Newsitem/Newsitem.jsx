@@ -1,16 +1,17 @@
 import { Link } from "react-router-dom";
 import style from "./newsitem.module.scss";
 
+
 const NewsItem = ({
   image,
   description,
   category,
   title,
   text,
-  themes,
+  theme,
   date,
 }) => {
-	
+	console.log(theme)
   return (
     <Link className={style.item}>
       <div className={style.img}>
@@ -24,11 +25,8 @@ const NewsItem = ({
         </div>
         <div className={style.categories}>
           <div className={style.categoriesbody}>
-            {themes.map((theme, index) => (
-              <div key={index} className={style.category}>
-                {theme}
-              </div>
-            ))}
+					  <div className={style.category}>{theme}</div>
+           
           </div>
           <div className={style.date}>{date}</div>
         </div>

@@ -3,6 +3,7 @@ import style from "./news.module.scss";
 import Buttondark from "../../Button/Buttondark";
 import { Link } from "react-router-dom";
 import NewsItem from "../Newsitem/Newsitem";
+import { posts } from "../newsitems";
 
 const News = () => {
   return (
@@ -14,33 +15,9 @@ const News = () => {
           <div className={style.itemsdecorup}>
             <img src="/image/homepage/news/decorup.png" alt="черная снежинка" />
           </div>
-          <NewsItem
-            image="/image/homepage/news/news1.png"
-            description="девушка в маске рисует на стене"
-            subtitle="PODCAST"
-            title="Setup your own podcast"
-            text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minimvel iam, quis nostrud exercitation ullamco
-                  laboris..."
-            category1="business"
-            category2="startup"
-            date="Sep 14, 2021"
-          />
-          <NewsItem
-            image="/image/homepage/news/news2.png"
-            description="аудио аппаратура"
-            subtitle="TIPS & TRICK"
-            title="Doodle artwork 101"
-            text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minimvel iam, quis nostrud exercitation ullamco
-                  laboris..."
-            category1="art"
-            category2="creative"
-            category3="tips and trick"
-            date="Sep 14, 2021"
-          />
+          {posts.slice(0,2).map((postItem) => (
+            <NewsItem key={postItem.id} {...postItem} />
+          ))}
           <div className={style.itemsdecordown}>
             <img src="/image/homepage/news/decordown.png" alt="черная кривая" />
           </div>

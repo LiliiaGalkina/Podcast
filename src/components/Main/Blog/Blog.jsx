@@ -2,7 +2,7 @@ import allstyle from "../allstyles.module.scss";
 import style from "./blog.module.scss";
 import NewsItem from "../Newsitem/Newsitem";
 import DownloadApp from "../HomePage/DownloadApp";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { posts, categories } from "../newsitems";
 
 const Blog = () => {
@@ -13,7 +13,9 @@ const Blog = () => {
     if (selectedCategory === "All") {
       return posts;
     }
-    return posts.filter((post) => post.category.toLowerCase() === selectedCategory.toLowerCase());
+    return posts.filter(
+      (post) => post.category.toLowerCase() === selectedCategory.toLowerCase()
+    );
   };
 
   return (

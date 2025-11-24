@@ -6,7 +6,7 @@ export const posts = [
     category: "Podcast",
     title: "Setup your own podcast",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...",
-    themes: ["business", "startup"],
+    theme: "business, podcast, startup",
     date: "Sep 14, 2021",
   },
   {
@@ -16,7 +16,7 @@ export const posts = [
     category: "Tips & Trick",
     title: "Doodle artwork 101",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...",
-    themes: ["art", "creative", "tips and trick"],
+    theme: "art, tips and trick, creative",
     date: "Sep 12, 2021",
   },
   {
@@ -26,7 +26,7 @@ export const posts = [
     category: "News",
     title: "Mother Nature Taking Over",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...",
-    themes: ["news", "nature"],
+    theme: "nature, news",
     date: "Sep 10, 2021",
   },
   {
@@ -36,7 +36,7 @@ export const posts = [
     category: "Productivity",
     title: "How to Be Productive",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...",
-    themes: ["productivity", "mindset"],
+    theme: "mindset, productivity",
     date: "Sep 8, 2021",
   },
   {
@@ -46,7 +46,7 @@ export const posts = [
     category: "Business",
     title: "Setup your own podcast",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...",
-    themes: ["business", "startup"],
+    theme: "business, podcast, startup",
     date: "Sep 14, 2021",
   },
   {
@@ -56,7 +56,7 @@ export const posts = [
     category: "News",
     title: "Doodle artwork 101",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...",
-    themes: ["art", "creative", "tips and trick"],
+    theme: "art, tips and trick, creative",
     date: "Sep 12, 2021",
   },
 ];
