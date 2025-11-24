@@ -3,6 +3,7 @@ import style from "./newsitem.module.scss";
 
 
 const NewsItem = ({
+	id,
   image,
   description,
   category,
@@ -11,9 +12,9 @@ const NewsItem = ({
   theme,
   date,
 }) => {
-	console.log(theme)
+	
   return (
-    <Link className={style.item}>
+    <Link to={`/${id}`} className={style.item}>
       <div className={style.img}>
         <img src={image} alt={description} />
       </div>
@@ -21,7 +22,7 @@ const NewsItem = ({
         <div className={style.contentup}>
           <h4 className={style.subtitle}>{category}</h4>
           <h3 className={style.title}>{title}</h3>
-          <p className={style.text}>{text}</p>
+          <p className={style.text}>{text.slice(0,200) + "..."}</p>
         </div>
         <div className={style.categories}>
           <div className={style.categoriesbody}>
