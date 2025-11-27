@@ -1,6 +1,7 @@
 {
   "name": "podcast",
   "private": true,
+  "homepage": "https://liliiagalkina.github.io/Podcast",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
