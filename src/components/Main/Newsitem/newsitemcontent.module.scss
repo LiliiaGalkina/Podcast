@@ -22,7 +22,7 @@
   transition: all 0.5s ease;
 
   &:hover {
-	text-decoration: underline
+    text-decoration: underline;
   }
 }
 
@@ -56,6 +56,18 @@
   gap: 2.5rem;
 }
 
+.herodecorleft {
+  @include decorSlider(left, top, 0, 10rem);
+  max-width: 25rem;
+  img {
+    width: 100%;
+  }
+}
+
+.herodecorright {
+  @include decorSlider(right, top, 0, 20rem);
+}
+
 .mainimg {
   margin-bottom: 10rem;
   position: relative;
@@ -66,6 +78,76 @@
   img {
     width: 100%;
     height: 100%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .mainimg {
+    height: 70rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .herodecorleft {
+    @include decorSlider(left, top, 0, 17rem);
+    max-width: 18rem;
+  }
+
+  .herodecorright {
+    @include decorSlider(right, top, 0, 25rem);
+    max-width: 12rem;
+    img {
+      width: 100%;
+    }
+  }
+
+  .mainimg {
+    margin-bottom: 6rem;
+    height: 60rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    @include title(5.2rem, 120%, 2%);
+  }
+
+  .herodecorleft,
+  .herodecorright {
+    display: none;
+  }
+
+  .mainimg {
+    height: 45rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 6rem 0 4.6rem;
+  }
+
+  .title {
+    @include title(4.6rem, 120%, 2%);
+  }
+
+  .mainimg {
+    margin-bottom: 4rem;
+    height: 35rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero {
+    padding: 4.6rem 0;
+  }
+
+  .title {
+    @include title(4rem, 120%, 2%);
+  }
+
+  .mainimg {
+    height: 30rem;
   }
 }
 
@@ -83,6 +165,19 @@
 
 .contentext {
   @include text(1.6rem, 160%);
+}
+
+@media (max-width: 600px) {
+  .subtitle {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .subtitle {
+    margin-bottom: 3rem;
+    font-size: 3.2rem;
+  }
 }
 
 .articles {
@@ -108,6 +203,7 @@
 .notnumberlist,
 .numberlist {
   @include text(1.6rem, 160%);
+  list-style-position: inside;
 
   li:not(:last-child) {
     margin-bottom: 4rem;
@@ -115,9 +211,7 @@
 }
 
 .notnumberlist {
-  li {
-    list-style: disc;
-  }
+  list-style-type: disc;
 }
 
 .itemimg {
@@ -146,4 +240,38 @@
       text-decoration: underline;
     }
   }
+}
+
+@media (max-width: 768px) {
+  .dopinfo {
+    padding: 8rem 0;
+  }
+
+  .items {
+    grid-template-columns: 1fr;
+    gap: 8rem;
+  }
+
+  .itemtitle {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    margin-bottom: 8rem;
+    padding-bottom: 6rem;
+  }
+
+    .dopinfo {
+    padding: 6rem 0 8rem;
+  }
+
+  .notnumberlist,
+.numberlist {
+
+  li:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
 }

@@ -36,13 +36,13 @@ const NewsItemContent = () => {
             <img src="/image/footer/tiktok.svg" alt="tiktok" />
           </div>
         </div>
-        <div className={allstyle.herodecorleft}>
+        <div className={style.herodecorleft}>
           <img
             src="/image/homepage/hero-decor1.png"
             alt="черная кривая с оранжевой звездочкой на конце"
           />
         </div>
-        <div className={allstyle.herodecorright}>
+        <div className={style.herodecorright}>
           <img
             src="/image/homepage/hero-decor2.png"
             alt="несколько разноцветных звездочек"
