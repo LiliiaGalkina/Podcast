@@ -19,7 +19,7 @@ function App() {
     });
   };
   return (
-    <Router>
+    <Router basename="/Podcast">
       <Header
         episodes={episodes}
         pricing={pricing}
