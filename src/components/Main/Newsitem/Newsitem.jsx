@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 import style from "./newsitem.module.scss";
 
-
 const NewsItem = ({
-	id,
+  id,
   image,
   description,
   category,
@@ -12,7 +11,6 @@ const NewsItem = ({
   theme,
   date,
 }) => {
-	
   return (
     <Link to={`/${id}`} className={style.item}>
       <div className={style.img}>
@@ -22,12 +20,11 @@ const NewsItem = ({
         <div className={style.contentup}>
           <h4 className={style.subtitle}>{category}</h4>
           <h3 className={style.title}>{title}</h3>
-          <p className={style.text}>{text.slice(0,200) + "..."}</p>
+          <p className={style.text}>{text.slice(0, 200) + "..."}</p>
         </div>
         <div className={style.categories}>
           <div className={style.categoriesbody}>
-					  <div className={style.category}>{theme}</div>
-           
+            <div className={style.category}>{theme}</div>
           </div>
           <div className={style.date}>{date}</div>
         </div>
