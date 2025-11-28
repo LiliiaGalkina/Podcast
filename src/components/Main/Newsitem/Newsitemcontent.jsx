@@ -10,7 +10,7 @@ const NewsItemContent = () => {
   const match = useMatch("/:id");
   const postId = match.params.id;
 	const post = posts.find((elem) => elem.id == postId);
-	console.log(post)
+	
 
   return (
     <main>
