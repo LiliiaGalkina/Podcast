@@ -5,4 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: "/Podcast",
   plugins: [react()],
+   base: "https://liliiagalkina.github.io/Podcast",
 });
