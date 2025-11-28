@@ -18,16 +18,19 @@
   gap: 2rem;
 }
 
-.item,
-.itemshadow {
+.item {
   padding: 1.6rem;
   border: 0.2rem solid $textColorDark;
   border-radius: 1.2rem;
   background-color: $textColorWhite;
-}
+  transition: all 0.5s ease;
 
-.itemshadow {
-  box-shadow: 1rem 1rem 0 $textColorSliderTitle;
+  &:hover {
+	box-shadow: 1rem 1rem 0 $textColorSliderTitle;
+	.itemtitle {
+		color: $textColorRed;
+	}
+  }
 }
 
 .itemup {

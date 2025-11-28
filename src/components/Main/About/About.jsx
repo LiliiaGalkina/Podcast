@@ -46,17 +46,17 @@ const About = () => {
           </div>
         </div>
         <div className={style.herodecorred}>
-          <img src="/image/about/hero-decor.png" alt="красная кривая" />
+          <img src="/Podcast/image/about/hero-decor.png" alt="красная кривая" />
         </div>
         <div className={allstyle.herodecorleft}>
           <img
-            src="/image/homepage/hero-decor1.png"
+            src="/Podcast/image/homepage/hero-decor1.png"
             alt="черная кривая с оранжевой звездочкой на конце"
           />
         </div>
         <div className={allstyle.herodecorright}>
           <img
-            src="/image/homepage/hero-decor2.png"
+            src="/Podcast/image/homepage/hero-decor2.png"
             alt="несколько разноцветных звездочек"
           />
         </div>
@@ -66,7 +66,7 @@ const About = () => {
         <div className={style.sponsortitleblock}>
           <h2 className={allstyle.sectiontitle}>Our Sponsor</h2>
           <img
-            src="/image/homepage/sparkle.png"
+            src="/Podcast/image/homepage/sparkle.png"
             className={style.sponsortitledecor}
             alt="красное солнышко"
           />
@@ -79,7 +79,7 @@ const About = () => {
           <div className={style.getintouchtitleblock}>
             <h2 className={allstyle.sectiontitle}>Get in touch</h2>
             <img
-              src="/image/about/getintouch-decor.png"
+              src="/Podcast/image/about/getintouch-decor.png"
               className={style.getintouchtitledecor}
               alt="красное солнышко"
             />
@@ -88,13 +88,13 @@ const About = () => {
           <MessageForm />
         </div>
         <div className={style.formdecordown}>
-          <img src="/image/reddecorsection.png" alt="красная кривая" />
+          <img src="/Podcast/image/reddecorsection.png" alt="красная кривая" />
         </div>
         <div className={style.formdecorleft}>
-          <img src="/image/about/hero-decor.png" alt="красная кривая" />
+          <img src="/Podcast/image/about/hero-decor.png" alt="красная кривая" />
         </div>
         <div className={style.formdecorright}>
-          <img src="/image/homepage/benefits/benefits2.png" alt="" />
+          <img src="/Podcast/image/homepage/benefits/benefits2.png" alt="" />
         </div>
       </section>
       <DownloadApp />

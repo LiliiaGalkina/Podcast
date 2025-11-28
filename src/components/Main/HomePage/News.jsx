@@ -13,13 +13,19 @@ const News = () => {
         <p className={allstyle.sectiontext}>News, tips, tricks and more</p>
         <div className={style.items}>
           <div className={style.itemsdecorup}>
-            <img src="/image/homepage/news/decorup.png" alt="черная снежинка" />
+            <img
+              src="/Podcast/image/homepage/news/decorup.png"
+              alt="черная снежинка"
+            />
           </div>
-          {posts.slice(0,2).map((postItem) => (
+          {posts.slice(0, 2).map((postItem) => (
             <NewsItem key={postItem.id} {...postItem} />
           ))}
           <div className={style.itemsdecordown}>
-            <img src="/image/homepage/news/decordown.png" alt="черная кривая" />
+            <img
+              src="/Podcast/image/homepage/news/decordown.png"
+              alt="черная кривая"
+            />
           </div>
         </div>
         <Link to="/blog" className={style.button}>
@@ -27,7 +33,7 @@ const News = () => {
         </Link>
       </div>
       <div className={style.decor}>
-        <img src="/image/reddecorsection.png" alt="красная кривая" />
+        <img src="/Podcast/image/reddecorsection.png" alt="красная кривая" />
       </div>
     </section>
   );

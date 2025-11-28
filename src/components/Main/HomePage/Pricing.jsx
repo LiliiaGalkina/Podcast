@@ -9,7 +9,7 @@ const Pricing = ({pricing}) => {
         <div className={style.titleblock}>
           <h2 className={allstyle.sectiontitle}>Become our sponsor</h2>
           <img
-            src="/image/homepage/pricing/decorred.png"
+            src="/Podcast/image/homepage/pricing/decorred.png"
             className={style.titledecor}
             alt="три красные линии"
           />
@@ -20,7 +20,7 @@ const Pricing = ({pricing}) => {
         <div className={style.items}>
           <div className={style.itemsdecorup}>
             <img
-              src="/image/homepage/pricing/decorstarblack.png"
+              src="/Podcast/image/homepage/pricing/decorstarblack.png"
               alt="черная звезда"
             />
           </div>
@@ -101,14 +101,14 @@ const Pricing = ({pricing}) => {
           </div>
           <div className={style.itemsdecordonw}>
             <img
-              src="/image/homepage/pricing/decorblue.png"
+              src="/Podcast/image/homepage/pricing/decorblue.png"
               alt="голубая кривая"
             />
           </div>
         </div>
       </div>
       <div className={style.decor}>
-        <img src="/image/blackdecorsection.png" alt="черная кривая" />
+        <img src="/Podcast/image/blackdecorsection.png" alt="черная кривая" />
       </div>
     </section>
   );

@@ -12,7 +12,7 @@ const TalkListen = () => {
           <div className={style.item}>
             <div className={style.itemimg}>
               <img
-                src="/image/homepage/talk-man.svg"
+                src="/Podcast/image/homepage/talk-man.svg"
                 alt="нарисованная голова мужчины, над ним облачко со знаками вопроса"
               />
             </div>
@@ -24,7 +24,7 @@ const TalkListen = () => {
           <div className={style.item}>
             <div className={style.itemimg}>
               <img
-                src="/image/homepage/talk-lamp.svg"
+                src="/Podcast/image/homepage/talk-lamp.svg"
                 alt="нарисованная голова мужчины, над ним облачко со знаками вопроса"
               />
             </div>
@@ -34,9 +34,7 @@ const TalkListen = () => {
             </p>
           </div>
         </div>
-        <Banner
-          bannertext="One of the best daily podcasts that covers every topic on Spotify."
-        />
+        <Banner bannertext="One of the best daily podcasts that covers every topic on Spotify." />
       </div>
     </section>
   );

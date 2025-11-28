@@ -4,7 +4,7 @@ import Buttondark from "../../Button/Buttondark";
 
 const Episodes = ({episodes}) => {
   return (
-	  <section ref={episodes} className={style.episodes}>
+    <section ref={episodes} className={style.episodes}>
       <div className="container">
         <h2 className={allstyle.sectiontitle}>Recent Episodes</h2>
         <p className={allstyle.sectiontext}>
@@ -13,24 +13,22 @@ const Episodes = ({episodes}) => {
         <div className={style.content}>
           <div className={style.decor}>
             <img
-              src="./image/homepage/episodes/decor.png"
+              src="/Podcast/image/homepage/episodes/decor.png"
               alt="три красные черточки"
             />
           </div>
           <div className={style.items}>
-            <a href="#" className={style.itemshadow}>
+            <a href="#" className={style.item}>
               <div className={style.itemup}>
                 <div className={style.itemimg}>
                   <img
-                    src="/image/homepage/episodes/episode1.png"
+                    src="/Podcast/image/homepage/episodes/episode1.png"
                     alt="на сером фоне на стульях сидят вирусы"
                   />
                 </div>
                 <div className={style.iteminfo}>
                   <h4 className={style.itemsubtitle}>Eps. 6</h4>
-                  <h3 className={style.itemtitlered}>
-                    Pandemic Becoming Endemic
-                  </h3>
+                  <h3 className={style.itemtitle}>Pandemic Becoming Endemic</h3>
                   <p className={style.itemtext}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Curabitur ac ultrices odio.
@@ -46,7 +44,7 @@ const Episodes = ({episodes}) => {
                   <p className={style.itemhosttext}>Hosted by: </p>
                   <div className={style.itemhostimg}>
                     <img
-                      src="/image/homepage/episodes/host.png"
+                      src="/Podcast/image/homepage/episodes/host.png"
                       alt="двойное фото авторов"
                     />
                   </div>
@@ -57,7 +55,7 @@ const Episodes = ({episodes}) => {
               <div className={style.itemup}>
                 <div className={style.itemimg}>
                   <img
-                    src="/image/homepage/episodes/episode2.png"
+                    src="/Podcast/image/homepage/episodes/episode2.png"
                     alt="машина наклонилась на юок и стоит на двух колесах"
                   />
                 </div>
@@ -81,7 +79,7 @@ const Episodes = ({episodes}) => {
                   <p className={style.itemhosttext}>Hosted by: </p>
                   <div className={style.itemhostimg}>
                     <img
-                      src="/image/homepage/episodes/host.png"
+                      src="/Podcast/image/homepage/episodes/host.png"
                       alt="двойное фото авторов"
                     />
                   </div>
@@ -92,7 +90,7 @@ const Episodes = ({episodes}) => {
               <div className={style.itemup}>
                 <div className={style.itemimg}>
                   <img
-                    src="/image/homepage/episodes/episode3.png"
+                    src="/Podcast/image/homepage/episodes/episode3.png"
                     alt="девушки и парни сидят на полу"
                   />
                 </div>
@@ -115,24 +113,24 @@ const Episodes = ({episodes}) => {
                   <p className={style.itemhosttext}>Hosted by: </p>
                   <div className={style.itemhostimg}>
                     <img
-                      src="/image/homepage/episodes/host.png"
+                      src="/Podcast/image/homepage/episodes/host.png"
                       alt="двойное фото авторов"
                     />
                   </div>
                 </div>
               </div>
             </a>
-            <a href="#" className={style.itemshadow}>
+            <a href="#" className={style.item}>
               <div className={style.itemup}>
                 <div className={style.itemimg}>
                   <img
-                    src="/image/homepage/episodes/episode4.png"
+                    src="/Podcast/image/homepage/episodes/episode4.png"
                     alt="человек в сером облегающем косюие лежит на серой листве"
                   />
                 </div>
                 <div className={style.iteminfo}>
                   <h4 className={style.itemsubtitle}>Eps. 3</h4>
-                  <h3 className={style.itemtitlered}>
+                  <h3 className={style.itemtitle}>
                     How to Deal with Self–Confidence
                   </h3>
                   <p className={style.itemtext}>
@@ -150,7 +148,7 @@ const Episodes = ({episodes}) => {
                   <p className={style.itemhosttext}>Hosted by: </p>
                   <div className={style.itemhostimg}>
                     <img
-                      src="/image/homepage/episodes/host.png"
+                      src="/Podcast/image/homepage/episodes/host.png"
                       alt="двойное фото авторов"
                     />
                   </div>
@@ -161,7 +159,7 @@ const Episodes = ({episodes}) => {
               <div className={style.itemup}>
                 <div className={style.itemimg}>
                   <img
-                    src="/image/homepage/episodes/episode5.png"
+                    src="/Podcast/image/homepage/episodes/episode5.png"
                     alt="мужчина в костюме сидит на опрокинутом стуле"
                   />
                 </div>
@@ -185,24 +183,24 @@ const Episodes = ({episodes}) => {
                   <p className={style.itemhosttext}>Hosted by: </p>
                   <div className={style.itemhostimg}>
                     <img
-                      src="/image/homepage/episodes/host.png"
+                      src="/Podcast/image/homepage/episodes/host.png"
                       alt="двойное фото авторов"
                     />
                   </div>
                 </div>
               </div>
             </a>
-            <a href="#" className={style.itemshadow}>
+            <a href="#" className={style.item}>
               <div className={style.itemup}>
                 <div className={style.itemimg}>
                   <img
-                    src="/image/homepage/episodes/episode6.png"
+                    src="/Podcast/image/homepage/episodes/episode6.png"
                     alt="лицо девушки, которая ержится за свое лицо"
                   />
                 </div>
                 <div className={style.iteminfo}>
                   <h4 className={style.itemsubtitle}>Eps. 1</h4>
-                  <h3 className={style.itemtitlered}>
+                  <h3 className={style.itemtitle}>
                     Are you a Perplexed Mind Person?
                   </h3>
                   <p className={style.itemtext}>
@@ -220,7 +218,7 @@ const Episodes = ({episodes}) => {
                   <p className={style.itemhosttext}>Hosted by: </p>
                   <div className={style.itemhostimg}>
                     <img
-                      src="/image/homepage/episodes/host.png"
+                      src="/Podcast/image/homepage/episodes/host.png"
                       alt="двойное фото авторов"
                     />
                   </div>
@@ -234,7 +232,7 @@ const Episodes = ({episodes}) => {
         </div>
       </div>
       <div className={style.decorblack}>
-        <img src="/image/blackdecorsection.png" alt="черная кривая" />
+        <img src="/Podcast/image/blackdecorsection.png" alt="черная кривая" />
       </div>
     </section>
   );

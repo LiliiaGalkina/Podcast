@@ -4,20 +4,18 @@ const Banner = ({ bannertext }) => {
 	return (
     <div className={allstyle.banner}>
       <div className={allstyle.bannerquote}>
-        <img src="/image/homepage/quote.png" alt="красные кавычки" />
+        <img src="/Podcast/image/homepage/quote.png" alt="красные кавычки" />
       </div>
-      <h3 className={allstyle.bannertitle}>
-        {bannertext}
-      </h3>
+      <h3 className={allstyle.bannertitle}>{bannertext}</h3>
       <div className={allstyle.bannermanblock}>
         <div className={allstyle.banneravatar}>
-          <img src="/image/homepage/avatar.png" alt="фото John Smith" />
+          <img src="/Podcast/image/homepage/avatar.png" alt="фото John Smith" />
         </div>
         <p className={allstyle.bannername}>John Smith</p>
         <div className={allstyle.bannerpositionbody}>
           <div className={allstyle.bannergreencircle}>
             <img
-              src="/image/homepage/green-circle.svg"
+              src="/Podcast/image/homepage/green-circle.svg"
               alt="зеленый кружок с черными полосками"
             />
           </div>

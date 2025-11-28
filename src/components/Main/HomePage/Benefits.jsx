@@ -4,12 +4,12 @@ import Buttondark from "../../Button/Buttondark";
 
 const Benefits = ({benefits}) => {
   return (
-    <section ref = {benefits} className={style.benefits}>
+    <section ref={benefits} className={style.benefits}>
       <div className="container">
         <div className={style.titleblock}>
           <h2 className={allstyle.sectiontitle}>Membership benefits</h2>
           <img
-            src="/image/homepage/benefits/benefitsdecor.png"
+            src="/Podcast/image/homepage/benefits/benefitsdecor.png"
             className={style.titledecor}
             alt="черная кривая"
           />
@@ -21,7 +21,7 @@ const Benefits = ({benefits}) => {
           <div className={style.item}>
             <div className={style.itemimg}>
               <img
-                src="/image/homepage/benefits/benefits1.png"
+                src="/Podcast/image/homepage/benefits/benefits1.png"
                 alt="голубая кривая"
               />
             </div>
@@ -34,7 +34,7 @@ const Benefits = ({benefits}) => {
           <div className={style.item}>
             <div className={style.itemimg}>
               <img
-                src="/image/homepage/benefits/benefits2.png"
+                src="/Podcast/image/homepage/benefits/benefits2.png"
                 alt="цветные ромбики"
               />
             </div>
@@ -47,7 +47,7 @@ const Benefits = ({benefits}) => {
           <div className={style.item}>
             <div className={style.itemimg}>
               <img
-                src="/image/homepage/benefits/benefits3.png"
+                src="/Podcast/image/homepage/benefits/benefits3.png"
                 alt="улыбающаяся рожица"
               />
             </div>
@@ -60,7 +60,7 @@ const Benefits = ({benefits}) => {
           <div className={style.item}>
             <div className={style.itemimg}>
               <img
-                src="/image/homepage/benefits/benefits4.png"
+                src="/Podcast/image/homepage/benefits/benefits4.png"
                 alt="три улыбающиеся рожицы друг за другом"
               />
             </div>
@@ -72,7 +72,10 @@ const Benefits = ({benefits}) => {
           </div>
           <div className={style.item}>
             <div className={style.itemimg}>
-              <img src="/image/homepage/benefits/benefits5.png" alt="огонь" />
+              <img
+                src="/Podcast/image/homepage/benefits/benefits5.png"
+                alt="огонь"
+              />
             </div>
             <h3 className={style.itemtitle}>Exclusive Episodes & Merch</h3>
             <p className={style.itemtext}>
@@ -83,7 +86,7 @@ const Benefits = ({benefits}) => {
           <div className={style.item}>
             <div className={style.itemimg}>
               <img
-                src="/image/homepage/benefits/benefits6.png"
+                src="/Podcast/image/homepage/benefits/benefits6.png"
                 alt="черная снежинка"
               />
             </div>
@@ -99,7 +102,7 @@ const Benefits = ({benefits}) => {
         </div>
       </div>
       <div className={style.decor}>
-        <img src="/image/blackdecorsection.png" alt="черная кривая" />
+        <img src="/Podcast/image/blackdecorsection.png" alt="черная кривая" />
       </div>
     </section>
   );

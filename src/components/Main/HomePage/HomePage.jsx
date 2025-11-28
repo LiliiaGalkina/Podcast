@@ -19,10 +19,10 @@ const HomePage = ({episodes, pricing, feedback, benefits}) => {
         </h1>
         <p className={allstyle.herotext}>
           We cover all kinds of categories and a weekly special guest.
-			  </p>
-			  <div className={allstyle.herobutton}>
-				  <Buttondark buttonText="SUBSCRIBE"/>
-			  </div>
+        </p>
+        <div className={allstyle.herobutton}>
+          <Buttondark buttonText="SUBSCRIBE" />
+        </div>
         <div className={style.heroslider}>
           <HomePageSlider />
         </div>
@@ -30,35 +30,41 @@ const HomePage = ({episodes, pricing, feedback, benefits}) => {
           <div className={style.herolinks}>
             <p className={style.herolinkstitle}>Supported by:</p>
             <a href="#" className={style.herolink}>
-              <img src="/image/homepage/spotify.png" alt="spotify" />
+              <img src="/Podcast/image/homepage/spotify.png" alt="spotify" />
             </a>
             <a href="#" className={style.herolink}>
-              <img src="/image/homepage/googlepodcasts.png" alt="google podcasts" />
+              <img
+                src="/Podcast/image/homepage/googlepodcasts.png"
+                alt="google podcasts"
+              />
             </a>
             <a href="#" className={style.herolink}>
-              <img src="/image/homepage/youtube.png" alt="youtube" />
+              <img src="/Podcast/image/homepage/youtube.png" alt="youtube" />
             </a>
           </div>
         </div>
         <div className={allstyle.herodecorleft}>
           <img
-            src="/image/homepage/hero-decor1.png"
+            src="/Podcast/image/homepage/hero-decor1.png"
             alt="черная кривая с оранжевой звездочкой на конце"
           />
         </div>
         <div className={allstyle.herodecorright}>
-          <img src="/image/homepage/hero-decor2.png" alt="несколько разноцветных звездочек" />
+          <img
+            src="/Podcast/image/homepage/hero-decor2.png"
+            alt="несколько разноцветных звездочек"
+          />
         </div>
         <div className={style.herodecordown}>
-          <img src="/image/reddecorsection.png" alt="красная кривая" />
+          <img src="/Podcast/image/reddecorsection.png" alt="красная кривая" />
         </div>
       </section>
-      <TalkListen/>
+      <TalkListen />
       <section ref={feedback} className={style.feedback}>
         <div className={style.feedbacktitleblock}>
           <h2 className={allstyle.sectiontitle}>What our listeners say</h2>
           <img
-            src="/image/homepage/sparkle.png"
+            src="/Podcast/image/homepage/sparkle.png"
             className={style.feedbacktitledecor}
             alt="красное солнышко"
           />
@@ -68,17 +74,17 @@ const HomePage = ({episodes, pricing, feedback, benefits}) => {
         </p>
         <HomePageFeedbackSlider />
         <div className={style.feedbackupdecor}>
-          <img src="/image/blackdecorsection.png" alt="черная кривая" />
+          <img src="/Podcast/image/blackdecorsection.png" alt="черная кривая" />
         </div>
         <div className={style.feedbackdowndecor}>
-          <img src="/image/blackdecorsection.png" alt="черная кривая" />
+          <img src="/Podcast/image/blackdecorsection.png" alt="черная кривая" />
         </div>
       </section>
-		  <Benefits benefits={benefits} />
-		  <Episodes episodes={episodes} />
-		  <Pricing pricing={pricing} />
-     <News/>
-      <DownloadApp/>
+      <Benefits benefits={benefits} />
+      <Episodes episodes={episodes} />
+      <Pricing pricing={pricing} />
+      <News />
+      <DownloadApp />
     </main>
   );
 };

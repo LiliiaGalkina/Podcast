@@ -1,7 +1,7 @@
 export const posts = [
   {
     id: 1,
-    image: "/image/homepage/news/news1.png",
+    image: "/Podcast/image/homepage/news/news1.png",
     description: "аудио аппаратура",
     category: "Podcast",
     title: "Setup your own podcast",
@@ -11,7 +11,7 @@ export const posts = [
   },
   {
     id: 2,
-    image: "/image/homepage/news/news2.png",
+    image: "/Podcast/image/homepage/news/news2.png",
     description: "девушка в маске рисует на стене",
     category: "Tips & Trick",
     title: "Doodle artwork 101",
@@ -21,7 +21,7 @@ export const posts = [
   },
   {
     id: 3,
-    image: "/image/homepage/news/news3.png",
+    image: "/Podcast/image/homepage/news/news3.png",
     description: "рамка из листочков и веточек",
     category: "News",
     title: "Mother Nature Taking Over",
@@ -31,7 +31,7 @@ export const posts = [
   },
   {
     id: 4,
-    image: "/image/homepage/news/news4.png",
+    image: "/Podcast/image/homepage/news/news4.png",
     description: "парень и девушка в наушниках сидят на диване",
     category: "Productivity",
     title: "How to Be Productive",
@@ -41,7 +41,7 @@ export const posts = [
   },
   {
     id: 5,
-    image: "/image/homepage/news/news1.png",
+    image: "/Podcast/image/homepage/news/news1.png",
     description: "аудио аппаратура",
     category: "Business",
     title: "Setup your own podcast",
@@ -51,7 +51,7 @@ export const posts = [
   },
   {
     id: 6,
-    image: "/image/homepage/news/news2.png",
+    image: "/Podcast/image/homepage/news/news2.png",
     description: "девушка в маске рисует на стене",
     category: "News",
     title: "Doodle artwork 101",

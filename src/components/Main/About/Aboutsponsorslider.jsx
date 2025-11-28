@@ -59,7 +59,7 @@ const AboutSponsorSlider = () => {
       <Slider {...settings} className={style.sliderfeedback}>
         <div className={style.slidersponsoritem}>
           <div className={style.itemimg}>
-            <img src="/image/about/spotify.png" alt="spotify" />
+            <img src="/Podcast/image/about/spotify.png" alt="spotify" />
           </div>
           <p className={style.itemtext}>
             Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in
@@ -69,7 +69,10 @@ const AboutSponsorSlider = () => {
         </div>
         <div className={style.slidersponsoritem}>
           <div className={style.itemimg}>
-            <img src="/image/about/googlepodcasts.png" alt="googlepodcasts" />
+            <img
+              src="/Podcast/image/about/googlepodcasts.png"
+              alt="googlepodcasts"
+            />
           </div>
           <p className={style.itemtext}>
             Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in
@@ -80,7 +83,7 @@ const AboutSponsorSlider = () => {
 
         <div className={style.slidersponsoritem}>
           <div className={style.itemimg}>
-            <img src="/image/about/youtube.png" alt="youtube" />
+            <img src="/Podcast/image/about/youtube.png" alt="youtube" />
           </div>
           <p className={style.itemtext}>
             Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in
@@ -90,7 +93,10 @@ const AboutSponsorSlider = () => {
         </div>
         <div className={style.slidersponsoritem}>
           <div className={style.itemimg}>
-            <img src="/image/about/googlepodcasts.png" alt="googlepodcasts" />
+            <img
+              src="/Podcast/image/about/googlepodcasts.png"
+              alt="googlepodcasts"
+            />
           </div>
           <p className={style.itemtext}>
             Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in
@@ -100,7 +106,7 @@ const AboutSponsorSlider = () => {
         </div>
         <div className={style.slidersponsoritem}>
           <div className={style.itemimg}>
-            <img src="/image/about/spotify.png" alt="spotify" />
+            <img src="/Podcast/image/about/spotify.png" alt="spotify" />
           </div>
           <p className={style.itemtext}>
             Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in
@@ -110,7 +116,7 @@ const AboutSponsorSlider = () => {
         </div>
         <div className={style.slidersponsoritem}>
           <div className={style.itemimg}>
-            <img src="/image/about/youtube.png" alt="youtube" />
+            <img src="/Podcast/image/about/youtube.png" alt="youtube" />
           </div>
           <p className={style.itemtext}>
             Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in

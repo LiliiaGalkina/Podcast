@@ -38,13 +38,13 @@ const Blog = () => {
         />
         <div className={allstyle.herodecorleft}>
           <img
-            src="/image/homepage/hero-decor1.png"
+            src="/Podcast/image/homepage/hero-decor1.png"
             alt="черная кривая с оранжевой звездочкой на конце"
           />
         </div>
         <div className={allstyle.herodecorright}>
           <img
-            src="/image/homepage/hero-decor2.png"
+            src="/Podcast/image/homepage/hero-decor2.png"
             alt="несколько разноцветных звездочек"
           />
         </div>
@@ -54,7 +54,7 @@ const Blog = () => {
           <div className={style.titleblock}>
             <h2 className={allstyle.sectiontitle}>Latest Posts</h2>
             <img
-              src="/image/homepage/pricing/decorred.png"
+              src="/Podcast/image/homepage/pricing/decorred.png"
               className={style.titledecor}
               alt="три красные линии"
             />
@@ -80,7 +80,7 @@ const Blog = () => {
           </div>
         </div>
         <div className={style.postsdecordown}>
-          <img src="/image/reddecorsection.png" alt="красная кривая" />
+          <img src="/Podcast/image/reddecorsection.png" alt="красная кривая" />
         </div>
       </section>
       <DownloadApp />

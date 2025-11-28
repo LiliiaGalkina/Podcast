@@ -19,7 +19,7 @@ const NewsItemContent = () => {
           <div className={style.heroheader}>
             <Link to={"/blog"} className={style.linktoback}>
               <img
-                src="/image/blog/arrow-back.png"
+                src="/Podcast/image/blog/arrow-back.png"
                 className={style.arrow}
                 alt="стрелка влево"
               />
@@ -31,20 +31,20 @@ const NewsItemContent = () => {
           <h2 className={style.title}>{post.title}</h2>
           <div className={style.theme}>{post.theme}</div>
           <div className={style.social}>
-            <img src="/image/footer/twitter.svg" alt="twitter" />
-            <img src="/image/footer/instagram.svg" alt="instagram" />
-            <img src="/image/footer/tiktok.svg" alt="tiktok" />
+            <img src="/Podcast/image/footer/twitter.svg" alt="twitter" />
+            <img src="/Podcast/image/footer/instagram.svg" alt="instagram" />
+            <img src="/Podcast/image/footer/tiktok.svg" alt="tiktok" />
           </div>
         </div>
         <div className={style.herodecorleft}>
           <img
-            src="/image/homepage/hero-decor1.png"
+            src="/Podcast/image/homepage/hero-decor1.png"
             alt="черная кривая с оранжевой звездочкой на конце"
           />
         </div>
         <div className={style.herodecorright}>
           <img
-            src="/image/homepage/hero-decor2.png"
+            src="/Podcast/image/homepage/hero-decor2.png"
             alt="несколько разноцветных звездочек"
           />
         </div>
@@ -103,7 +103,7 @@ const NewsItemContent = () => {
             <div className={style.item}>
               <div className={style.itemimg}>
                 <img
-                  src="/image/blog/itemimg1.png"
+                  src="/Podcast/image/blog/itemimg1.png"
                   alt="голубые, красные и черные завитушки"
                 />
               </div>
@@ -113,7 +113,10 @@ const NewsItemContent = () => {
             </div>
             <div className={style.item}>
               <div className={style.itemimg}>
-                <img src="/image/blog/itemimg2.png" alt="черные завитушки" />
+                <img
+                  src="/Podcast/image/blog/itemimg2.png"
+                  alt="черные завитушки"
+                />
               </div>
               <div className={style.seconditemcaption}>
                 <a href="#">download here</a>
