@@ -6,7 +6,7 @@ import Buttondark from "../Button/Buttondark";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Header = ({ episodes, pricing, feedback, benefits, scrollToSection }) => {
+const Header = ({pricing, feedback, benefits, scrollToSection }) => {
   const [showInnerMenu, setShowInnerMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -57,11 +57,7 @@ const Header = ({ episodes, pricing, feedback, benefits, scrollToSection }) => {
                       </Link>
                     </li>
                     <li className={style.innermenuitem}>
-                      <Link
-                        onClick={() => scrollToSection(episodes)}
-                        className={style.menulink}
-                        style={{ color: "#bfbfbf" }}
-                      >
+                      <Link to="/episodes" className={style.menulink}>
                         Episodes
                       </Link>
                     </li>

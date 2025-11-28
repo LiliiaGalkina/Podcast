@@ -43,10 +43,8 @@ const Footer = ({ episodes, pricing, feedback, benefits, scrollToSection }) => {
               <Link to="/blog" className={style.footermenuitem}>
                 Blog
               </Link>
-              <Link
-                onClick={() => scrollToSection(episodes)}
+              <Link to="/episodes"
                 className={style.footermenuitem}
-                style={{ color: "#bfbfbf" }}
               >
                 Episodes
               </Link>

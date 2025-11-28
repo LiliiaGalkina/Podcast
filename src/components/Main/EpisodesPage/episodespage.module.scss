@@ -1,0 +1,18 @@
+@use "../../_variables.scss" as *;
+
+.hero {
+  position: relative;
+  padding: 6rem 0;
+  background-color: $backgroundHeaderHero;
+}
+
+.herodecordown {
+  @include decorSlider(left, bottom, 50%, -7.5rem);
+  transform: translate(-50%);
+}
+
+@media (max-width: 480px) {
+  .herodecordown {
+    display: none;
+  }
+}
