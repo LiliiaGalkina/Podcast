@@ -1,12 +1,12 @@
 {
   "name": "podcast",
   "private": true,
-  "homepage": "https://liliiagalkina.github.io/Podcast/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
