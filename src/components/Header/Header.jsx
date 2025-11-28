@@ -18,9 +18,9 @@ const Header = ({ episodes, pricing, feedback, benefits, scrollToSection }) => {
       <div className="container">
         <div className={style.headeritems}>
           <div className={style.navigation}>
-            <div className={style.logo}>
+            <Link to="/" className={style.logo}>
               <img src={logo} alt="логотип" />
-            </div>
+            </Link>
             <nav className={style.menu}>
               <ul className={style.menulist}>
                 <li className={style.menuitem}>
@@ -52,9 +52,15 @@ const Header = ({ episodes, pricing, feedback, benefits, scrollToSection }) => {
                     style={{ display: showInnerMenu ? "block" : "none" }}
                   >
                     <li className={style.innermenuitem}>
+                      <Link to="/blog" className={style.menulink}>
+                        Blog
+                      </Link>
+                    </li>
+                    <li className={style.innermenuitem}>
                       <Link
                         onClick={() => scrollToSection(episodes)}
                         className={style.menulink}
+                        style={{ color: "#bfbfbf" }}
                       >
                         Episodes
                       </Link>
@@ -63,6 +69,7 @@ const Header = ({ episodes, pricing, feedback, benefits, scrollToSection }) => {
                       <Link
                         onClick={() => scrollToSection(pricing)}
                         className={style.menulink}
+                        style={{ color: "#bfbfbf" }}
                       >
                         Pricing
                       </Link>
@@ -71,6 +78,7 @@ const Header = ({ episodes, pricing, feedback, benefits, scrollToSection }) => {
                       <Link
                         onClick={() => scrollToSection(feedback)}
                         className={style.menulink}
+                        style={{ color: "#bfbfbf" }}
                       >
                         Feedback
                       </Link>
@@ -79,13 +87,9 @@ const Header = ({ episodes, pricing, feedback, benefits, scrollToSection }) => {
                       <Link
                         onClick={() => scrollToSection(benefits)}
                         className={style.menulink}
+                        style={{ color: "#bfbfbf" }}
                       >
                         Benefits
-                      </Link>
-                    </li>
-                    <li className={style.innermenuitem}>
-                      <Link to="/blog" className={style.menulink}>
-                        Blog
                       </Link>
                     </li>
                   </ul>

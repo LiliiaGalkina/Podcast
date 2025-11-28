@@ -53,13 +53,10 @@
   gap: 2rem;
 }
 
-.footermenuitemdark {
+.footermenuitem {
   @include footermenuitem($textColorDark);
 }
 
-.footermenuitemred {
-  @include footermenuitem($textColorRed);
-}
 
 .navigatioinfotext {
   @include footertext(1.6rem);

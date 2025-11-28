@@ -16,10 +16,10 @@ const Footer = ({ episodes, pricing, feedback, benefits, scrollToSection }) => {
       <div className="container">
         <div className={style.content}>
           <div className={style.info}>
-            <div className={style.logoblock}>
+            <Link to="/" className={style.logoblock}>
               <img src={logo} alt="логотип" className={style.logo} />
               <p className={style.logotext}>©2021.</p>
-            </div>
+            </Link>
             <p className={style.infotext}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
@@ -37,37 +37,41 @@ const Footer = ({ episodes, pricing, feedback, benefits, scrollToSection }) => {
           </div>
           <div className={style.footermenu}>
             <div className={style.footermenucolumn}>
-              <Link to={"/about"} className={style.footermenuitemdark}>
+              <Link to={"/about"} className={style.footermenuitem}>
                 About
+              </Link>
+              <Link to="/blog" className={style.footermenuitem}>
+                Blog
               </Link>
               <Link
                 onClick={() => scrollToSection(episodes)}
-                className={style.footermenuitemred}
+                className={style.footermenuitem}
+                style={{ color: "#bfbfbf" }}
               >
                 Episodes
-              </Link>
-              <Link
-                onClick={() => scrollToSection(pricing)}
-                className={style.footermenuitemdark}
-              >
-                Pricing
               </Link>
             </div>
             <div className={style.footermenucolumn}>
               <Link
+                onClick={() => scrollToSection(pricing)}
+                className={style.footermenuitem}
+                style={{ color: "#bfbfbf" }}
+              >
+                Pricing
+              </Link>
+              <Link
                 onClick={() => scrollToSection(feedback)}
-                className={style.footermenuitemred}
+                className={style.footermenuitem}
+                style={{ color: "#bfbfbf" }}
               >
                 Feedback
               </Link>
               <Link
                 onClick={() => scrollToSection(benefits)}
-                className={style.footermenuitemdark}
+                className={style.footermenuitem}
+                style={{ color: "#bfbfbf" }}
               >
                 Benefits
-              </Link>
-              <Link to="/blog" className={style.footermenuitemdark}>
-                Blog
               </Link>
             </div>
           </div>

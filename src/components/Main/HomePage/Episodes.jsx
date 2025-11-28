@@ -107,7 +107,7 @@ const Episodes = ({episodes}) => {
               </div>
               <div className={style.itemdown}>
                 <div className={style.itemcategories}>
-                  <div className={style.itemcategoory}>women’s rights</div>
+                  <div className={style.itemcategory}>women’s rights</div>
                 </div>
                 <div className={style.itemhost}>
                   <p className={style.itemhosttext}>Hosted by: </p>
