@@ -21,20 +21,17 @@ function App() {
   return (
     <Router>
       <Header
-        episodes={episodes}
         pricing={pricing}
         feedback={feedback}
         benefits={benefits}
         scrollToSection={scrollToSection}
       />
       <AppRoute
-        episodes={episodes}
         pricing={pricing}
         feedback={feedback}
         benefits={benefits}
       />
       <Footer
-        episodes={episodes}
         pricing={pricing}
         feedback={feedback}
         benefits={benefits}

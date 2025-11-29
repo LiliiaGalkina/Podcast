@@ -61,12 +61,68 @@ export const posts = [
   },
 ];
 
-
 export const categories = [
   "All",
   "Business",
   "News",
   "Tips & Trick",
   "Podcast",
-  "Productivity"
+  "Productivity",
+];
+
+export const episodes = [
+  {
+    id: 11,
+    subtitle: "Eps. 6",
+    title: "Pandemic Becoming Endemic",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.",
+    imageUrl: "/Podcast/image/homepage/episodes/episode1.png",
+    imageAlt: "на сером фоне на стульях сидят вирусы",
+    tags: ["covid-19", "health"],
+  },
+  {
+    id: 12,
+    subtitle: "Eps. 5",
+    title: "Tesla Autopilot Controversy",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.",
+    imageUrl: "/Podcast/image/homepage/episodes/episode2.png",
+    imageAlt: "машина наклонилась на бок и стоит на двух колесах",
+    tags: ["automation", "tech"],
+  },
+  {
+    id: 13,
+    subtitle: "Eps. 4",
+    title: " Women's Rights? Is it alright?",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.",
+    imageUrl: "/Podcast/image/homepage/episodes/episode3.png",
+    imageAlt: "девушки и парни сидят на полу",
+    tags: ["women’s rights"],
+  },
+  {
+    id: 14,
+    subtitle: "Eps. 3",
+    title: "How to Deal with Self–Confidence",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.",
+    imageUrl: "/Podcast/image/homepage/episodes/episode4.png",
+    imageAlt: "человек в сером облегающем косюие лежит на серой листве",
+    tags: ["self-esteem", "health"],
+  },
+  {
+    id: 15,
+    subtitle: "Eps. 2",
+    title: "PType of Social Classes of People",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.",
+    imageUrl: "/Podcast/image/homepage/episodes/episode5.png",
+    imageAlt: "мужчина в костюме сидит на опрокинутом стуле",
+    tags: ["social class", "wealth"],
+  },
+  {
+    id: 16,
+    subtitle: "Eps. 1",
+    title: "Pandemic Becoming Endemic",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.",
+    imageUrl: "/Podcast/image/homepage/episodes/episode1.png",
+    imageAlt: "лицо девушки, которая держится за свое лицо",
+    tags: ["mind-behaviour", "health"],
+  },
 ];

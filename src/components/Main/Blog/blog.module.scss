@@ -65,6 +65,7 @@
 }
 
 .postsitems {
+  margin-bottom: 10rem;
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -78,6 +79,15 @@
   bottom: -7.5rem;
   transform: translate(-50%);
   z-index: 2;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  button {
+    width: 17.2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -130,10 +140,14 @@
   }
 
   .categories {
-	margin-bottom: 6rem;
+    margin-bottom: 6rem;
   }
 
   .postsdecordown {
     display: none;
+  }
+
+  .postsitems {
+	margin-bottom: 8rem;
   }
 }

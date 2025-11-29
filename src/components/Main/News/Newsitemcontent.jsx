@@ -3,14 +3,13 @@ import { posts } from "../newsitems";
 import style from "./newsitemcontent.module.scss";
 import { Link } from "react-router-dom";
 import Banner from "../Banner";
-import News from "../HomePage/News";
-import DownloadApp from "../HomePage/DownloadApp";
+import News from "./News";
+import DownloadApp from "../DownloadApp/DownloadApp";
 
 const NewsItemContent = () => {
   const match = useMatch("/:id");
   const postId = match.params.id;
-	const post = posts.find((elem) => elem.id == postId);
-	
+  const post = posts.find((elem) => elem.id == postId);
 
   return (
     <main>

@@ -2,7 +2,7 @@ import allstyle from "../allstyles.module.scss";
 import style from "./news.module.scss";
 import Buttondark from "../../Button/Buttondark";
 import { Link } from "react-router-dom";
-import NewsItem from "../Newsitem/Newsitem";
+import NewsItem from "./Newsitem";
 import { posts } from "../newsitems";
 
 const News = () => {

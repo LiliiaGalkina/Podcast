@@ -1,7 +1,8 @@
 import allstyle from "../allstyles.module.scss";
 import style from "./blog.module.scss";
-import NewsItem from "../Newsitem/Newsitem";
-import DownloadApp from "../HomePage/DownloadApp";
+import NewsItem from "../News/Newsitem";
+import DownloadApp from "../DownloadApp/DownloadApp";
+import Buttondark from "../../Button/Buttondark";
 import { useState } from "react";
 import { posts, categories } from "../newsitems";
 
@@ -78,6 +79,9 @@ const Blog = () => {
               <NewsItem key={postItem.id} {...postItem} />
             ))}
           </div>
+        </div>
+        <div className={style.button}>
+          <Buttondark buttonText="BROWSE ALL" />
         </div>
         <div className={style.postsdecordown}>
           <img src="/Podcast/image/reddecorsection.png" alt="красная кривая" />

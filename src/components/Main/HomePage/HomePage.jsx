@@ -3,14 +3,15 @@ import allstyle from "../allstyles.module.scss";
 import HomePageSlider from "./HomePageSlider";
 import HomePageFeedbackSlider from "./HomePageFeedbackSlider";
 import Buttondark from "../../Button/Buttondark";
-import DownloadApp from "./DownloadApp";
-import News from "./News";
-import Pricing from "./Pricing";
-import Episodes from "./Episodes";
-import Benefits from "./Benefits";
-import TalkListen from "./TalkListen";
+import DownloadApp from "../DownloadApp/DownloadApp";
+import News from "../News/News";
+import Pricing from "../Prising/Pricing";
+import Episodes from "../Episodes/Episodes";
+import Benefits from "../Benefits/Benefits";
+import TalkListen from "../TalkListen/TalkListen";
+import { Link } from "react-router-dom";
 
-const HomePage = ({episodes, pricing, feedback, benefits}) => {
+const HomePage = ({ pricing, feedback, benefits }) => {
   return (
     <main className={style.main}>
       <section className={allstyle.hero}>
@@ -81,7 +82,25 @@ const HomePage = ({episodes, pricing, feedback, benefits}) => {
         </div>
       </section>
       <Benefits benefits={benefits} />
-      <Episodes episodes={episodes} />
+      <section className={style.episodes}>
+        <div className="container">
+          <h2 className={allstyle.sectiontitle}>Recent Episodes</h2>
+          <p className={allstyle.sectiontext}>
+            Available on your favorite platform
+          </p>
+          <Episodes count={2} />
+          <Link to="/episodes" className={style.button}>
+            <Buttondark buttonText="BROWSE ALL EPISODES" />
+          </Link>
+          <div className={style.episodesdecorblack}>
+            <img
+              src="/Podcast/image/blackdecorsection.png"
+              alt="черная кривая"
+            />
+          </div>
+        </div>
+      </section>
+
       <Pricing pricing={pricing} />
       <News />
       <DownloadApp />

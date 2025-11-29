@@ -1,0 +1,55 @@
+@use "../../_variables.scss" as *;
+
+.hero {
+  position: relative;
+  padding: 6rem 0;
+  background-color: $backgroundHeaderHero;
+}
+
+.herodecordown {
+  @include decorSlider(left, bottom, 50%, -7.5rem);
+  transform: translate(-50%);
+}
+
+@media (max-width: 480px) {
+  .herodecordown {
+    display: none;
+  }
+}
+
+/*Episodes*/
+
+.episodes {
+  position: relative;
+  padding: 14rem 0;
+  background-color: $backgroundHeaderHero;
+}
+
+.episodesdecorblack {
+  position: absolute;
+  left: 50%;
+  bottom: -7.5rem;
+  transform: translate(-50%);
+  z-index: 2;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .episodes {
+    padding: 10rem 0 12rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .episodes {
+    padding: 8rem 0;
+  }
+
+  .episodesdecorblack {
+    display: none;
+  }
+}

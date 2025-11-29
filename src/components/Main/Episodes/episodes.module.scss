@@ -1,11 +1,6 @@
 @use "../../_variables.scss" as *;
 
 /*episodes*/
-.episodes {
-  position: relative;
-  padding: 14rem 0;
-  background-color: $backgroundHeaderHero;
-}
 
 .content {
   position: relative;
@@ -62,15 +57,10 @@
   color: $textColorRed;
 }
 
-.itemtitle,
-.itemtitlered {
+.itemtitle {
   @include title(2.265rem, 140%, -2%);
   margin-bottom: 1.5rem;
   min-height: 6.4rem;
-}
-
-.itemtitlered {
-  color: $textColorRed;
 }
 
 .itemtext {
@@ -104,11 +94,6 @@
   gap: 1rem;
 }
 
-.button {
-  display: flex;
-  justify-content: center;
-}
-
 .decor {
   position: absolute;
   top: -11rem;
@@ -118,13 +103,6 @@
   }
 }
 
-.decorblack {
-  position: absolute;
-  left: 50%;
-  bottom: -7.5rem;
-  transform: translate(-50%);
-  z-index: 2;
-}
 
 @media (max-width: 1400px) {
   .decor {
@@ -133,8 +111,7 @@
 }
 
 @media (max-width: 1024px) {
-  .item,
-  .itemshadow {
+  .item {
     padding: 1rem;
   }
 
@@ -147,23 +124,14 @@
     color: $textColorRed;
   }
 
-  .itemtitle,
-  .itemtitlered {
+  .itemtitle {
     @include title(1.8rem, 140%, -2%);
     margin-bottom: 1rem;
     min-height: 7.4rem;
   }
-
-  .itemtitlered {
-    color: $textColorRed;
-  }
 }
 
 @media (max-width: 768px) {
-  .episodes {
-    padding: 10rem 0 12rem;
-  }
-
   .items {
     grid-template-columns: 1fr;
   }
@@ -182,17 +150,9 @@
     margin-bottom: 1rem;
     min-height: auto;
   }
-
-  .itemshadow {
-    box-shadow: none;
-  }
 }
 
 @media (max-width: 480px) {
-  .episodes {
-    padding: 8rem 0;
-  }
-
   .items {
     margin-bottom: 8rem;
   }
@@ -208,10 +168,6 @@
 
   .itemtext {
     @include text(1.2rem, 140%);
-  }
-
-  .decorblack {
-    display: none;
   }
 
   .itemcategory {

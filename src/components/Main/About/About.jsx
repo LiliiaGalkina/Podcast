@@ -5,7 +5,7 @@ import Button from "../../Button/Button";
 import Listenerssay from "./Listenerssay";
 import AboutSponsorSlider from "./Aboutsponsorslider";
 import MessageForm from "./MessageForm";
-import DownloadApp from "../HomePage/DownloadApp";
+import DownloadApp from "../DownloadApp/DownloadApp";
 
 const About = () => {
   return (

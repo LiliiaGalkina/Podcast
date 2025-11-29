@@ -2,8 +2,8 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "./HomePage/HomePage";
 import About from "./About/About";
 import Blog from "./Blog/Blog";
-import EpisodesPage from "./EpisodesPage/EpisodesPage";
-import NewsItemContent from "./Newsitem/Newsitemcontent";
+import EpisodesPage from "./Episodes/EpisodesPage";
+import NewsItemContent from "./News/Newsitemcontent";
 
 const AppRoute = ({ episodes, pricing, feedback, benefits }) => {
   return (
