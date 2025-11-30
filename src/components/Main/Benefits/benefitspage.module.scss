@@ -1,0 +1,13 @@
+@use "../../_variables.scss" as *;
+
+.hero {
+	position: relative;
+	padding: 8rem 0;
+	background-color: $backgroundHeaderHero;
+}
+
+@media (max-width: 480px) {
+	.hero {
+		padding: 8rem 1rem 2rem;
+	}
+}

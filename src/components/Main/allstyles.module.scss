@@ -7,7 +7,7 @@
 }
 
 .herotitle {
-  @include title(9.6rem, 100%, -4%);
+  @include title(9.6rem, 100%, 4%);
   margin-bottom: 4rem;
   text-align: center;
 }
@@ -34,7 +34,7 @@
 
 @media (max-width: 1180px) {
   .herotitle {
-    @include title(8rem, 100%, -4%);
+    @include title(8rem, 100%, 4%);
   }
 }
 
@@ -75,7 +75,7 @@
 
 @media (max-width: 600px) {
   .herotitle {
-    @include title(6rem, 100%, -4%);
+    @include title(6rem, 100%, 4%);
   }
 
   .herodecorleft,
@@ -86,12 +86,18 @@
 
 @media (max-width: 480px) {
   .herotitle {
-    @include title(4rem, 100%, -4%);
+    @include title(4rem, 100%, 4%);
   }
 
   .herotext {
     margin: 0 auto 8rem;
   }
+}
+
+@media (max-width: 375px) {
+	.herotitle {
+		 @include title(3.8rem, 100%, 4%);
+	}
 }
 
 .sectiontext {

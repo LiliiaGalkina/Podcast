@@ -10,7 +10,7 @@ import appstore from "/image/footer/appstore.svg";
 import googleplay from "/image/footer/google_play.svg";
 import { Link } from "react-router-dom";
 
-const Footer = ({ feedback, benefits, scrollToSection }) => {
+const Footer = () => {
   return (
     <footer className={style.footer}>
       <div className="container">
@@ -40,35 +40,24 @@ const Footer = ({ feedback, benefits, scrollToSection }) => {
               <Link to={"/about"} className={style.footermenuitem}>
                 About
               </Link>
-              <Link to="/blog" className={style.footermenuitem}>
+              <Link to={"/blog"} className={style.footermenuitem}>
                 Blog
               </Link>
-              <Link to="/episodes"
-                className={style.footermenuitem}
-              >
+              <Link to={"/episodes"} className={style.footermenuitem}>
                 Episodes
               </Link>
             </div>
             <div className={style.footermenucolumn}>
-              <Link to="/prising"
-                onClick={() => scrollToSection(pricing)}
-                className={style.footermenuitem}
-               
-              >
+              <Link to={"/prising"} className={style.footermenuitem}>
                 Pricing
               </Link>
               <Link
-                onClick={() => scrollToSection(feedback)}
                 className={style.footermenuitem}
                 style={{ color: "#bfbfbf" }}
               >
                 Feedback
               </Link>
-              <Link
-                onClick={() => scrollToSection(benefits)}
-                className={style.footermenuitem}
-                style={{ color: "#bfbfbf" }}
-              >
+              <Link to={"/benefits"} className={style.footermenuitem}>
                 Benefits
               </Link>
             </div>

@@ -3,7 +3,6 @@ import allstyle from "../allstyles.module.scss";
 import Pricing from "./Pricing";
 import DownloadApp from "../DownloadApp/DownloadApp";
 
-
 const PrisingPage = () => {
   return (
     <main>
@@ -27,10 +26,10 @@ const PrisingPage = () => {
             src="/Podcast/image/homepage/hero-decor2.png"
             alt="несколько разноцветных звездочек"
           />
-			  </div>
-			   <div className={allstyle.sectiondecordown}>
-						<img src="/Podcast/image/reddecorsection.png" alt="красная кривая" />
-					  </div>
+        </div>
+        <div className={allstyle.sectiondecordown}>
+          <img src="/Podcast/image/reddecorsection.png" alt="красная кривая" />
+        </div>
       </section>
       <section className={style.prisinginfo}>
         <div className="container">
@@ -97,13 +96,13 @@ const PrisingPage = () => {
               inventore doloremque et.
             </p>
           </div>
-			  </div>
-			    <div className={allstyle.sectiondecordown}>
-					  <img src="/Podcast/image/blackdecorsection.png" alt="черная кривая" />
-					</div>
-		  </section>
-		  <Pricing />
-		  <DownloadApp/>
+        </div>
+        <div className={allstyle.sectiondecordown}>
+          <img src="/Podcast/image/blackdecorsection.png" alt="черная кривая" />
+        </div>
+      </section>
+      <Pricing />
+      <DownloadApp />
     </main>
   );
 };
