@@ -1,4 +1,5 @@
 import style from "./talklisten.module.scss";
+import allstyle from "../allstyles.module.scss";
 import Banner from "../Banner";
 
 const TalkListen = () => {
@@ -35,7 +36,10 @@ const TalkListen = () => {
           </div>
         </div>
         <Banner bannertext="One of the best daily podcasts that covers every topic on Spotify." />
-      </div>
+			</div>
+			  <div className={allstyle.sectiondecordown}>
+					  <img src="/Podcast/image/blackdecorsection.png" alt="черная кривая" />
+					</div>
     </section>
   );
 }

@@ -11,9 +11,9 @@ const About = () => {
   return (
     <main>
       <section className={style.heroabout}>
-        <h1 className={allstyle.herotitle}>
+        <h2 className={allstyle.herotitle}>
           About <p className={allstyle.herotitlered}>Pod of Cast</p>
-        </h1>
+        </h2>
         <p className={allstyle.herotext}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -73,6 +73,9 @@ const About = () => {
         </div>
         <p className={allstyle.sectiontext}>Our current official sponsor</p>
         <AboutSponsorSlider />
+        <div className={allstyle.sectiondecordown}>
+          <img src="/Podcast/image/blackdecorsection.png" alt="черная кривая" />
+        </div>
       </section>
       <section className={style.getintouch}>
         <div className="container">

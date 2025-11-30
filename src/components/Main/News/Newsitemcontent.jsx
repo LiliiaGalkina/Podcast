@@ -1,6 +1,7 @@
 import { useMatch } from "react-router-dom";
 import { posts } from "../newsitems";
 import style from "./newsitemcontent.module.scss";
+import allstyle from "../allstyles.module.scss";
 import { Link } from "react-router-dom";
 import Banner from "../Banner";
 import News from "./News";
@@ -121,7 +122,10 @@ const NewsItemContent = () => {
                 <a href="#">download here</a>
               </div>
             </div>
-          </div>
+				  </div>
+				    <div className={allstyle.sectiondecordown}>
+						  <img src="/Podcast/image/blackdecorsection.png" alt="черная кривая" />
+						</div>
         </section>
       </div>
       <div className={style.articles}>

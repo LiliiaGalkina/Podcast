@@ -100,6 +100,12 @@
   text-align: center;
 }
 
+.sectiondecordown {
+  @include decorSlider(left, bottom, 50%, -7.5rem);
+  transform: translate(-50%);
+}
+
+
 @media (max-width: 1024px) {
   .sectiontitle {
     @include title(5rem, 120%, -2%);
@@ -114,6 +120,10 @@
   .sectiontext {
     @include text(1.8rem, 160%);
     margin-bottom: 5rem;
+  }
+
+  .sectiondecordown {
+	display: none;
   }
 }
 

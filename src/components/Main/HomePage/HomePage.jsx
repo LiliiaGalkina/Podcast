@@ -56,7 +56,7 @@ const HomePage = ({ pricing, feedback, benefits }) => {
             alt="несколько разноцветных звездочек"
           />
         </div>
-        <div className={style.herodecordown}>
+        <div className={allstyle.sectiondecordown}>
           <img src="/Podcast/image/reddecorsection.png" alt="красная кривая" />
         </div>
       </section>
@@ -74,10 +74,7 @@ const HomePage = ({ pricing, feedback, benefits }) => {
           Their experience throughout every platform
         </p>
         <HomePageFeedbackSlider />
-        <div className={style.feedbackupdecor}>
-          <img src="/Podcast/image/blackdecorsection.png" alt="черная кривая" />
-        </div>
-        <div className={style.feedbackdowndecor}>
+        <div className={allstyle.sectiondecordown}>
           <img src="/Podcast/image/blackdecorsection.png" alt="черная кривая" />
         </div>
       </section>
@@ -92,7 +89,7 @@ const HomePage = ({ pricing, feedback, benefits }) => {
           <Link to="/episodes" className={style.button}>
             <Buttondark buttonText="BROWSE ALL EPISODES" />
           </Link>
-          <div className={style.episodesdecorblack}>
+          <div className={allstyle.sectiondecordown}>
             <img
               src="/Podcast/image/blackdecorsection.png"
               alt="черная кривая"
@@ -100,7 +97,6 @@ const HomePage = ({ pricing, feedback, benefits }) => {
           </div>
         </div>
       </section>
-
       <Pricing pricing={pricing} />
       <News />
       <DownloadApp />

@@ -1,0 +1,25 @@
+@use "../../_variables.scss" as *;
+
+.hero {
+	position: relative;
+	padding: 6rem 0 4rem;
+	background-color: $backgroundHeaderHero;
+}
+
+.prisinginfo {
+	position: relative;
+	padding: 10rem 0;
+}
+
+.title {
+	@include title(3.668rem, 160%, 2%);
+	margin-bottom: 3rem;
+	text-align: center;
+}
+
+.content {
+	@include text(1.6rem, 160%);
+	p:not(:last-child) {
+		margin-bottom: 2rem;
+	}
+}

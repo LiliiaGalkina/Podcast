@@ -125,13 +125,6 @@
   }
 }
 
-.decor {
-  position: absolute;
-  left: 50%;
-  bottom: -7.5rem;
-  transform: translate(-50%);
-  z-index: 2;
-}
 
 @media (max-width: 1400px) {
   .itemsdecorup,
@@ -173,10 +166,6 @@
     padding: 10rem 0 2rem;
   }
 
-  .decor {
-    display: none;
-  }
-
   .titledecor {
     display: none;
   }
@@ -204,6 +193,7 @@
   .pricing {
     padding: 8rem 0;
   }
+  
   .items {
     grid-template-columns: 1fr;
   }

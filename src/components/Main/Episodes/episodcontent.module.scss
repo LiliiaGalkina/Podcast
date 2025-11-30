@@ -2,7 +2,7 @@
 
 .hero {
   position: relative;
-  padding: 8rem 0 4rem;
+  padding: 8rem 0;
   background-color: $backgroundHeaderHero;
 }
 
@@ -164,7 +164,8 @@
 }
 
 .textinfo {
-	padding: 4rem 0;
+	position: relative;
+	padding: 8rem 0;
 }
 
 .textinfotitle {
@@ -182,7 +183,8 @@
 
 .episodes {
 	position: relative;
-	padding: 8rem 0;background-color: $backgroundHeaderHero;
+	padding: 10rem 0;
+	background-color: $backgroundHeaderHero;
 }
 
 .button {

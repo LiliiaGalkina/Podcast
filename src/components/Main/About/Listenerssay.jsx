@@ -156,7 +156,10 @@ const Listenerssay = () => {
             </div>
           </div>
         </div>
-      </div>
+		  </div>
+		    <div className={allstyle.sectiondecordown}>
+				  <img src="/Podcast/image/blackdecorsection.png" alt="черная кривая" />
+				</div>
     </section>
   );
 };

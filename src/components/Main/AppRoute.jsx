@@ -5,6 +5,7 @@ import Blog from "./Blog/Blog";
 import EpisodesPage from "./Episodes/EpisodesPage";
 import NewsItemContent from "./News/Newsitemcontent";
 import EpisodContent from "./Episodes/EpisodContent";
+import PrisingPage from "./Prising/PrisingPage";
 
 const AppRoute = ({ pricing, feedback, benefits }) => {
   return (
@@ -13,7 +14,6 @@ const AppRoute = ({ pricing, feedback, benefits }) => {
         path={"/"}
         element={
           <HomePage
-            pricing={pricing}
             feedback={feedback}
             benefits={benefits}
           />
@@ -23,7 +23,8 @@ const AppRoute = ({ pricing, feedback, benefits }) => {
 		  <Route path={"/blog"} element={<Blog />} />
 		  <Route path={"/episodes"} element={<EpisodesPage/> } />
 		  <Route path={`/:elemId`} element={<NewsItemContent />} />
-		  <Route path={`/episodes/:elemId`} element={<EpisodContent/>} />
+		  <Route path={`/episodes/:elemId`} element={<EpisodContent />} />
+		  <Route path="/prising" element={<PrisingPage/> } />
     </Routes>
   );
 };

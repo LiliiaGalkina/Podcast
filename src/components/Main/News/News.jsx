@@ -32,7 +32,7 @@ const News = () => {
           <Buttondark buttonText="BROWSE ALL" />
         </Link>
       </div>
-      <div className={style.decor}>
+      <div className={allstyle.sectiondecordown}>
         <img src="/Podcast/image/reddecorsection.png" alt="красная кривая" />
       </div>
     </section>

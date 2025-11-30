@@ -11,9 +11,9 @@ const EpisodesPage = ({count}) => {
   return (
     <main>
       <section className={style.hero}>
-        <h1 className={allstyle.herotitle}>
+        <h2 className={allstyle.herotitle}>
           Your Daily <p className={allstyle.herotitlered}>Episodes</p>
-        </h1>
+        </h2>
         <p className={allstyle.herotext}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
           dolor sit.

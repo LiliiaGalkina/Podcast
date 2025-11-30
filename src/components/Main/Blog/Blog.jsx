@@ -22,9 +22,9 @@ const Blog = () => {
   return (
     <main>
       <section className={style.heroblog}>
-        <h1 className={allstyle.herotitle}>
+        <h2 className={allstyle.herotitle}>
           Article <br /> and <span className={allstyle.herotitlered}>News</span>
-        </h1>
+        </h2>
         <p className={allstyle.herotext}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

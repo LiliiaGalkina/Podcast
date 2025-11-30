@@ -2,9 +2,9 @@ import allstyle from "../allstyles.module.scss";
 import style from "./pricing.module.scss";
 import Buttondark from "../../Button/Buttondark";
 
-const Pricing = ({pricing}) => {
+const Pricing = () => {
   return (
-    <section ref={pricing} className={style.pricing}>
+    <section className={style.pricing}>
       <div className="container">
         <div className={style.titleblock}>
           <h2 className={allstyle.sectiontitle}>Become our sponsor</h2>
@@ -107,7 +107,7 @@ const Pricing = ({pricing}) => {
           </div>
         </div>
       </div>
-      <div className={style.decor}>
+      <div className={allstyle.sectiondecordown}>
         <img src="/Podcast/image/blackdecorsection.png" alt="черная кривая" />
       </div>
     </section>

@@ -101,7 +101,7 @@ const Benefits = ({benefits}) => {
           <Buttondark buttonText="SEE PRICING" />
         </div>
       </div>
-      <div className={style.decor}>
+      <div className={allstyle.sectiondecordown}>
         <img src="/Podcast/image/blackdecorsection.png" alt="черная кривая" />
       </div>
     </section>
