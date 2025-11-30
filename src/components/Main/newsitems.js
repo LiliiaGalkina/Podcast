@@ -79,6 +79,7 @@ export const episodes = [
     imageUrl: "/Podcast/image/homepage/episodes/episode1.png",
     imageAlt: "на сером фоне на стульях сидят вирусы",
     tags: ["covid-19", "health"],
+    time: "46min",
   },
   {
     id: 12,
@@ -88,6 +89,7 @@ export const episodes = [
     imageUrl: "/Podcast/image/homepage/episodes/episode2.png",
     imageAlt: "машина наклонилась на бок и стоит на двух колесах",
     tags: ["automation", "tech"],
+    time: "48min",
   },
   {
     id: 13,
@@ -97,6 +99,7 @@ export const episodes = [
     imageUrl: "/Podcast/image/homepage/episodes/episode3.png",
     imageAlt: "девушки и парни сидят на полу",
     tags: ["women’s rights"],
+    time: "35min",
   },
   {
     id: 14,
@@ -106,6 +109,7 @@ export const episodes = [
     imageUrl: "/Podcast/image/homepage/episodes/episode4.png",
     imageAlt: "человек в сером облегающем косюие лежит на серой листве",
     tags: ["self-esteem", "health"],
+    time: "51min",
   },
   {
     id: 15,
@@ -115,14 +119,16 @@ export const episodes = [
     imageUrl: "/Podcast/image/homepage/episodes/episode5.png",
     imageAlt: "мужчина в костюме сидит на опрокинутом стуле",
     tags: ["social class", "wealth"],
+    time: "38min",
   },
   {
     id: 16,
     subtitle: "Eps. 1",
     title: "Pandemic Becoming Endemic",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.",
-    imageUrl: "/Podcast/image/homepage/episodes/episode1.png",
+    imageUrl: "/Podcast/image/homepage/episodes/episode6.png",
     imageAlt: "лицо девушки, которая держится за свое лицо",
     tags: ["mind-behaviour", "health"],
+    time: "42min",
   },
 ];

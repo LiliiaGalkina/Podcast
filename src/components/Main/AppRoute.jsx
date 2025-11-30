@@ -4,8 +4,9 @@ import About from "./About/About";
 import Blog from "./Blog/Blog";
 import EpisodesPage from "./Episodes/EpisodesPage";
 import NewsItemContent from "./News/Newsitemcontent";
+import EpisodContent from "./Episodes/EpisodContent";
 
-const AppRoute = ({ episodes, pricing, feedback, benefits }) => {
+const AppRoute = ({ pricing, feedback, benefits }) => {
   return (
     <Routes>
       <Route
@@ -21,7 +22,8 @@ const AppRoute = ({ episodes, pricing, feedback, benefits }) => {
       <Route path={"/about"} element={<About />} />
 		  <Route path={"/blog"} element={<Blog />} />
 		  <Route path={"/episodes"} element={<EpisodesPage/> } />
-		  <Route path={`/:elemId`} element={<NewsItemContent/> } />
+		  <Route path={`/:elemId`} element={<NewsItemContent />} />
+		  <Route path={`/episodes/:elemId`} element={<EpisodContent/>} />
     </Routes>
   );
 };

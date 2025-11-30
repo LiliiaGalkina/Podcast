@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import style from "./episodes.module.scss";
 
 const Episod = ({id, subtitle, title, text, imageUrl, imageAlt, tags}) => {
   return (
-    <a href="#" className={style.item}>
+    <Link to={`/episodes/${id}`} className={style.item}>
       <div className={style.itemup}>
         <div className={style.itemimg}>
           <img src={imageUrl} alt={imageAlt} />
@@ -30,7 +31,7 @@ const Episod = ({id, subtitle, title, text, imageUrl, imageAlt, tags}) => {
           </div>
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 
