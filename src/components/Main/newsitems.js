@@ -132,3 +132,36 @@ export const episodes = [
     time: "42min",
   },
 ];
+
+export const feedback = [
+  {
+    id: "nkyWG0rgfF",
+    name: "Ann",
+    email: "aaa@yandex.ru",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aspernatur sunt, voluptas corporis, deleniti quasi eaque, voluptate facere veniam officiis animi culpa natus fugiat voluptatibus necessitatibus laborum quidem distinctio ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    id: "wz22HBkTby",
+    name: "Jack",
+    email: "jjj@yandex.ru",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aspernatur sunt, voluptas corporis, deleniti quasi eaque, voluptate facere veniam officiis animi culpa natus fugiat voluptatibus necessitatibus laborum quidem distinctio ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    id: "1At5j18OcS",
+    name: "Lucas",
+    email: "lll@yandex.ru",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aspernatur sunt, voluptas corporis, deleniti quasi eaque, voluptate facere veniam officiis animi culpa natus fugiat voluptatibus necessitatibus laborum quidem distinctio ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    id: "a91bvRmpQy",
+    name: "Emily",
+    email: "eee@yandex.ru",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aspernatur sunt, voluptas corporis, deleniti quasi eaque, voluptate facere veniam officiis animi culpa natus fugiat voluptatibus necessitatibus laborum quidem distinctio ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    id: "GdEXxea7bL",
+    name: "Florence",
+    email: "fff@yandex.ru",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aspernatur sunt, voluptas corporis, deleniti quasi eaque, voluptate facere veniam officiis animi culpa natus fugiat voluptatibus necessitatibus laborum quidem distinctio ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  },
+];

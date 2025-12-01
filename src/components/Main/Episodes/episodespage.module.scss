@@ -11,6 +11,20 @@
   transform: translate(-50%);
 }
 
+.episodesherobutton {
+	display: flex;
+	justify-content: center;
+	button {
+		width: 20rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.hero {
+		padding: 6rem 0 4rem;
+	}
+}
+
 @media (max-width: 480px) {
   .herodecordown {
     display: none;

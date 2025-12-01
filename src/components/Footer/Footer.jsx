@@ -51,9 +51,8 @@ const Footer = () => {
               <Link to={"/prising"} className={style.footermenuitem}>
                 Pricing
               </Link>
-              <Link
+              <Link to="/feedback"
                 className={style.footermenuitem}
-                style={{ color: "#bfbfbf" }}
               >
                 Feedback
               </Link>

@@ -18,7 +18,7 @@ const EpisodesPage = ({count}) => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
           dolor sit.
         </p>
-        <div className={allstyle.herobutton}>
+        <div className={style.episodesherobutton}>
           <Buttondark buttonText="SUBSCRIBE" />
         </div>
         <div className={allstyle.herodecorleft}>

@@ -23,3 +23,13 @@
 		margin-bottom: 2rem;
 	}
 }
+
+@media (max-width: 480px) {
+	.hero {
+		padding: 6rem 0 2rem;
+	}
+
+	.prisinginfo {
+		padding: 6rem 0 2rem;
+	}
+}

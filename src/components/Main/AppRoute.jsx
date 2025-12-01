@@ -7,26 +7,20 @@ import NewsItemContent from "./News/Newsitemcontent";
 import EpisodContent from "./Episodes/EpisodContent";
 import PrisingPage from "./Prising/PrisingPage";
 import BenefitsPage from "./Benefits/BenefitsPage";
+import FeedbackPage from "./Feedback/FeedbackPage";
 
-const AppRoute = ({ pricing, feedback, benefits }) => {
+const AppRoute = () => {
   return (
     <Routes>
-      <Route
-        path={"/"}
-        element={
-          <HomePage
-            feedback={feedback}
-            benefits={benefits}
-          />
-        }
-      />
+      <Route path={"/"} element={<HomePage />} />
       <Route path={"/about"} element={<About />} />
-		  <Route path={"/blog"} element={<Blog />} />
-		  <Route path={"/episodes"} element={<EpisodesPage/> } />
-		  <Route path={`/:elemId`} element={<NewsItemContent />} />
-		  <Route path={`/episodes/:elemId`} element={<EpisodContent />} />
-		  <Route path={"/prising"} element={<PrisingPage />} />
-		  <Route path={"/benefits"} element={<BenefitsPage/> } />
+      <Route path={"/blog"} element={<Blog />} />
+      <Route path={"/episodes"} element={<EpisodesPage />} />
+      <Route path={`/:elemId`} element={<NewsItemContent />} />
+      <Route path={`/episodes/:elemId`} element={<EpisodContent />} />
+      <Route path={"/prising"} element={<PrisingPage />} />
+		  <Route path={"/benefits"} element={<BenefitsPage />} />
+		  <Route path={"/feedback"} element={<FeedbackPage/> } />
     </Routes>
   );
 };

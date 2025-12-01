@@ -67,15 +67,14 @@ const Header = () => {
                       </Link>
                     </li>
                     <li className={style.innermenuitem}>
-                      <Link
-                        className={style.menulink}
-                        style={{ color: "#bfbfbf" }}
-                      >
+                      <Link to="/feedback" className={style.menulink}>
                         Feedback
                       </Link>
                     </li>
                     <li className={style.innermenuitem}>
-                      <Link to="/benefits" className={style.menulink}>Benefits</Link>
+                      <Link to="/benefits" className={style.menulink}>
+                        Benefits
+                      </Link>
                     </li>
                   </ul>
                 </li>
