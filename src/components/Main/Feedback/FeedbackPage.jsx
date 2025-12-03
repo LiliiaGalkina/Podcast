@@ -37,7 +37,7 @@ const FeedbackPage = () => {
   return (
     <main>
       <section className={style.herofeedback}>
-        <h2 className={allstyle.sectiontitle}>Feedback</h2>
+        <h2 className={allstyle.herotitle}>Feedback</h2>
         <p className={allstyle.sectiontext}>
           Add exclusive feedback, merch and more
         </p>
