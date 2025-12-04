@@ -81,6 +81,9 @@
 }
 
 @media (max-width: 768px) {
+  .items {
+    top: 6rem
+  }
   .digittext {
     @include title(3.2rem, 120%, 2%);
   }
