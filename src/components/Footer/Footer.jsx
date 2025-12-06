@@ -8,7 +8,7 @@ import spotify from "/image/footer/spotify.png";
 import youtube from "/image/footer/youtube.png";
 import appstore from "/image/footer/appstore.svg";
 import googleplay from "/image/footer/google_play.svg";
-import { Link } from "react-router-dom";
+import { Link, replace } from "react-router-dom";
 
 const Footer = () => {
   return (
