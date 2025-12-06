@@ -185,7 +185,7 @@
 }
 
 .dopinfo {
-	position: relative;
+  position: relative;
   padding: 10rem 0 12rem;
 }
 
@@ -260,19 +260,26 @@
 
 @media (max-width: 480px) {
   .content {
-    margin-bottom: 8rem;
-    padding-bottom: 6rem;
+    margin-bottom: 6rem;
+    padding-bottom: 4rem;
   }
 
-    .dopinfo {
-    padding: 6rem 0 8rem;
+  .dopinfo {
+    padding: 4rem 0 8rem;
+  }
+
+  .items {
+    gap: 6rem;
+  }
+
+  .itemimg {
+    margin-bottom: 1rem;
   }
 
   .notnumberlist,
-.numberlist {
-
-  li:not(:last-child) {
-    margin-bottom: 3rem;
+  .numberlist {
+    li:not(:last-child) {
+      margin-bottom: 3rem;
+    }
   }
-}
 }

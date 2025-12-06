@@ -1,112 +1,114 @@
 @use "../../_variables.scss" as *;
 
 .herofeedback {
- position: relative;
- padding: 14rem 0 11rem;
- background-color: $backgroundHeaderHero;
+  position: relative;
+  padding: 12rem 0 8rem;
+  background-color: $backgroundHeaderHero;
 }
 
 .addfeedback {
-	position: relative;
-	padding: 10rem 0;
+  position: relative;
+  padding: 10rem 0;
 }
 
 .form {
-	@include text(1.8rem, 160%);
-	padding-top: 5rem;
+  @include text(1.8rem, 160%);
+  padding-top: 5rem;
 }
 
 .blockinput {
-	margin-bottom: 4rem;
-	display: flex;
-	align-items: center;
-	color: $textColorDark;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  color: $textColorDark;
 }
 
 .inputText {
-	&:not(:last-child){
-		margin-right: 2rem;
-	}
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
 }
 .feedbackInput,
 .feedbackMessage {
-	@include text(1.8rem, 160%);
-	width: 40rem;
-	padding: .8rem 1rem;
-	border: 0.1rem solid $textColorGrey;
-	border-radius: 0.8rem;
+  @include text(1.8rem, 160%);
+  width: 40rem;
+  padding: 0.8rem 1rem;
+  border: 0.1rem solid $textColorGrey;
+  border-radius: 0.8rem;
 }
 
 .feedbackMessage {
-	margin-bottom: 4rem;
-	margin-top: 1rem;
-	display: block;
-	width: 100%;
-	min-height: 30rem;
-	color: $textColorDark;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+  display: block;
+  width: 100%;
+  min-height: 30rem;
+  color: $textColorDark;
 }
 
 .button {
-	@include button(#000000, $textColorWhite );
-	margin: 0 auto;
-	width: 20rem;
-	height: 6.2rem;
-    box-shadow: 0.3rem 0.3rem 0 #BFBFBF;
-	text-transform: uppercase;
+  @include button(#000000, $textColorWhite);
+  margin: 0 auto;
+  width: 20rem;
+  height: 6.2rem;
+  box-shadow: 0.3rem 0.3rem 0 #bfbfbf;
+  text-transform: uppercase;
 }
 
 /*feedbackall*/
 .feedbackall {
-	position: relative;
-	padding: 10rem 0;
-	background-color: $backgroundHeaderHero;
+  position: relative;
+  padding: 10rem 0;
+  background-color: $backgroundHeaderHero;
 }
 
 .items {
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .item {
-	padding: 1rem;
-	border-bottom: 0.1rem solid $textColorDark;
+  padding: 1rem;
+  border-bottom: 0.1rem solid $textColorDark;
 }
 
 .name {
-	@include title(2rem, 160%, 2%);
-	margin-bottom: 1rem;
+  @include title(2rem, 160%, 2%);
+  margin-bottom: 1rem;
 }
 
 .message {
-	@include text(1.8rem, 160%);
+  @include text(1.8rem, 160%);
+}
+
+@media (max-width: 768px) {
+  .herofeedback {
+    padding: 8rem 0 6rem;
+  }
 }
 
 @media (max-width: 600px) {
-	.herofeedback {
-		padding: 8rem 0 6rem;
-	}
+  .blockinput {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-	.blockinput {
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	.inputText {
-		margin-bottom: 1rem;
-	}
+  .inputText {
+    margin-bottom: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
-	.herofeedback {
-		padding: 4rem 0;
-	}
-	.addfeedback,
-	.feedbackall {
-		padding: 6rem 0;
-	}
+  .herofeedback {
+    padding: 4rem 0 2rem;
+  }
+  .addfeedback,
+  .feedbackall {
+    padding: 5rem 0;
+  }
 
-	.feedbackInput {
-		width: 100%;
-	}
+  .feedbackInput {
+    width: 100%;
+  }
 }

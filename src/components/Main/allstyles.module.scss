@@ -85,12 +85,19 @@
 }
 
 @media (max-width: 480px) {
+  .hero {
+     padding: 6.4rem 0;
+  }
   .herotitle {
     @include title(4rem, 100%, 4%);
   }
 
   .herotext {
-    margin: 0 auto 8rem;
+    margin: 0 auto 6rem;
+  }
+
+  .herobutton  {
+    margin-bottom: 8rem;
   }
 }
 
