@@ -62,7 +62,11 @@ const HomePageFeedbackSlider = () => {
                   </p>
                   <img
                     src={sliderItem.sourcesrc}
-                    className={style.sliderfeedbackpersonimg1}
+                    className={
+                      sliderItem.class == "big"
+                        ? style.sliderfeedbackpersonimg2
+                        : style.sliderfeedbackpersonimg1
+                    }
                     alt={sliderItem.sourcealt}
                   />
                 </div>

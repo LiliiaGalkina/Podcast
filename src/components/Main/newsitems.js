@@ -175,6 +175,7 @@ export const feedbackSliderItems = [
     name: "Luna lovegood,",
     sourcesrc: "Podcast/image/homepage/spotify.png",
     sourcealt: "Spotify",
+    class: "little",
   },
   {
     id: 2,
@@ -184,6 +185,7 @@ export const feedbackSliderItems = [
     name: "Emily Blunt,",
     sourcesrc: "Podcast/image/homepage/googlepodcasts.png",
     sourcealt: "Googlepodcasts",
+    class: "big",
   },
   {
     id: 3,
@@ -193,6 +195,7 @@ export const feedbackSliderItems = [
     name: "Mia Winters,",
     sourcesrc: "Podcast/image/homepage/spotify.png",
     sourcealt: "Spotify",
+    class: "little",
   },
   {
     id: 4,
@@ -202,6 +205,7 @@ export const feedbackSliderItems = [
     name: "Luna lovegood,",
     sourcesrc: "Podcast/image/homepage/spotify.png",
     sourcealt: "Spotify",
+    class: "little",
   },
   {
     id: 5,
@@ -211,6 +215,7 @@ export const feedbackSliderItems = [
     name: "Emily Blunt,",
     sourcesrc: "Podcast/image/homepage/googlepodcasts.png",
     sourcealt: "Googlepodcasts",
+    class: "big",
   },
   {
     id: 6,
@@ -220,6 +225,7 @@ export const feedbackSliderItems = [
     name: "Mia Winters,",
     sourcesrc: "Podcast/image/homepage/spotify.png",
     sourcealt: "Spotify",
+    class: "little",
   },
 ];
 
