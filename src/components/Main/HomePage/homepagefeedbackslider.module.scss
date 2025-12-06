@@ -1,14 +1,24 @@
 @use "../../_variables.scss" as *;
 
 .sliderfeedbackcontainer {
-  margin: 0 auto 6.4rem;
-  padding-left: 1%;
-  width: 99%;
   position: relative;
+  margin: 0 auto 6.4rem;
+  width: 100%;
+  position: relative;
+  padding: 0 1.5rem;
+}
+
+.sliderfeedback {
+  display: flex;
+  gap: 2rem;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+  width: 100%;
+  overflow: hidden;
 }
 
 .sliderfeedbackitem {
-  max-width: 98%;
+  flex: 0 1 49%;
   padding: 4rem;
   border-radius: 0.8rem;
   background-color: $textColorWhite;
@@ -48,14 +58,17 @@
   max-width: 14.1rem;
 }
 
-.arrowleft {
-  @include decorSlider(left, bottom, 5rem, -25rem);
-  cursor: pointer;
-}
+.arrows {
+  position: absolute;
+  bottom: -6rem;
+  left: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 
-.arrowright {
-  @include decorSlider(left, bottom, -10rem, -25rem);
-  cursor: pointer;
+  button:disabled {
+	opacity: 0.3;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -70,6 +83,12 @@
   .sliderfeedbacktext {
     @include text(2rem, 160%);
   }
+}
+
+@media (max-width: 768px) {
+	.sliderfeedbackitem {
+		flex: 0 1 100%;
+	}
 }
 
 @media (max-width: 480px) {
