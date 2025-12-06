@@ -222,3 +222,36 @@ export const feedbackSliderItems = [
     sourcealt: "Spotify",
   },
 ];
+
+export const homepageSlides = [
+  {
+    id: 1,
+    imagesrc: "Podcast/image/homepage/slider/slide1.png",
+    imagealt: "человеческая фигура на фоне серых листьев",
+  },
+  {
+    id: 2,
+    imagesrc: "Podcast/image/homepage/slider/slide2.png",
+    imagealt: "девушка закатила глаза и высунула язык",
+  },
+  {
+    id: 3,
+    imagesrc: "Podcast/image/homepage/slider/slide3.png",
+    imagealt: "девушки и парни сидят на полу",
+  },
+  {
+    id: 4,
+    imagesrc: "Podcast/image/homepage/slider/slide1.png",
+    imagealt: "человеческая фигура на фоне серых листьев",
+  },
+  {
+    id: 5,
+    imagesrc: "Podcast/image/homepage/slider/slide2.png",
+    imagealt: "девушка закатила глаза и высунула язык",
+  },
+  {
+    id: 6,
+    imagesrc: "Podcast/image/homepage/slider/slide3.png",
+    imagealt: "девушки и парни сидят на полу",
+  },
+];

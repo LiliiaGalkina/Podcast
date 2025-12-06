@@ -67,7 +67,7 @@
   gap: 2rem;
 
   button:disabled {
-	opacity: 0.3;
+    opacity: 0.3;
   }
 }
 
@@ -86,17 +86,21 @@
 }
 
 @media (max-width: 768px) {
-	.sliderfeedbackitem {
-		flex: 0 1 100%;
-	}
+  .sliderfeedbackitem {
+    flex: 0 1 100%;
+  }
+  .arrows {
+    bottom: -8rem;
+  }
 }
 
 @media (max-width: 480px) {
-  .arrowleft {
-    @include decorSlider(left, bottom, 5rem, -22rem);
+  .sliderfeedbackitem {
+    padding: 1rem;
   }
 
-  .arrowright {
-    @include decorSlider(left, bottom, -10rem, -22rem);
+  .sliderfeedbackquote {
+    margin-bottom: 2rem;
+    width: 3rem;
   }
 }
