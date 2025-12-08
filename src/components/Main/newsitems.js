@@ -261,3 +261,61 @@ export const homepageSlides = [
     imagealt: "девушки и парни сидят на полу",
   },
 ];
+
+/*slider about*/
+export const sponsor = [
+  {
+    id: 1,
+    imagesrc: "/Podcast/image/about/spotify.png",
+    imgalt: "spotify",
+    text: "Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in sed sodales in mauris molestie. Eleifend estcon sctetur interdum eu in auctor. Gravida leo et.",
+  },
+  {
+    id: 2,
+    imagesrc: "/Podcast/image/about/googlepodcasts.png",
+    imgalt: "googlepodcasts",
+    text: "Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in sed sodales in mauris molestie. Eleifend estcon sctetur interdum eu in auctor. Gravida leo et.",
+  },
+  {
+    id: 3,
+    imagesrc: "/Podcast/image/about/youtube.png",
+    imgalt: "youtube",
+    text: "Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in sed sodales in mauris molestie. Eleifend estcon sctetur interdum eu in auctor. Gravida leo et.",
+  },
+  {
+    id: 4,
+    imagesrc: "/Podcast/image/about/spotify.png",
+    imgalt: "spotify",
+    text: "Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in sed sodales in mauris molestie. Eleifend estcon sctetur interdum eu in auctor. Gravida leo et.",
+  },
+  {
+    id: 5,
+    imagesrc: "/Podcast/image/about/googlepodcasts.png",
+    imgalt: "googlepodcasts",
+    text: "Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in sed sodales in mauris molestie. Eleifend estcon sctetur interdum eu in auctor. Gravida leo et.",
+  },
+  {
+    id: 6,
+    imagesrc: "/Podcast/image/about/youtube.png",
+    imgalt: "youtube",
+    text: "Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in sed sodales in mauris molestie. Eleifend estcon sctetur interdum eu in auctor. Gravida leo et.",
+  },
+  {
+    id: 7,
+    imagesrc: "/Podcast/image/about/spotify.png",
+    imgalt: "spotify",
+    text: "Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in sed sodales in mauris molestie. Eleifend estcon sctetur interdum eu in auctor. Gravida leo et.",
+  },
+  {
+    id: 8,
+    imagesrc: "/Podcast/image/about/googlepodcasts.png",
+    imgalt: "googlepodcasts",
+    text: "Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in sed sodales in mauris molestie. Eleifend estcon sctetur interdum eu in auctor. Gravida leo et.",
+  },
+  {
+    id: 9,
+    imagesrc: "/Podcast/image/about/youtube.png",
+    imgalt: "youtube",
+    text: "Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in sed sodales in mauris molestie. Eleifend estcon sctetur interdum eu in auctor. Gravida leo et.",
+  },
+];
