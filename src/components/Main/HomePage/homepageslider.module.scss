@@ -1,17 +1,25 @@
 @use "../../_variables.scss" as *;
 
-.slideritem {
-	display: flex !important;
-	justify-content: center;
+.slider {
+	width: 99%;
+	margin: 0 auto;
 }
 
-@media (max-width: 375px) {
+
+@media (max-width: 768px) {
 	.slideritem {
-		padding: 0 1rem;
+		max-width: 50%;
+		img {
+			width: 100%;
+		}
 	}
-	img {
+}
+@media (max-width: 600px) {
+	.slideritem {
 		max-width: 100%;
 	}
 }
+
+
 
 

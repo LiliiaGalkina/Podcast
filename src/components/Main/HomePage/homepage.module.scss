@@ -42,6 +42,18 @@
   }
 }
 
+@media (max-width: 768px) {
+	.heroslider {
+  margin-bottom: 8rem;
+}
+}
+
+@media (max-width: 480px) {
+		.heroslider {
+  margin-bottom: 4rem;
+}
+}
+
 /*feedback*/
 
 .feedback {

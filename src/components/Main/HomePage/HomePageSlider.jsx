@@ -1,70 +1,38 @@
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import style from "./homepageslider.module.scss";
 import { homepageSlides } from "../newsitems";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
+import useResponsiveEvent from "../About/useResponsiveEvent";
 
 const HomePageSlider = () => {
-  const settings = {
-    dots: true,
-    arrows: false,
-    infinite: true,
-    autoplay: true,
-    speed: 500,
-    centerPadding: "200px",
-    centerMode: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1600,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          centerMode: false,
-        },
-      },
-      {
-        breakpoint: 1280,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          centerMode: true,
-        },
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          centerMode: false,
-        },
-      },
-      {
-        breakpoint: 790,
-        settings: {
-          dots: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: false,
-        },
-      },
-    ],
-  };
-	
+	const isScreenLittle = useResponsiveEvent(1500)
+	const isScreenSmoll = useResponsiveEvent(1131)
+const isMobileScreen = useResponsiveEvent(600);
 
   return (
-    <div className={style.slidercontainer}>
-		  <Slider {...settings} className={style.slider}>
-			  {homepageSlides.map((slide) => (
-				  <div className={style.slideritem} key={slide.id}>
-					  <img src={slide.imagesrc} alt={slide.imagealt} />
-				  </div>
-			  ))}
-              
-      </Slider>
+    <div className={style.slider}>
+      <Swiper
+        slidesPerView={isMobileScreen ? 1 : isScreenSmoll ? 2 : isScreenLittle ? 3 : 4}
+        spaceBetween={20}
+			  loop={true}
+			  
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination, Autoplay]}
+       
+      >
+        {homepageSlides.map((slide) => (
+          <SwiperSlide className={style.slideritem} key={slide.id}>
+            <img src={slide.imagesrc} alt={slide.imagealt} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 };
