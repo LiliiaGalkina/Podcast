@@ -2,7 +2,7 @@
 
 .slider {
   margin: 0 auto;
-  width: 98%;
+  width: 99%;
   position: relative;
 }
 
@@ -18,13 +18,14 @@
 }
 
 .itemimg {
+	height: 5.4rem;
 	padding-bottom: 2rem;
 	border-bottom: 0.05rem solid $textColorGrey;
 	display: flex;
 	justify-content: center;
 	img {
 		width: 60%;
-		height: 5.4rem;
+		
 	}
 }
 
@@ -39,6 +40,24 @@
 .slidersponsoritem {
   padding: 2rem;
 }
+
+.itemimg {
+	height: 4rem;
+	padding-bottom: 1rem;
+	img {
+		width: 50%;
+	}
+}
+
+.itemtext {
+	padding-top: 1rem;
+}
+}
+
+@media (max-width: 480px) {
+	.itemimg {
+		height: 5rem;
+	}
 }
 
 
