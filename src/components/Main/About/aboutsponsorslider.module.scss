@@ -1,13 +1,13 @@
 @use "../../_variables.scss" as *;
 
-.slidersponsorcontainer {
-  margin: 0 auto 6.4rem;
-  width: 99%;
+.slider {
+  margin: 0 auto;
+  width: 98%;
   position: relative;
 }
 
+
 .slidersponsoritem {
-  max-width: 98%;
  padding: 4rem;
   display: flex;
   flex-direction: column;
@@ -18,14 +18,12 @@
 }
 
 .itemimg {
-	width: 35.49rem;
-	margin: 0 auto;
 	padding-bottom: 2rem;
 	border-bottom: 0.05rem solid $textColorGrey;
 	display: flex;
 	justify-content: center;
 	img {
-		max-width: 90%;
+		width: 60%;
 		height: 5.4rem;
 	}
 }
@@ -36,35 +34,13 @@
 	text-align: center;
 }
 
-  .arrowleft {
-    @include decorSlider(left, bottom, 5rem, -22rem);
-  }
-
-  .arrowright {
-    @include decorSlider(left, bottom, -10rem, -22rem);
-  }
-
 
 @media (max-width: 1024px) {
-  .slidersponsoritem {
-    padding: 4rem 2rem;
-  }
-
-  .itemimg {
-	width: 30rem;
-  }
+.slidersponsoritem {
+  padding: 2rem;
+}
 }
 
-@media (max-width: 480px) {
-	 .itemimg {
-	width: 20rem;
-  }
 
-  .arrowleft {
-    @include decorSlider(left, bottom, 5rem, -22rem);
-  }
 
-  .arrowright {
-    @include decorSlider(left, bottom, -10rem, -22rem);
-  }
-}
+
