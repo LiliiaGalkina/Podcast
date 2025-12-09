@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { Autoplay } from "swiper/modules";
 import useResponsiveEvent from "../About/useResponsiveEvent";
+import "./swiperstyles.scss";
 
 const HomePageSlider = () => {
 	const isScreenLittle = useResponsiveEvent(1500)
@@ -13,10 +14,11 @@ const isMobileScreen = useResponsiveEvent(600);
   return (
     <div className={style.slider}>
       <Swiper
-        slidesPerView={isMobileScreen ? 1 : isScreenSmoll ? 2 : isScreenLittle ? 3 : 4}
+        slidesPerView={
+          isMobileScreen ? 1 : isScreenSmoll ? 2 : isScreenLittle ? 3 : 4
+        }
         spaceBetween={20}
-			  loop={true}
-			  
+        loop={true}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
@@ -25,7 +27,6 @@ const isMobileScreen = useResponsiveEvent(600);
           clickable: true,
         }}
         modules={[Pagination, Autoplay]}
-       
       >
         {homepageSlides.map((slide) => (
           <SwiperSlide className={style.slideritem} key={slide.id}>

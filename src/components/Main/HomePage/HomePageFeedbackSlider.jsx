@@ -4,22 +4,14 @@ import arrowleft from "/image/homepage/sliderfeedback/arrowleft.png";
 import arrowright from "/image/homepage/sliderfeedback/arrowright.png";
 import { feedbackSliderItems } from "../newsitems";
 import { useEffect, useState } from "react";
+import useResponsiveEvent from "../About/useResponsiveEvent";
 
 const HomePageFeedbackSlider = () => {
   const [slideIdx, setSlideIdx] = useState(0);
-  const [isMobile, setIsMobile] = useState(
-    window.matchMedia("(max-width: 768px)").matches
-  );
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.matchMedia("(max-width: 768px)").matches);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const isMobileScreen = useResponsiveEvent(769);
 
-  let sliderLength = isMobile ? 1 : 2;
+  let sliderLength = isMobileScreen ? 1 : 2;
 
   const isPrevButtonDisabled = slideIdx === 0;
   const isNextButtonDisabled =

@@ -9,9 +9,9 @@ import { Navigation } from "swiper/modules";
 import useResponsiveEvent from "./useResponsiveEvent.jsx";
 
 const AboutSponsorSlider = () => {
-	const isMobileScreen = useResponsiveEvent(769);
-	const isMobileScreenLittle = useResponsiveEvent(481);
-	
+  const isMobileScreen = useResponsiveEvent(769);
+  const isMobileScreenLittle = useResponsiveEvent(481);
+
   return (
     <div className={style.slider}>
       <Swiper
