@@ -1,6 +1,7 @@
 import allstyle from "../allstyles.module.scss";
 import style from "./benefits.module.scss";
 import Buttondark from "../../Button/Buttondark";
+import { Link } from "react-router-dom";
 
 const Benefits = () => {
   return (
@@ -97,9 +98,9 @@ const Benefits = () => {
             </p>
           </div>
         </div>
-        <div className={style.button}>
+        <Link to={"/prising"} className={style.button}>
           <Buttondark buttonText="SEE PRICING" />
-        </div>
+        </Link>
       </div>
       <div className={allstyle.sectiondecordown}>
         <img src="/Podcast/image/blackdecorsection.png" alt="черная кривая" />

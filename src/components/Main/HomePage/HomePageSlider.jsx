@@ -12,7 +12,7 @@ const HomePageSlider = () => {
 const isMobileScreen = useResponsiveEvent(600);
 
   return (
-    <div className={style.slider}>
+    <div className={style.heroslider}>
       <Swiper
         slidesPerView={
           isMobileScreen ? 1 : isScreenSmoll ? 2 : isScreenLittle ? 3 : 4
